@@ -21,6 +21,7 @@ class B556Mag : HDMagAmmo{
 	override void GetItemsThatUseThis() {
 		itemsthatusethis.push("B_M4");
 		itemsthatusethis.push("B_M4_M203");
+        itemsthatusethis.push("B_AK19");
 	}
 
 	states{
@@ -95,6 +96,69 @@ class BM249MagEmpty:IdleDummy{
 		destroy();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+class BM240Mag : HDMagAmmo {
+	default{
+		hdmagammo.maxperunit 100;
+		hdmagammo.roundtype "B762x51Ammo";
+		hdmagammo.roundbulk c_762_load_bulk;
+		hdmagammo.magbulk c_m240_pouch_bulk;
+		hdpickup.refid B_MF240_MAG_REFID;
+		tag "7.62x51mm 100 round pouch";
+		inventory.icon "M42CA0";
+		inventory.pickupmessage "Picked up a 7.62x51mm 100 Round NATO STANAG magazine.";
+		scale 0.8;
+	}
+
+	override string,string,name,double getmagsprite(int thismagamt){
+		return (thismagamt > 0) ? "M42CA0" : "M42CB0", "BF76A3A7", "B762x51Ammo", 1.7;
+	}
+
+	override void GetItemsThatUseThis() {
+		itemsthatusethis.push("B_M240");
+	}
+
+	states{
+		spawn:
+			M42C A -1;
+			stop;
+		spawnempty:
+			M42C B -1{
+				brollsprite = true;
+				brollcenter = true;
+				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
+			}
+			stop;
+	}
+}
+
+class BM240MagEmpty:IdleDummy{
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"BM240Mag",0);
+		destroy();
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 class B9mm_MP5K_MAG : HDMagAmmo {
 	default{
@@ -250,7 +314,7 @@ class B762MagEmpty:IdleDummy{
 
 class GlockMagazine : HDMagAmmo {
 	default{
-		hdmagammo.maxperunit 15;
+		hdmagammo.maxperunit 17;
 		hdmagammo.roundtype "HDPistolAmmo";
 		hdmagammo.roundbulk c_van_9mm_bulk;
 		hdmagammo.magbulk c_glock_mag_bulk;
@@ -486,8 +550,8 @@ class BAKM_762Mag : HDMagAmmo {
 		hdmagammo.roundbulk c_762_sov_load_bulk;
 		hdmagammo.magbulk c_akm_mag_bulk;
 		hdpickup.refid B_AKM_MAG_REFID;
-		tag "AKM 7.62x39mm magazine";
-		inventory.pickupmessage "Picked up an AKM 7.62x39mm magazine.";
+		tag "AK-15 7.62x39mm magazine";
+		inventory.pickupmessage "Picked up an AK-15 7.62x39mm magazine.";
 		Inventory.Icon "AKMCA0";
 		scale 0.8;
 	}

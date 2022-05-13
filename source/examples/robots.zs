@@ -777,9 +777,8 @@ class THERPUsable:HDWeapon{
 			invoker.weaponstatus[HERP_YOFS]=yofs;
 		}else invoker.weaponstatus[HERP_YOFS]=invoker.weaponstatus[HERP_YOFS]*2/3;
 		if(pressingfiremode()){
-			int inputamt=clamp((player.cmd.pitch>>8),-4,4);
+			int inputamt=(GetMouseY(true)>>4);
 			inputamt+=(justpressed(BT_ATTACK)?1:justpressed(BT_ALTATTACK)?-1:0);
-			hijackmouse();
 			invoker.weaponstatus[HERP_BOTID]=clamp(
 				invoker.weaponstatus[HERP_BOTID]-inputamt,0,63
 			);

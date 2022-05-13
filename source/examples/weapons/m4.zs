@@ -7,12 +7,12 @@ class B_M4 : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the M4.";
+		inventory.pickupmessage      "You got the M4A1.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "M4";
+		tag                          "M4A1";
 		inventory.icon               "M4RPA0";
 		BHDWeapon.BFlashSprite       "FLSHA0";
 		BHDWeapon.BHeatDrain         12;
@@ -44,7 +44,7 @@ class B_M4 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.5;
+		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       -7;
 		BHDWeapon.BBackOffsetY       40;
 		BHDWeapon.BFrontSightImage   "m16iron";
@@ -65,10 +65,10 @@ class B_M4 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -1.2;
-		BHDWeapon.BRecoilXHigh 1.2;
-		BHDWeapon.BRecoilYLow  1.3;
-		BHDWeapon.BRecoilYHigh 1.8;		
+		BHDWeapon.BRecoilXLow -0.5;
+		BHDWeapon.BRecoilXHigh 0.5;
+		BHDWeapon.BRecoilYLow  0.6;
+		BHDWeapon.BRecoilYHigh 0.8;		
 		BHDWeapon.bShowFireMode true;
 	}
 
@@ -79,7 +79,7 @@ class B_M4 : BaseStandardRifle {
 
 		Firemode:
 			#### A 1 {
-				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 2 ? 0 : 2);
+				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 1 ? 0 : 1);
 				A_WeaponReady(WRF_NONE);
 				return ResolveState("Nope");
 			}
@@ -518,7 +518,7 @@ class B_M4_M203 : BaseGLRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.5;
+		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       -7;
 		BHDWeapon.BBackOffsetY       40;
 		BHDWeapon.BFrontSightImage   "m16iron";
@@ -542,10 +542,10 @@ class B_M4_M203 : BaseGLRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -1.2;
-		BHDWeapon.BRecoilXHigh 1.2;
-		BHDWeapon.BRecoilYLow  1.3;
-		BHDWeapon.BRecoilYHigh 1.7;	
+		BHDWeapon.BRecoilXLow -0.5;
+		BHDWeapon.BRecoilXHigh 0.5;
+		BHDWeapon.BRecoilYLow  0.6;
+		BHDWeapon.BRecoilYHigh 0.8;	
 		BHDWeapon.bShowFireMode true;	
 	}
 
@@ -556,7 +556,7 @@ class B_M4_M203 : BaseGLRifle {
 
 		Firemode:
 			#### A 1 {
-				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 2 ? 0 : 2);
+				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 1 ? 0 : 1);
 				A_WeaponReady(WRF_NONE);
 				return ResolveState("Nope");
 			}

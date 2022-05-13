@@ -30,7 +30,7 @@ class b_Glock : BasePistol {
 		BHDWeapon.BWeaponBulk        c_glock_bulk;
 		BHDWeapon.BMagazineBulk      c_glock_mag_bulk;
 		BHDWeapon.BBulletBulk        1;
-		BHDWeapon.BMagazineCapacity  15;
+		BHDWeapon.BMagazineCapacity  17;
 		BHDWeapon.BarrelLength       10;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
@@ -67,9 +67,10 @@ class b_Glock : BasePistol {
 		BHDWeapon.bLayerGunBack -99;
 
 		BHDWeapon.BRecoilXLow -1.2;
-		BHDWeapon.BRecoilXHigh 1.2;
+	    BHDWeapon.BRecoilXHigh 1.2;
 		BHDWeapon.BRecoilYLow  1.1;
 		BHDWeapon.BRecoilYHigh 2.1;	
+        BHDWeapon.bShowFireMode true;
 	}
 
 	states {
@@ -106,7 +107,11 @@ class b_Glock : BasePistol {
 			goto HDWeapon::Spawn;
 
 		Firemode:
-			goto nope;
+			#### A 1 {
+				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 1 ? 0 : 1);
+				A_WeaponReady(WRF_NONE);
+				return ResolveState("Nope");
+			}
 
 		SpawnNoMag:
 			GLKU B 0 {

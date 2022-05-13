@@ -206,12 +206,12 @@ class PlayerEvents : EventHandler {
 			};
 			e.Replacement = possible[random(0, 17)];
 		}
-		else if (e.Replacee is "HideousShotgunGuy") {
+		else if (e.Replacee is "ZombieShotgunner") {
 			if (random(0, 100) < b_ai_shotgunner_chance) {
 				e.Replacement = "usmc_fostech";
 			}
 		}
-		else if (e.Replacee is "VulcanetteGuy") {
+		else if (e.Replacee is "VulcanetteZombie") {
 			string possible[15] = {
 				"usmc_m14",
 				"usmc_m249",
@@ -374,7 +374,7 @@ class PlayerEvents : EventHandler {
 				next is "DeadTrilobite" ||
 				next is "DeadRifleman" ||
 				next is "DeadImpSpawner" ||
-				next is "DeadHideousShotgunGuy" ||
+				next is "DeadZombieShotgunner" ||
 				next is "DeadDemonSpawner" ||
 				next is "DeadZombieStormtrooper" ||
 				next is "Candlestick" ||

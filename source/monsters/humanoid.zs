@@ -41,7 +41,7 @@ class HumanoidBase : ZombieStormtrooper {
 	Class<BaseSightAttachment> sightClass;
 
 	override void postbeginplay(){
-		HDMobMan.postbeginplay();
+		HDHumanoid.postbeginplay();
 		mgr = AttachmentManager(EventHandler.find("AttachmentManager"));
 		silenced = random(0, 2);
 		scoped = random(0, 2);

@@ -43,7 +43,7 @@ class b_M249 : BHDWeapon {
 		BHDWeapon.BLoadSound         "weapons/m249/loading";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.5;
+		BHDWeapon.BROF               0.3;
 		BHDWeapon.BBackSightImage    "m24rsig";
 		BHDWeapon.BBackOffsetX       4;
 		BHDWeapon.BBackOffsetY       23;
@@ -67,10 +67,10 @@ class b_M249 : BHDWeapon {
 		BHDWeapon.BLayerGun     100;
 		BHDWeapon.bLayerGunBack 107;
 
-		BHDWeapon.BRecoilXLow -0.7;
-		BHDWeapon.BRecoilXHigh 0.7;
-		BHDWeapon.BRecoilYLow  1.1;
-		BHDWeapon.BRecoilYHigh 1.5;		
+		BHDWeapon.BRecoilXLow -0.4;
+		BHDWeapon.BRecoilXHigh 0.4;
+		BHDWeapon.BRecoilYLow  0.5;
+		BHDWeapon.BRecoilYHigh 0.7;		
 	}
 
 	override void InitializeWepStats (bool idfa) {

@@ -205,7 +205,14 @@ class B_ACOG_Red : BaseAcog {
 		BaseAttachment.SerialId B_ACOG_RED_ID;
 		BaseAttachment.BaseSprite "SCOP";
 		BaseAttachment.BaseFrame 0;
-		HDPickup.RefID "acg";
+		//Inventory.ICON "ZUXKA0";
+		BaseSightAttachment.BackOffY 32;
+        BaseSightAttachment.BackOffX 0;
+		BaseSightAttachment.bbackAltImage "rflahd";	
+        BaseSightAttachment.bfrontAltImage "holira";	
+		Scale 0.4;
+		
+        HDPickup.RefID "acg";
 		Tag "Red ACOG (iron Sight).";
 		Inventory.Icon "SCPPA0";
 		Inventory.PickupMessage "Picked up a red M4 ACOG (iron Sight).";

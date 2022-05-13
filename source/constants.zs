@@ -60,6 +60,9 @@ const B_M107_REFID    = "w10";
 const B_AKS74U_REFID  = "w11";
 const B_AKM_REFID     = "w12";
 const B_UZI_REFID     = "w13";
+const B_AK19_REFID     = "w14";
+const B_AK108_REFID     = "w15";
+const B_MF240_REFID   = "w16";
 
 const B_GLOCK_MAG_REFID  = "m01";
 const B_MP5_MAG_REFID    = "m02";
@@ -72,6 +75,7 @@ const B_M107_MAG_REFID   = "m10";
 const B_AKS74U_MAG_REFID = "m11";
 const B_AKM_MAG_REFID    = "m12";
 const B_UZI_MAG_REFID    = "m13";
+const B_MF240_MAG_REFID  = "m16";
 
 // ID's and Ref's for Attachments
 const B_M4_REARSIGHT_ID   = 1;
@@ -124,6 +128,9 @@ const c_faux_drum_bulk = 20;
 
 const c_m249_bulk = 200;
 const c_m249_pouch_bulk = 15;
+
+const c_m240_bulk = 200;
+const c_m240_pouch_bulk = 15;
 
 const c_545_round_bulk = 0.30;
 const c_545_spent_bulk = c_545_round_bulk * 0.7;

@@ -569,8 +569,7 @@ class TDERPUsable:HDWeapon{
 				return;
 			}
 			if(pressingfiremode()){
-				hijackmouse();
-				int ptch=player.cmd.pitch>>6;
+				int ptch=(GetMouseY(true)>>6);
 				if(ptch){
 					invoker.weaponstatus[DERPS_BOTID]=clamp(
 						ptch+invoker.weaponstatus[DERPS_BOTID],0,63
@@ -956,8 +955,8 @@ class TDerpController:HDWeapon{
 						moved=true;
 					}
 				}
-				int yaw=player.cmd.yaw>>6;
-				int ptch=player.cmd.pitch>>6;
+				int yaw=(GetMouseX(true)>>6);
+				int ptch=(GetMouseY(true)>>6);
 				if(yaw||ptch){
 					ddd.A_DerpCrawlSound(150);
 					ddd.pitch=clamp(ddd.pitch-clamp(ptch,-10,10),-90,60);
@@ -972,7 +971,6 @@ class TDerpController:HDWeapon{
 					ddd.angle+=player.cmd.sidemove<0?10:-10;
 					player.cmd.sidemove*=-1;
 				}
-				hijackmouse();
 				hijackmove();
 			}else{
 				ddd.cmd=cmd;

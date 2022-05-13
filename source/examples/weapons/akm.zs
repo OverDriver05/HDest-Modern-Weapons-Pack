@@ -6,12 +6,12 @@ class B_AKM : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AKM.";
+		inventory.pickupmessage      "You got the AK-15.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AKM";
+		tag                          "AK-15";
 		inventory.icon               "AKMPA0";
 		BHDWeapon.BFlashSprite       "AKMFA0";
 		BHDWeapon.BHeatDrain         12;
@@ -53,8 +53,8 @@ class B_AKM : BaseStandardRifle {
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "762_MOUNT";
-		BHDWeapon.bScopeMount        "";
-		BHDWeapon.bMiscMount         "";
+		BHDWeapon.bScopeMount        "NATO_RAILS";
+		BHDWeapon.bMiscMount         "NATO_RAILS";
 		BHDWeapon.EjectShellClass    "B762SovSpent";
 		hdweapon.refid               B_AKM_REFID;
 
@@ -65,10 +65,10 @@ class B_AKM : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -1.2;
-		BHDWeapon.BRecoilXHigh 1.2;
-		BHDWeapon.BRecoilYLow  1.3;
-		BHDWeapon.BRecoilYHigh 2.3;		
+		BHDWeapon.BRecoilXLow -0.8;
+		BHDWeapon.BRecoilXHigh 0.8;
+		BHDWeapon.BRecoilYLow  0.9;
+		BHDWeapon.BRecoilYHigh 1.9;		
 		BHDWeapon.bShowFireMode true;
 	}
 
