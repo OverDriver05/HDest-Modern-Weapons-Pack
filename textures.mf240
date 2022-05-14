@@ -1,0 +1,45 @@
+
+sprite M42PA0, 156, 52 {
+	XScale 3
+	YScale 3
+	OFfset 77, 52
+	Patch "sprites/mf240B/bm240pickup.png", 0, 0
+}
+
+sprite M42PB0, 156, 52 {
+	XScale 3
+	YScale 3
+	Offset 77, 52
+	Patch "sprites/mf240B/bm240pickupnm.png", 0, 0
+}
+
+sprite M42CA0, 13, 18 {
+	XScale 3
+	YScale 3
+	Offset 7, 18
+	Patch "sprites/mf240B/bm249clip.png", 0, 0
+}
+
+sprite M42CB0, 13, 18 {
+	XScale 3
+	YScale 3
+	Offset 7, 18
+	Patch "sprites/mf240B/bm249clipnb.png", 0, 0
+}
+
+// Begin Images
+
+sprite M42UA0, 186, 72 {
+	XScale 3
+	YScale 3
+	Offset 93, 72
+	Patch "graphics/gunimages/m240/none/base.png", 0, 0
+}
+
+sprite M42UB0, 186, 72 {
+	XScale 3
+	YScale 3
+	Offset 93, 72
+	Patch "graphics/gunimages/m240/none/empty.png", 0, 0
+}
+

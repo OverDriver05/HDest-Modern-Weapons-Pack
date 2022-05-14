@@ -1,0 +1,58 @@
+
+OptionValue "B_Replace_Types" {
+	1, "None"
+	6, "Map"
+	5, "Replace"
+}
+
+OptionValue "B_AI_Replace_Types" {
+	1, "None"
+	6, "Map"
+	5, "Replace"
+}
+
+OptionValue "B_Althud_Options" {
+	1, "Full"
+	2, "Minimal"
+}
+
+OptionValue "B_Attach_Spawn_Options" {
+	1, "None"
+	2, "Random"
+}
+
+OptionValue "B_Resource_Options" {
+	0, "Off"
+	1, "On"
+}
+
+OptionValue "B_Jam_Options" {
+	0, "Off"
+	1, "On"
+}
+
+OptionValue "B_Mag_Options" {
+	0, "Filled"
+	1, "Empty"
+}
+
+OptionValue "B_Alt_Backpack" {
+	0, "Vanilla"
+	1, "Alternative"
+}
+
+AddOptionMenu "OptionsMenu" {
+	StaticText ""
+	Submenu "Bryan's Weapons Options", "B_Options"
+}
+
+OptionMenu "B_Options" {
+	title "Bryan's Weapons"
+	statictext "See README.md for option description."
+	option "Replace mode", "B_Replace_Type", "B_Replace_Types"
+	option "AI Replace mode", "B_AI_Replace_Type", "B_AI_Replace_Types"
+	option "HUD Sights", "b_althud_mode", "B_Althud_options"
+	option "Attachment Spawn Mode", "b_attach_spawn_mode", "B_Attach_Spawn_Options"
+	option "Backpack Mode", "b_alt_backpack", "B_Alt_Backpack"
+	option "Resource mode", "b_spawn_raw_resources", "B_Resource_Options"
+}

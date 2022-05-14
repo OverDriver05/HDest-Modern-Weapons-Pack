@@ -1,0 +1,122 @@
+version "4.4"
+
+#include "source/constants.zs"
+#include "source/player.zs"
+#include "source/drops.zs"
+#include "source/temp.zs"
+
+#include "source/input/miscattachment.zs"
+#include "source/input/removers.zs"
+
+#include "source/attachment/base.zs"
+#include "source/attachment/manager.zs"
+#include "source/attachment/menus.zs"
+
+#include "source/weapons/base.zs"
+#include "source/weapons/baseRifle.zs"
+#include "source/weapons/baseShotgun.zs"
+#include "source/weapons/basePistol.zs"
+#include "source/weapons/baseRpg.zs"
+#include "source/weapons/baseAmmo.zs"
+
+#include "source/examples/weapons/glock.zs"
+#include "source/examples/weapons/ak19.zs"
+#include "source/examples/weapons/ak12.zs"
+#include "source/examples/weapons/ak108.zs"
+#include "source/examples/weapons/ak308.zs"
+#include "source/examples/weapons/rpk16.zs"
+#include "source/examples/weapons/m4.zs"
+#include "source/examples/weapons/m14.zs"
+#include "source/examples/weapons/mp5.zs"
+#include "source/examples/weapons/fostech.zs"
+#include "source/examples/weapons/mf249.zs"
+#include "source/examples/weapons/m240.zs"
+#include "source/examples/weapons/rpg.zs"
+#include "source/examples/weapons/m107.zs"
+#include "source/examples/weapons/aks74u.zs"
+#include "source/examples/weapons/akm.zs"
+#include "source/examples/weapons/uzi.zs"
+
+#include "source/examples/ammos.zs"
+#include "source/examples/bullets.zs"
+#include "source/examples/magazines.zs"
+#include "source/examples/barrels.zs"
+#include "source/examples/miscs.zs"
+#include "source/examples/scopes.zs"
+#include "source/examples/pickups.zs"
+
+#include "source/examples/misc/m249reloader.zs"
+#include "source/examples/misc/gunpowder.zs"
+#include "source/examples/misc/leadconverter.zs"
+#include "source/examples/misc/backpack.zs"
+
+#include "source/monsters/lvl1warrior.zs"
+#include "source/examples/robots.zs"
+#include "source/examples/robots2.zs"
+
+#include "source/monsters/humanoid.zs"
+
+#include "source/monsters/new/ai_bubble.zs"
+#include "source/monsters/new/afrf.zs"
+#include "source/monsters/new/usm.zs"
+
+#include "source/examples/misc/compat.zs"
+
+class BryanOperator : HDSkin {
+	default {
+		hdskin.mug "MOS";	
+	}
+	states {
+		spawn: 
+			MOSA A 0;
+			stop;
+		crouch:
+			MOSB A 0;
+			stop;
+	}
+}
+
+class ru_emr : HDSkin {
+	default {
+		hdskin.mug "MOS";	
+		hdskin.translate false;
+	}
+	states {
+		spawn: 
+			EMRA A 0;
+			stop;
+		crouch:
+			EMRB A 0;
+			stop;
+	}
+}
+
+class ru_vsr : HDSkin {
+	default {
+		hdskin.mug "MOS";	
+		hdskin.translate false;
+	}
+	states {
+		spawn: 
+			VSRA A 0;
+			stop;
+		crouch:
+			VSRB A 0;
+			stop;
+	}
+}
+
+class us_mc : HDSkin {
+	default {
+		hdskin.mug "MOS";	
+		hdskin.translate false;
+	}
+	states {
+		spawn: 
+			UMCA A 0;
+			stop;
+		crouch:
+			UMCB A 0;
+			stop;
+	}
+}
