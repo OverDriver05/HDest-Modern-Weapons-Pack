@@ -25,7 +25,7 @@ class B_AK108 : BaseStandardRifle {
 		BHDWeapon.BSpriteWithoutMag  "AK8PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "AKMCA0";
+		BHDWeapon.BMagazineSprite    "AK8CA0";
 		BHDWeapon.BWeaponBulk        c_akm_bulk;
 		BHDWeapon.BMagazineBulk      c_m4_mag_bulk;
 		BHDWeapon.BBulletBulk        c_556_round_bulk;
@@ -34,7 +34,7 @@ class B_AK108 : BaseStandardRifle {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/akm/fire";
+		BHDWeapon.BFireSound         "weapons/m4/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
 		BHDWeapon.BChamberSound      "weapons/m4/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";

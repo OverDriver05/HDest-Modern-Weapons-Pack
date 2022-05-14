@@ -2,8 +2,8 @@
 class HDB_556 : HDBulletActor{
 	default{
 		pushfactor 0.4;
-		mass 42;
-		speed 1200;
+		mass 40;
+		speed 1100;
 		accuracy 670;
 		stamina 556;
 		woundhealth 40;
@@ -14,9 +14,9 @@ class HDB_556 : HDBulletActor{
 
 class HDB_762 : HDBulletActor{
 	default{
-		pushfactor 0.2;
-		mass 102;
-		speed 1121;
+		pushfactor 0.4;
+		mass 35;
+		speed 1400;
 		accuracy 666;
 		stamina 762;
 		woundhealth 40;
@@ -28,8 +28,8 @@ class HDB_762 : HDBulletActor{
 class HDB_762x63 : HDBulletActor{
 	default{
 		pushfactor 0.4;
-		mass 84;
-		speed 963;
+		mass 35;
+		speed 1400;
 		accuracy 666;
 		stamina 762;
 		woundhealth 40;
@@ -40,9 +40,9 @@ class HDB_762x63 : HDBulletActor{
 
 class HDB_762x51 : HDBulletActor {
 	default {
-		pushfactor 0.2;
-		mass 102;
-		speed 1121;
+		pushfactor 0.4;
+		mass 90;
+		speed 1000;
 		accuracy 666;
 		stamina 762;
 		woundhealth 40;
@@ -66,7 +66,7 @@ class HDB_792 : HDBulletActor{
 
 class HDB_BMG:HDBulletActor{
     default{
-        pushfactor 0.4;
+        pushfactor 0.01;
         mass 450;
         speed 1200;
         accuracy 600;
@@ -79,8 +79,8 @@ class HDB_BMG:HDBulletActor{
 class HDB_545:HDBulletActor{
     default{
         pushfactor 0.4;
-        mass 37;
-        speed 1161;
+        mass 36;
+        speed 1160;
         accuracy 666;
         stamina 545;
         woundhealth 5;
@@ -92,12 +92,25 @@ class HDB_545:HDBulletActor{
 class HDB_762sov : HDBulletActor{
     default{
         pushfactor 0.3;
-        mass 84;
-        speed 963;
+        mass 80;
+        speed 960;
         accuracy 600;
         stamina 762;
         woundhealth 5;
         hdbulletactor.hardness 4;
 		hdbulletactor.distantsound "world/riflefar";
     }
+}
+
+class HDB_HD45ACP : HDBulletActor{
+	default{
+		pushfactor 0.2;
+		mass 150;
+		speed 400;
+		accuracy 450;
+		stamina 450;
+		woundhealth 4;
+		hdbulletactor.hardness 3;
+		hdbulletactor.distantsound "world/riflefar";
+	}
 }

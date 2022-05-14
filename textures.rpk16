@@ -1,0 +1,28 @@
+
+sprite RK6PA0, 145, 41 {
+	XScale 3
+	YScale 3
+	Offset 72, 41
+	Patch "graphics/gunimages/rpk16/base.png", 0, 0
+}
+
+sprite RK6PB0, 145, 31 {
+	XScale 3
+	YScale 3
+	Offset 145, 31
+	Patch "graphics/gunimages/rpk16/empty.png", 0, 0
+}
+
+sprite RK6CA0, 21, 32 {
+	XScale 3
+	YScale 3
+	Offset 11, 32
+	Patch "graphics/mags/rpkclip.png", 0, 0
+}
+
+sprite RK6CB0, 21, 32 {
+	XScale 3
+	YScale 3
+	Offset 11, 32
+	Patch "graphics/mags/rpkclipnb.png", 0, 0
+}

@@ -151,15 +151,6 @@ class BM240MagEmpty:IdleDummy{
 }
 
 
-
-
-
-
-
-
-
-
-
 class B9mm_MP5K_MAG : HDMagAmmo {
 	default{
 		hdmagammo.maxperunit 30;
@@ -542,6 +533,44 @@ class BAK_545Mag : HDMagAmmo {
 			stop;
 	}
 }
+
+
+class RPKMag : HDMagAmmo {
+	default{
+		hdmagammo.maxperunit 95;
+		hdmagammo.roundtype "B545Ammo";
+		hdmagammo.roundbulk c_556_load_bulk;
+		hdmagammo.magbulk c_rpk_mag_bulk;
+		hdpickup.refid B_RPK_MAG_REFID;
+		tag "RPK 95 round 5.45x39mm drum";
+		inventory.pickupmessage "Picked up an 95 round 5.45x39mm drum.";
+		Inventory.Icon "RK6CA0";
+		scale 0.8;
+	}
+
+	override string,string,name,double getmagsprite(int thismagamt) {
+		return (thismagamt > 0) ? "RK6CA0" : "RK6CB0", "B54BA7A3", "B545Ammo", 1.7;
+	}
+
+	override void GetItemsThatUseThis() {
+		itemsthatusethis.push("B_RPK16");
+	}
+
+	states{
+		spawn:
+			RK6C A -1;
+			stop;
+		spawnempty:
+			RK6C B -1{
+				brollsprite = true;
+				brollcenter = true;
+				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
+			}
+			stop;
+	}
+}
+
+
 
 class BAKM_762Mag : HDMagAmmo {
 	default{

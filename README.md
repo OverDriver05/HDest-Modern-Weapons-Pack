@@ -1,47 +1,90 @@
 # Changelog
 This repository is my personal tweaking of the original project, which itself was edited by HalfBakedCake to work with newer HD versions. Thanks to everyone who worked on it before to create a highly useful and fun mod.
 Creating new weapons consists of creating a new zs under /source/examples/weapons/. Textures are edited under /graphics/gunimages/ and /sprites. Make sure to change textures under /textures.xxx and load by editing /zscript.
+New sprites have to have offsets set through something like SLADE. 
 
 - Reworked M4 to M4A1
-        - Firemodes: Semi/Auto
-        - Reduced Recoil
-        - Same loadout code
-- Reworked M249
-        - Reduced recoil
-        - Same loadout code
-- Reworked Glock to Glock 18
-        - Firemodes: Semi/Auto 
-        - Capacity changed to 17 rounds
-        - Magazine changed to hold 17 rounds
-        - Same loadout codes for magazine and gun
-- Reworked AKM to AK-15 
-        - Added "NATO" rails to attach attachments such as optics and flashlight 
-        - Slightly reduced recoil
-        - Same loadout code as AKM
-- Added AK-19 (w14)
-        - The 5.56 version of the old AKM.  Shares 5.56 mags with the M4A1
-        - Reduced recoil compared to the AK-15
-        - Has "NATO" rails to attach attachments such as optics and flashlight
-        - Firemodes: Semi/Auto
-        - Loadout code is w14
-- Added AK-108 (w15)
-        - From the AK-100 family, known for heavily reduced recoil due to balancing system
-        - AK-108 is the 5.56 version. Shares 5.56 mags with the M4A1
-        - Does not have rails, so you cannot attach attachments
-        - Firemodes: Semi/Burst/Auto
-- Added M240 (w16) and 100 round 7.62x51mm pouch (m16)
-        - FN MAG, modified for US Military. Fires 7.62x51mm.
-        - Uses 100 round 7.62x51mm pouches, which has a loadout code of (m16)
-                - The magazine is differentiable from the 200 round 5.56 pouch in that the 7.62 pouch is lighter in color. And heavier in weight.
-        - Has a slower rate of fire compared to the M249
-        - Has a higher recoil compared to the M249
-        - Firemodes: Auto
-- Added a reflex to the ACOG. 
-        - Without zooming, the reflex is active. While zooming, you switch to the magnified view.
-        - I didn't like how I was bad at aiming with the ACOG, so here goes.
+	- Firemodes: Semi/Auto
+	- Reduced Recoil
+	- Same loadout code
 
-#Known Issues:
-- Cannot add in new textures for gun sprites. Don't know why. I tried recreating the AKM sprites by just altering their saturation, but it screws up the scaling. And don't get me started with importing new ones.
+- Reworked M249
+	- Reduced recoil
+	- Same loadout code
+
+- Reworked Glock to Glock 18
+	- Firemodes: Semi/Auto 
+	- Capacity changed to 17 rounds
+	- Magazine changed to hold 17 rounds
+	- Same loadout codes for magazine and gun
+
+- Reworked AKM to AK-15
+    - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for Russian military.
+	- Added "NATO" rails to attach attachments such as optics and flashlight 
+	- Slightly reduced recoil
+	- Same loadout code as AKM
+
+- Added AK-12 (w17)
+    - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for Russian military.
+	- The 5.45 version of the old AKM.  Shares 5.45 mags with the AK74
+	- Reduced recoil compared to the AK-15
+	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Firemodes: Semi/Auto
+	- Loadout code is w17
+
+- Added AK-19 (w14)
+    - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for international export.
+	- The 5.56 version of the old AKM.  Shares 5.56 mags with the M4A1
+	- Reduced recoil compared to the AK-15 and AK-12
+	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Firemodes: Semi/Auto
+	- Loadout code is w14
+
+- Added AK-308 (w18)
+    - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for international export.
+	- The 7.62x51mm version of the old AKM.  Shares mags with the M14
+	- Around the same recoil compared to the AK-15
+	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Firemodes: Semi/Auto
+	- Loadout code is w18
+
+- Added RPK-16 (w19)
+    - Replacement for the RPK-74. For simplicity, think of a higher capacity AK-12
+	- Features a new 95 round 5.45mm drum. Loadout code for drum is m19
+	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Firemodes: Semi/Auto
+	- Loadout code of gun is w19
+
+- Added AK-108 (w15)
+	- From the AK-100 family, known for heavily reduced recoil due to balancing system
+	- AK-108 is the 5.56 version. Shares 5.56 mags with the M4A1
+	- Does not have rails, so you cannot attach attachments
+	- Firemodes: Semi/Burst/Auto
+
+- Added M240 (w16) and 100 round 7.62x51mm pouch (m16)
+	- FN MAG, modified for US Military. Fires 7.62x51mm.
+	- Uses 100 round 7.62x51mm pouches, which has a loadout code of (m16)
+	 	- The magazine is differentiable from the 200 round 5.56 pouch in that the 7.62 pouch is lighter in color.
+	- Has a slower rate of fire compared to the M249
+	- Has a higher recoil compared to the M249
+	- Firemodes: Auto
+
+- Added a reflex to the ACOG. 
+ 	- Without zooming, the reflex is active. While zooming, you switch to the magnified view.
+ 	- I didn't like how I was bad at aiming with the ACOG, so here goes.
+
+
+TLDR of new weapons: 
+Eastern Firearms:
+- AK-15 (w12)
+- AK-12 (w17)
+- AK-19 (w14)
+- AK-308 (w18)
+- RPK-16 (w19), Magazine (m19)
+- AK-108 (w15)
+
+Western Firearms:
+- M240 (w16), Magazine (m16)
 
 ---
 The original project readme is below.

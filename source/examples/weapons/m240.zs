@@ -34,8 +34,8 @@ class b_M240 : BHDWeapon {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m249/fire";
-		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
+		BHDWeapon.BFireSound         "weapons/m14/fire";
+		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
 		BHDWeapon.BChamberSound      "weapons/m4/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
 		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
@@ -43,7 +43,7 @@ class b_M240 : BHDWeapon {
 		BHDWeapon.BLoadSound         "weapons/m249/loading";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               1.4;
+		BHDWeapon.BROF               1.6;
 		BHDWeapon.BBackSightImage    "m24rsig";
 		BHDWeapon.BBackOffsetX       4;
 		BHDWeapon.BBackOffsetY       23;

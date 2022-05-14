@@ -1,4 +1,4 @@
-class B_AK19 : BaseStandardRifle {
+class B_RPK16 : BaseStandardRifle {
 
 	default {
 		+hdweapon.fitsinbackpack
@@ -6,35 +6,35 @@ class B_AK19 : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AK-19.";
+		inventory.pickupmessage      "You got the RPK-16.";
 		scale                        0.7;
-		weapon.bobrangex             0.22;
-		weapon.bobrangey             0.9;
+		weapon.bobrangex             0.35;
+		weapon.bobrangey             0.95;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AK-19";
-		inventory.icon               "AK9PA0";
+		tag                          "RPK-16";
+		inventory.icon               "RK6PA0";
 		BHDWeapon.BFlashSprite       "AKMFA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_556";
-		BHDWeapon.BAmmoClass         "B556Ammo";
-		BHDWeapon.BMagazineClass     "B556Mag";
+		BHDWeapon.BBulletClass       "HDB_545";
+		BHDWeapon.BAmmoClass         "B545Ammo";
+		BHDWeapon.BMagazineClass     "RPKMag";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "AK9PA0";
-		BHDWeapon.BSpriteWithoutMag  "AK9PB0";
+		BHDWeapon.BSpriteWithMag     "RK6PA0";
+		BHDWeapon.BSpriteWithoutMag  "RK6PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "AK9CA0";
+		BHDWeapon.BMagazineSprite    "RK6CA0";
 		BHDWeapon.BWeaponBulk        c_akm_bulk;
-		BHDWeapon.BMagazineBulk      c_m4_mag_bulk;
+		BHDWeapon.BMagazineBulk      c_rpk_mag_bulk;
 		BHDWeapon.BBulletBulk        c_556_round_bulk;
-		BHDWeapon.BMagazineCapacity  30;
+		BHDWeapon.BMagazineCapacity  95;
 		BHDWeapon.BarrelLength       25;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m4/fire";
+		BHDWeapon.BFireSound         "weapons/akm/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
 		BHDWeapon.BChamberSound      "weapons/m4/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
@@ -43,7 +43,7 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.9;
+		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       30;
 		BHDWeapon.BFrontSightImage   "akmfr";
@@ -52,11 +52,11 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.BFrontOffsetY      17;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
-		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
+		BHDWeapon.bBarrelMount       "554_MOUNT";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "NATO_RAILS";
-		BHDWeapon.EjectShellClass    "B556Spent";
-		hdweapon.refid               B_AK19_REFID;
+		BHDWeapon.EjectShellClass    "B545Spent";
+		hdweapon.refid               B_RPK16_REFID;
 
 		BHDWeapon.BAltFrontSightImage "a_akmfr";
 		BHDWeapon.BAltBackSightImage "a_akmbr";
@@ -65,16 +65,16 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.5;
-		BHDWeapon.BRecoilXHigh 0.5;
-		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 1.6;		
+		BHDWeapon.BRecoilXLow -0.9;
+		BHDWeapon.BRecoilXHigh 0.9;
+		BHDWeapon.BRecoilYLow  1.0;
+		BHDWeapon.BRecoilYHigh 2.0;		
 		BHDWeapon.bShowFireMode true;
 	}
 
 	states {
 		Spawn:
-			AK9P A 0 GetMagState();
+			RK6P A 0 GetMagState();
 			Goto Super::Spawn;
 
 		Firemode:
@@ -85,11 +85,11 @@ class B_AK19 : BaseStandardRifle {
 			}
 
 		SpawnMag:
-			AK9P A -1;
+			RK6P A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			AK9P B -1;
+			RK6P B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -309,10 +309,10 @@ class B_AK19 : BaseStandardRifle {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "AK9PA0", 1.;
+			return "RK6PA0", 1.;
 		}
 		else {
-			return "AK9PB0", 1.;
+			return "RK6PB0", 1.;
 		}
 	}
 	

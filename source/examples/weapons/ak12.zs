@@ -1,4 +1,4 @@
-class B_AK19 : BaseStandardRifle {
+class B_AK2 : BaseStandardRifle {
 
 	default {
 		+hdweapon.fitsinbackpack
@@ -6,35 +6,35 @@ class B_AK19 : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AK-19.";
+		inventory.pickupmessage      "You got the AK-12.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AK-19";
-		inventory.icon               "AK9PA0";
+		tag                          "AK-12";
+		inventory.icon               "AK2PA0";
 		BHDWeapon.BFlashSprite       "AKMFA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_556";
-		BHDWeapon.BAmmoClass         "B556Ammo";
-		BHDWeapon.BMagazineClass     "B556Mag";
+		BHDWeapon.BBulletClass       "HDB_545";
+		BHDWeapon.BAmmoClass         "B545Ammo";
+		BHDWeapon.BMagazineClass     "BAK_545Mag";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "AK9PA0";
-		BHDWeapon.BSpriteWithoutMag  "AK9PB0";
+		BHDWeapon.BSpriteWithMag     "AK2PA0";
+		BHDWeapon.BSpriteWithoutMag  "AK2PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "AK9CA0";
+		BHDWeapon.BMagazineSprite    "AK2CA0";
 		BHDWeapon.BWeaponBulk        c_akm_bulk;
-		BHDWeapon.BMagazineBulk      c_m4_mag_bulk;
+		BHDWeapon.BMagazineBulk      c_aks74u_mag_bulk;
 		BHDWeapon.BBulletBulk        c_556_round_bulk;
 		BHDWeapon.BMagazineCapacity  30;
 		BHDWeapon.BarrelLength       25;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m4/fire";
+		BHDWeapon.BFireSound         "weapons/akm/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
 		BHDWeapon.BChamberSound      "weapons/m4/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
@@ -52,11 +52,11 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.BFrontOffsetY      17;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
-		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
+		BHDWeapon.bBarrelMount       "554_MOUNT";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "NATO_RAILS";
-		BHDWeapon.EjectShellClass    "B556Spent";
-		hdweapon.refid               B_AK19_REFID;
+		BHDWeapon.EjectShellClass    "B545Spent";
+		hdweapon.refid               B_AK12_REFID;
 
 		BHDWeapon.BAltFrontSightImage "a_akmfr";
 		BHDWeapon.BAltBackSightImage "a_akmbr";
@@ -65,16 +65,16 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.5;
-		BHDWeapon.BRecoilXHigh 0.5;
-		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 1.6;		
+		BHDWeapon.BRecoilXLow -0.6;
+		BHDWeapon.BRecoilXHigh 0.6;
+		BHDWeapon.BRecoilYLow  0.7;
+		BHDWeapon.BRecoilYHigh 1.7;		
 		BHDWeapon.bShowFireMode true;
 	}
 
 	states {
 		Spawn:
-			AK9P A 0 GetMagState();
+			AK2P A 0 GetMagState();
 			Goto Super::Spawn;
 
 		Firemode:
@@ -85,11 +85,11 @@ class B_AK19 : BaseStandardRifle {
 			}
 
 		SpawnMag:
-			AK9P A -1;
+			AK2P A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			AK9P B -1;
+			AK2P B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -309,10 +309,10 @@ class B_AK19 : BaseStandardRifle {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "AK9PA0", 1.;
+			return "AK2PA0", 1.;
 		}
 		else {
-			return "AK9PB0", 1.;
+			return "AK2PB0", 1.;
 		}
 	}
 	

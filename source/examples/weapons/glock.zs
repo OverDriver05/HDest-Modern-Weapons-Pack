@@ -7,7 +7,7 @@ class b_Glock : BasePistol {
 		weapon.slotnumber            2;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the Glock.";
+		inventory.pickupmessage      "You got the Glock 18.";
 		scale                        0.7;
 		weapon.bobrangex 0.1;
 		weapon.bobrangey 0.6;
