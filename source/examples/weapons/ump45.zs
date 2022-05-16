@@ -74,15 +74,15 @@ class B_UMP45 : BaseStandardRifle {
 
 	states {
 		Spawn:
-			UMPP A 0 GetMagState();
+			UM4P A 0 GetMagState();
 			Goto Super::Spawn;
 
 		SpawnMag:
-			UMPP A -1;
+			UM4P A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			UMPP B -1;
+			UM4P B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
