@@ -69,6 +69,7 @@ const B_RPK16_REFID     = "w19";
 const B_SCR16_REFID     = "w20";
 const B_SCR17_REFID     = "w21";
 const B_UMP9_REFID     = "w22";
+const B_UMP45_REFID     = "w23";
 
 const B_GLOCK_MAG_REFID  = "m01";
 const B_MP5_MAG_REFID    = "m02";
@@ -83,6 +84,7 @@ const B_AKM_MAG_REFID    = "m12";
 const B_UZI_MAG_REFID    = "m13";
 const B_MF240_MAG_REFID  = "m16";
 const B_RPK_MAG_REFID = "m19";
+const B_UMP45_MAG_REFID = "m23";
 
 // ID's and Ref's for Attachments
 const B_M4_REARSIGHT_ID   = 1;
@@ -127,6 +129,7 @@ const c_m4_mag_bulk = 8;
 const c_mp5_bulk = 60;
 const c_mp5_m203_bulk = 90;
 const c_mp5_mag_bulk = 6;
+const c_UMP45_mag_bulk = 9;
 
 const c_m14_bulk = 110;
 const c_m14_mag_bulk = 8;
@@ -164,6 +167,9 @@ const c_raw_resource_bulk = 0.1;
 
 const c_van_9mm_bulk = ENC_9;
 const c_9mm_load_bulk = ENC_9_LOADED;
+
+const c_van_45ACP_bulk = ENC_45ACP;
+const c_45ACP_load_bulk = ENC_45ACP_LOADED;
 
 const c_van_shell_bulk = ENC_SHELL;
 const c_shell_load_bulk = ENC_SHELLLOADED;

@@ -3,6 +3,8 @@ This repository is my personal tweaking of the original project, which itself wa
 Creating new weapons consists of creating a new zs under /source/examples/weapons/. Textures are edited under /graphics/gunimages/ and /sprites. Make sure to change textures under /textures.xxx and load by editing /zscript.
 New sprites have to have offsets set through something like SLADE. 
 
+**Now requires Accensi's 'HDBulletLib (https://gitlab.com/accensi/hd-addons/hdbulletlib), due to dependency on new calibers**
+
 - Reworked M4 to M4A1
 	- Firemodes: Semi/Auto
 	- Reduced Recoil
@@ -70,7 +72,7 @@ New sprites have to have offsets set through something like SLADE.
 	- Firemodes: Auto
 
 - Added SCAR-16 (w20)
-    - Textures used from https://delthor-games.itch.io/free-low-poly-weapons-pack-3
+    - Textures used from https://delthor-games.itch.io/free-low-poly-weapons-pack-3. Check them out!
 	- The FN SCAR is a family of gas-operated automatic rifles developed by Belgian manufacturer FN Herstal in 2004
 	- Shares 5.56 mags with the M4A1
 	- Has a slower rate of fire compared to the M4A1
@@ -89,6 +91,13 @@ New sprites have to have offsets set through something like SLADE.
     - Textures used from https://adwitr.itch.io/low-poly-gun-models-ump-uzi. Check them out!
 	- The Heckler & Koch UMP is a submachine gun developed and manufactured by Heckler & Koch. Heckler & Koch developed the UMP as a lighter and cheaper successor to the MP5, though both remain in production. 
 	- Shares 9mm smg mags with the MP5
+	- Firemodes: Semi/Burst/Auto
+
+- Added UMP-45 (w23)
+    - Textures used from https://adwitr.itch.io/low-poly-gun-models-ump-uzi. Check them out!
+	- The Heckler & Koch UMP is a submachine gun developed and manufactured by Heckler & Koch. Heckler & Koch developed the UMP as a lighter and cheaper successor to the MP5, though both remain in production. 
+	- Uses new 25 round .45ACP magazines. Loadout code for magazines is m23.
+    - This required the.45ACP from HDBulletLib
 	- Firemodes: Semi/Burst/Auto
 
 - Added a reflex to the ACOG. 
@@ -111,6 +120,7 @@ Firearms used by the West:
 - SCAR-16 (w20)
 - SCAR-17 (w21)
 - UMP-9 (w22)
+- UMP-45 (w23), Magazine (m23)
 
 ---
 The original project readme is below.

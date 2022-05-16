@@ -518,6 +518,7 @@ class BAK_545Mag : HDMagAmmo {
 
 	override void GetItemsThatUseThis() {
 		itemsthatusethis.push("B_AKS74U");
+		itemsthatusethis.push("B_RPK16");
 	}
 
 	states{
@@ -640,5 +641,65 @@ class UziMagazine : HDMagAmmo {
 				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
 			}
 			stop;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class BUMP45Mag : HDMagAmmo {
+	default{
+		hdmagammo.maxperunit 25;
+		hdmagammo.roundtype "HD45ACPAmmo";
+		hdmagammo.roundbulk c_45ACP_load_bulk;
+		hdmagammo.magbulk c_UMP45_mag_bulk;
+		hdpickup.refid B_UMP45_MAG_REFID;
+		tag "UMP-45 Magazine";
+		inventory.icon "UM4CA0";
+		inventory.pickupmessage "Picked up a UMP-45 magazine.";
+		scale 0.8;
+	}
+
+	override string,string,name,double getmagsprite(int thismagamt){
+		return (thismagamt > 0) ? "UM4CA0" : "UM4CB0", "PBRSA0", "HDPistolAmmo", 1.7;
+	}
+
+	override void GetItemsThatUseThis() {
+	}
+
+	states{
+		spawn:
+			UM4C A -1;
+			stop;
+		spawnempty:
+			UM4C B -1{
+				brollsprite = true;
+				brollcenter = true;
+				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
+			}
+			stop;
+	}
+}
+
+
+class BUMP45MagEmpty:IdleDummy{
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"BUMP45Mag",0);
+		destroy();
 	}
 }

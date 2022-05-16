@@ -1,0 +1,28 @@
+
+sprite UM4PA0, 145, 41 {
+	XScale 3
+	YScale 3
+	Offset 72, 41
+	Patch "graphics/gunimages/ump45/base.png", 0, 0
+}
+
+sprite UM4PB0, 145, 31 {
+	XScale 3
+	YScale 3
+	Offset 145, 31
+	Patch "graphics/gunimages/ump45/empty.png", 0, 0
+}
+
+sprite UM4CA0, 23, 26 {
+	XScale 3
+	YScale 3
+	Offset 11, 26
+	Patch "graphics/mags/ump45/clip.png", 0, 0
+}
+
+sprite UM4CB0, 23, 26 {
+	XScale 3
+	YScale 3
+	Offset 11, 26
+	Patch "graphics/mags/ump45/clipnb.png", 0, 0
+}
