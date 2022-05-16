@@ -5,6 +5,8 @@ New sprites have to have offsets set through something like SLADE.
 
 **Now requires Accensi's 'HDBulletLib (https://gitlab.com/accensi/hd-addons/hdbulletlib), due to dependency on new calibers**
 
+**If you just want to get the weapon ids for loadouts, check out the `id.md` file. Also make sure to scroll down to read the original project README.** 
+
 - Reworked M4 to M4A1
 	- Firemodes: Semi/Auto
 	- Reduced Recoil
