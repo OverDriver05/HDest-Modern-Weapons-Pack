@@ -20,7 +20,7 @@ New sprites have to have offsets set through something like SLADE.
 
 - Reworked AKM to AK-15
     - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for Russian military.
-	- Added "NATO" rails to attach attachments such as optics and flashlight 
+	- Added "NATO" rails to attach attachments such as optics  
 	- Slightly reduced recoil
 	- Same loadout code as AKM
 
@@ -28,7 +28,7 @@ New sprites have to have offsets set through something like SLADE.
     - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for Russian military.
 	- The 5.45 version of the old AKM.  Shares 5.45 mags with the AK74
 	- Reduced recoil compared to the AK-15
-	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Has "NATO" rails to attach attachments such as optics 
 	- Firemodes: Semi/Auto
 	- Loadout code is w17
 
@@ -36,7 +36,7 @@ New sprites have to have offsets set through something like SLADE.
     - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for international export.
 	- The 5.56 version of the old AKM.  Shares 5.56 mags with the M4A1
 	- Reduced recoil compared to the AK-15 and AK-12
-	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Has "NATO" rails to attach attachments such as optics 
 	- Firemodes: Semi/Auto
 	- Loadout code is w14
 
@@ -44,14 +44,14 @@ New sprites have to have offsets set through something like SLADE.
     - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for international export.
 	- The 7.62x51mm version of the old AKM.  Shares mags with the M14
 	- Around the same recoil compared to the AK-15
-	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Has "NATO" rails to attach attachments such as optics 
 	- Firemodes: Semi/Auto
 	- Loadout code is w18
 
 - Added RPK-16 (w19)
     - Replacement for the RPK-74. For simplicity, think of a higher capacity AK-12
 	- Features a new 95 round 5.45mm drum. Loadout code for drum is m19
-	- Has "NATO" rails to attach attachments such as optics and flashlight
+	- Has "NATO" rails to attach attachments such as optics 
 	- Firemodes: Semi/Auto
 	- Loadout code of gun is w19
 
@@ -69,13 +69,36 @@ New sprites have to have offsets set through something like SLADE.
 	- Has a higher recoil compared to the M249
 	- Firemodes: Auto
 
+- Added SCAR-16 (w20)
+    - Textures used from https://delthor-games.itch.io/free-low-poly-weapons-pack-3
+	- The FN SCAR is a family of gas-operated automatic rifles developed by Belgian manufacturer FN Herstal in 2004
+	- Shares 5.56 mags with the M4A1
+	- Has a slower rate of fire compared to the M4A1
+	- Has a lower recoil compared to the M4A1
+	- Firemodes: Semi/Auto
+
+- Added SCAR-17 (w21)
+    - Textures used from https://delthor-games.itch.io/free-low-poly-weapons-pack-3. Check them out!
+	- The FN SCAR is a family of gas-operated automatic rifles developed by Belgian manufacturer FN Herstal in 2004
+	- Shares 7.62x51mm mags with the M14
+	- Has a slower rate of fire compared to the M14
+	- Has a lower recoil compared to the M14
+	- Firemodes: Semi/Auto
+
+- Added UMP-9 (w22)
+    - Textures used from https://adwitr.itch.io/low-poly-gun-models-ump-uzi. Check them out!
+	- The Heckler & Koch UMP is a submachine gun developed and manufactured by Heckler & Koch. Heckler & Koch developed the UMP as a lighter and cheaper successor to the MP5, though both remain in production. 
+	- Shares 9mm smg mags with the MP5
+	- Firemodes: Semi/Burst/Auto
+
 - Added a reflex to the ACOG. 
  	- Without zooming, the reflex is active. While zooming, you switch to the magnified view.
  	- I didn't like how I was bad at aiming with the ACOG, so here goes.
 
 
 TLDR of new weapons: 
-Eastern Firearms:
+
+Firearms used by the East:
 - AK-15 (w12)
 - AK-12 (w17)
 - AK-19 (w14)
@@ -83,8 +106,11 @@ Eastern Firearms:
 - RPK-16 (w19), Magazine (m19)
 - AK-108 (w15)
 
-Western Firearms:
+Firearms used by the West:
 - M240 (w16), Magazine (m16)
+- SCAR-16 (w20)
+- SCAR-17 (w21)
+- UMP-9 (w22)
 
 ---
 The original project readme is below.

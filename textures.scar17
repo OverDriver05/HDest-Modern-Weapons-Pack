@@ -1,0 +1,28 @@
+
+sprite SC7PA0, 145, 41 {
+	XScale 3
+	YScale 3
+	Offset 72, 41
+	Patch "graphics/gunimages/scar17/base.png", 0, 0
+}
+
+sprite SC7PB0, 145, 31 {
+	XScale 3
+	YScale 3
+	Offset 145, 31
+	Patch "graphics/gunimages/scar17/empty.png", 0, 0
+}
+
+sprite SC7CA0, 23, 26 {
+	XScale 3
+	YScale 3
+	Offset 11, 26
+	Patch "sprites/m14/m14clip.png", 0, 0
+}
+
+sprite SC7CB0, 23, 26 {
+	XScale 3
+	YScale 3
+	Offset 11, 26
+	Patch "sprites/m14/m14clipnb.png", 0, 0
+}

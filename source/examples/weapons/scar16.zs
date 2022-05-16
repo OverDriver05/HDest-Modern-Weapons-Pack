@@ -1,4 +1,4 @@
-class B_AK308 : BaseStandardRifle {
+class B_SCAR16 : BaseStandardRifle {
 
 	default {
 		+hdweapon.fitsinbackpack
@@ -6,36 +6,36 @@ class B_AK308 : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AK-308.";
+		inventory.pickupmessage      "You got the SCAR-16.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AK-308";
-		inventory.icon               "A38PA0";
-		BHDWeapon.BFlashSprite       "AKMFA0";
+		tag                          "SCAR-16";
+		inventory.icon               "SC6PA0";
+		BHDWeapon.BFlashSprite       "FLSHA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_762x51";
-		BHDWeapon.BAmmoClass         "B762x51Ammo";
-		BHDWeapon.BMagazineClass     "b762_m14_mag";
+		BHDWeapon.BBulletClass       "HDB_556";
+		BHDWeapon.BAmmoClass         "B556Ammo";
+		BHDWeapon.BMagazineClass     "B556Mag";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "A38PA0";
-		BHDWeapon.BSpriteWithoutMag  "A38PB0";
+		BHDWeapon.BSpriteWithMag     "SC6PA0";
+		BHDWeapon.BSpriteWithoutMag  "SC6PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "A38CA0";
-		BHDWeapon.BWeaponBulk        c_m14_bulk;
-		BHDWeapon.BMagazineBulk      c_m14_mag_bulk;
-		BHDWeapon.BBulletBulk        c_762_round_bulk;
+		BHDWeapon.BMagazineSprite    "SC6CA0";
+		BHDWeapon.BWeaponBulk        c_m4_bulk;
+		BHDWeapon.BMagazineBulk      c_m4_mag_bulk;
+		BHDWeapon.BBulletBulk        c_556_round_bulk;
 		BHDWeapon.BMagazineCapacity  30;
 		BHDWeapon.BarrelLength       25;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m14/fire";
-		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
+		BHDWeapon.BFireSound         "weapons/m4/fire";
+		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
 		BHDWeapon.BChamberSound      "weapons/m4/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
 		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
@@ -43,38 +43,38 @@ class B_AK308 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               1.2;
+		BHDWeapon.BROF               0.9;
 		BHDWeapon.BBackOffsetX       0;
-		BHDWeapon.BBackOffsetY       30;
-		BHDWeapon.BFrontSightImage   "akmfr";
-		BHDWeapon.BBackSightImage    "akmbr";
-		BHDWeapon.BFrontOffsetX      0;
-		BHDWeapon.BFrontOffsetY      17;
+		BHDWeapon.BBackOffsetY       20;
+		BHDWeapon.BFrontSightImage   "scrfr";
+		BHDWeapon.BBackSightImage    "scrbr";
+		BHDWeapon.BFrontOffsetX      -6;
+		BHDWeapon.BFrontOffsetY      14;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
-		BHDWeapon.bBarrelMount       "762_NATO_BARREL";
+		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "";
-		BHDWeapon.EjectShellClass    "B762x51Spent";
-		hdweapon.refid               B_AK308_REFID;
+		BHDWeapon.EjectShellClass    "B556Spent";
+		hdweapon.refid               B_SCR16_REFID;
 
-		BHDWeapon.BAltFrontSightImage "a_akmfr";
-		BHDWeapon.BAltBackSightImage "a_akmbr";
+		BHDWeapon.BAltFrontSightImage "a_scrfr";
+		BHDWeapon.BAltBackSightImage "a_scrbr";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.8;
-		BHDWeapon.BRecoilXHigh 0.8;
-		BHDWeapon.BRecoilYLow  0.9;
-		BHDWeapon.BRecoilYHigh 1.9;		
+		BHDWeapon.BRecoilXLow -0.3;
+		BHDWeapon.BRecoilXHigh 0.3;
+		BHDWeapon.BRecoilYLow  0.4;
+		BHDWeapon.BRecoilYHigh 0.7;		
 		BHDWeapon.bShowFireMode true;
 	}
 
 	states {
 		Spawn:
-			A38P A 0 GetMagState();
+			SC6P A 0 GetMagState();
 			Goto Super::Spawn;
 
 		Firemode:
@@ -85,11 +85,11 @@ class B_AK308 : BaseStandardRifle {
 			}
 
 		SpawnMag:
-			A38P A -1;
+			SC6P A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			A38P B -1;
+			SC6P B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -97,15 +97,15 @@ class B_AK308 : BaseStandardRifle {
 			Loop;
 
 		LayerGun:
-			AKMG A 1;
+			SC6G A 1;
 			Loop;
 
 		LayerGunFire:
-			AKMG B 1;
+			SC6G B 1;
 			Goto LayerGun;
 
 		LayerGunBolt:
-			AKMG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
+			SC6G E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			Goto LayerGun;
 
 		LayerReloadHands:
@@ -161,8 +161,8 @@ class B_AK308 : BaseStandardRifle {
 			}
 
 		LayerGunHandReturn:
-			AKMG C 3;
-			AKMG A -1;
+			SC6G C 3;
+			SC6G A -1;
 			Stop;
 
 		ReloadEnd:
@@ -185,8 +185,8 @@ class B_AK308 : BaseStandardRifle {
 			Stop;
 
 		LayerGunReloading:
-			AKMG C 3;
-			AKMG D -1;
+			SC6G C 3;
+			SC6G D -1;
 			Stop;
 
 		UnloadMag:
@@ -248,13 +248,13 @@ class B_AK308 : BaseStandardRifle {
 			Goto LayerGun;
 
 		Chamber_Anim:
-			AKMG E 3;
-			AKMG F 3 {
+			SC6G E 3;
+			SC6G F 3 {
 				A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			}
-			AKMG G 3;
-			AKMG E 3;
-			AKMG A -1 {
+			SC6G G 3;
+			SC6G E 3;
+			SC6G A -1 {
 				A_StartSound(invoker.bBoltForwardSound, CHAN_WEAPON);
 			}
 			Stop;
@@ -301,7 +301,7 @@ class B_AK308 : BaseStandardRifle {
 			}
 
 		DUMMY:
-			AKMF ABCD -1;
+			SC6F ABCD -1;
 			Stop;
 
 
@@ -309,10 +309,10 @@ class B_AK308 : BaseStandardRifle {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "A38PA0", 1.;
+			return "SC6PA0", 1.;
 		}
 		else {
-			return "A38PB0", 1.;
+			return "SC6PB0", 1.;
 		}
 	}
 	

@@ -54,7 +54,7 @@ class B_AKM : BaseStandardRifle {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "762_MOUNT";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "NATO_RAILS";
+		BHDWeapon.bMiscMount         "";
 		BHDWeapon.EjectShellClass    "B762SovSpent";
 		hdweapon.refid               B_AKM_REFID;
 

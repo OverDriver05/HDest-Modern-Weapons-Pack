@@ -54,7 +54,7 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "NATO_RAILS";
+		BHDWeapon.bMiscMount         "";
 		BHDWeapon.EjectShellClass    "B556Spent";
 		hdweapon.refid               B_AK19_REFID;
 

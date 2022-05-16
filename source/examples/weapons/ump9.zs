@@ -1,95 +1,88 @@
-class B_AK308 : BaseStandardRifle {
+class B_UMP9 : BaseStandardRifle {
 
 	default {
 		+hdweapon.fitsinbackpack
 		weapon.selectionorder        20;
-		weapon.slotnumber            4;
+		weapon.slotnumber            2;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AK-308.";
+		inventory.pickupmessage      "You got the UMP-9.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AK-308";
-		inventory.icon               "A38PA0";
-		BHDWeapon.BFlashSprite       "AKMFA0";
+		tag                          "UMP-9";
+		inventory.icon               "UMPPA0";
+		BHDWeapon.BFlashSprite       "FLSHA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_762x51";
-		BHDWeapon.BAmmoClass         "B762x51Ammo";
-		BHDWeapon.BMagazineClass     "b762_m14_mag";
+		BHDWeapon.BBulletClass       "HDB_9";
+		BHDWeapon.BAmmoClass         "HDPistolAmmo";
+		BHDWeapon.BMagazineClass     "B9mm_MP5K_MAG";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "A38PA0";
-		BHDWeapon.BSpriteWithoutMag  "A38PB0";
+		BHDWeapon.BSpriteWithMag     "UMPPA0";
+		BHDWeapon.BSpriteWithoutMag  "UMPPB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "A38CA0";
-		BHDWeapon.BWeaponBulk        c_m14_bulk;
-		BHDWeapon.BMagazineBulk      c_m14_mag_bulk;
-		BHDWeapon.BBulletBulk        c_762_round_bulk;
+		BHDWeapon.BMagazineSprite    "UMPCA0";
+		BHDWeapon.BWeaponBulk        c_mp5_bulk;
+		BHDWeapon.BMagazineBulk      c_mp5_mag_bulk;
+		BHDWeapon.BBulletBulk        c_van_9mm_bulk;
 		BHDWeapon.BMagazineCapacity  30;
-		BHDWeapon.BarrelLength       25;
+		BHDWeapon.BarrelLength       18.75;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m14/fire";
-		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
-		BHDWeapon.BChamberSound      "weapons/m4/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
+		BHDWeapon.BFireSound         "weapons/mp5/fire";
+		BHDWeapon.BSFireSound        "weapons/mp5/silentfire";
+		BHDWeapon.BChamberSound      "weapons/mp5/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/mp5/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/mp5/boltforward";
+		BHDWeapon.BClickSound        "weapons/mp5/click";
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
 
-		BHDWeapon.BROF               1.2;
+		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       0;
-		BHDWeapon.BBackOffsetY       30;
-		BHDWeapon.BFrontSightImage   "akmfr";
-		BHDWeapon.BBackSightImage    "akmbr";
-		BHDWeapon.BFrontOffsetX      0;
-		BHDWeapon.BFrontOffsetY      17;
+		BHDWeapon.BBackOffsetY       22;
+		BHDWeapon.BFrontSightImage   "scrfr";
+		BHDWeapon.BBackSightImage    "umpbr";
+		BHDWeapon.BFrontOffsetX      -6;
+		BHDWeapon.BFrontOffsetY      14;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
-		BHDWeapon.bBarrelMount       "762_NATO_BARREL";
+		BHDWeapon.bBarrelMount       "9MM_GLOCK";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "";
-		BHDWeapon.EjectShellClass    "B762x51Spent";
-		hdweapon.refid               B_AK308_REFID;
+		BHDWeapon.EjectShellClass    "HDSpent9mm";
+		hdweapon.refid               B_UMP9_REFID;
 
-		BHDWeapon.BAltFrontSightImage "a_akmfr";
-		BHDWeapon.BAltBackSightImage "a_akmbr";
+		BHDWeapon.BAltFrontSightImage "a_scrfr";
+		BHDWeapon.BAltBackSightImage "a_umpbr";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.8;
-		BHDWeapon.BRecoilXHigh 0.8;
-		BHDWeapon.BRecoilYLow  0.9;
-		BHDWeapon.BRecoilYHigh 1.9;		
+		BHDWeapon.BRecoilXLow -0.1;
+		BHDWeapon.BRecoilXHigh 0.1;
+		BHDWeapon.BRecoilYLow  0.2;
+		BHDWeapon.BRecoilYHigh 0.5;		
 		BHDWeapon.bShowFireMode true;
 	}
 
 	states {
 		Spawn:
-			A38P A 0 GetMagState();
+			UMPP A 0 GetMagState();
 			Goto Super::Spawn;
 
-		Firemode:
-			#### A 1 {
-				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 1 ? 0 : 1);
-				A_WeaponReady(WRF_NONE);
-				return ResolveState("Nope");
-			}
-
 		SpawnMag:
-			A38P A -1;
+			UMPP A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			A38P B -1;
+			UMPP B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -97,15 +90,15 @@ class B_AK308 : BaseStandardRifle {
 			Loop;
 
 		LayerGun:
-			AKMG A 1;
+			UMPG A 1;
 			Loop;
 
 		LayerGunFire:
-			AKMG B 1;
+			UMPG B 1;
 			Goto LayerGun;
 
 		LayerGunBolt:
-			AKMG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
+			UMPG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			Goto LayerGun;
 
 		LayerReloadHands:
@@ -161,8 +154,8 @@ class B_AK308 : BaseStandardRifle {
 			}
 
 		LayerGunHandReturn:
-			AKMG C 3;
-			AKMG A -1;
+			UMPG C 3;
+			UMPG A -1;
 			Stop;
 
 		ReloadEnd:
@@ -185,8 +178,8 @@ class B_AK308 : BaseStandardRifle {
 			Stop;
 
 		LayerGunReloading:
-			AKMG C 3;
-			AKMG D -1;
+			UMPG C 3;
+			UMPG D -1;
 			Stop;
 
 		UnloadMag:
@@ -248,13 +241,13 @@ class B_AK308 : BaseStandardRifle {
 			Goto LayerGun;
 
 		Chamber_Anim:
-			AKMG E 3;
-			AKMG F 3 {
+			UMPG E 3;
+			UMPG F 3 {
 				A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			}
-			AKMG G 3;
-			AKMG E 3;
-			AKMG A -1 {
+			UMPG G 3;
+			UMPG E 3;
+			UMPG A -1 {
 				A_StartSound(invoker.bBoltForwardSound, CHAN_WEAPON);
 			}
 			Stop;
@@ -301,7 +294,7 @@ class B_AK308 : BaseStandardRifle {
 			}
 
 		DUMMY:
-			AKMF ABCD -1;
+			UMPF ABCD -1;
 			Stop;
 
 
@@ -309,10 +302,10 @@ class B_AK308 : BaseStandardRifle {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "A38PA0", 1.;
+			return "UMPPA0", 1.;
 		}
 		else {
-			return "A38PB0", 1.;
+			return "UMPPB0", 1.;
 		}
 	}
 	
