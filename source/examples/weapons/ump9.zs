@@ -13,7 +13,7 @@ class B_UMP9 : BaseStandardRifle {
 		obituary                     "%o was assaulted by %k.";
 		tag                          "UMP-9";
 		inventory.icon               "UMPPA0";
-		BHDWeapon.BFlashSprite       "FLSHA0";
+		BHDWeapon.BFlashSprite       "MPFLA0";
 		BHDWeapon.BHeatDrain         12;
 		BHDWeapon.BBulletClass       "HDB_9";
 		BHDWeapon.BAmmoClass         "HDPistolAmmo";
@@ -43,7 +43,7 @@ class B_UMP9 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
 
-		BHDWeapon.BROF               0.7;
+		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       22;
 		BHDWeapon.BFrontSightImage   "scrfr";

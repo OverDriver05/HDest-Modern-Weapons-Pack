@@ -20,6 +20,7 @@ version "4.4"
 #include "source/weapons/baseAmmo.zs"
 
 #include "source/examples/weapons/glock.zs"
+#include "source/examples/weapons/fnx.zs"
 #include "source/examples/weapons/ak19.zs"
 #include "source/examples/weapons/ak12.zs"
 #include "source/examples/weapons/ak108.zs"

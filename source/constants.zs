@@ -70,6 +70,7 @@ const B_SCR16_REFID     = "w20";
 const B_SCR17_REFID     = "w21";
 const B_UMP9_REFID     = "w22";
 const B_UMP45_REFID     = "w23";
+const B_FNX_REFID   = "w24";
 
 const B_GLOCK_MAG_REFID  = "m01";
 const B_MP5_MAG_REFID    = "m02";
@@ -85,6 +86,7 @@ const B_UZI_MAG_REFID    = "m13";
 const B_MF240_MAG_REFID  = "m16";
 const B_RPK_MAG_REFID = "m19";
 const B_UMP45_MAG_REFID = "m23";
+const B_FNX_MAG_REFID  = "m24";
 
 // ID's and Ref's for Attachments
 const B_M4_REARSIGHT_ID   = 1;
@@ -118,6 +120,7 @@ const c_akm_mag_bulk = 20;
 
 const c_glock_bulk = 35;
 const c_glock_mag_bulk = 4;
+const c_FNX_mag_bulk = 6;
 
 const c_uzi_bulk = 45;
 const c_uzi_mag_bulk = 5;

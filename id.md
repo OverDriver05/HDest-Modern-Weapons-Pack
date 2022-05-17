@@ -68,3 +68,6 @@
 - `w23`: UMP-45
     - .45ACP SMG
     - Magazine: `m23`
+- `w24`: FNX45 Tactical
+    - .45ACP Pistol
+    - Magazine: `m24`

@@ -83,9 +83,9 @@ class GlockSilencer : BaseSilencerAttachment {
 		BaseAttachment.BaseFrame 0;
 		HDPickup.Bulk 1;
 		HDPickup.RefId "sl9";
-		Tag "9mm silencer";
+		Tag "Universal pistol caliber silencer";
 		Inventory.Icon "NMMSA0";
-		Inventory.PickupMessage "Picked up 9mm silencer.";
+		Inventory.PickupMessage "Picked up a 'Universal Pistol Caliber'' silencer.";
 		Scale 0.4;
 	}
 

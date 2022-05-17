@@ -1,0 +1,1 @@
+only a and f are the slide closed sprites, rest are open

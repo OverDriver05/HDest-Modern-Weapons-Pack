@@ -66,10 +66,10 @@ class b_Glock : BasePistol {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -1.2;
-	    BHDWeapon.BRecoilXHigh 1.2;
-		BHDWeapon.BRecoilYLow  1.1;
-		BHDWeapon.BRecoilYHigh 2.1;	
+		BHDWeapon.BRecoilXLow -0.9;
+	    BHDWeapon.BRecoilXHigh 0.9;
+		BHDWeapon.BRecoilYLow  0.8;
+		BHDWeapon.BRecoilYHigh 1.8;	
         BHDWeapon.bShowFireMode true;
 	}
 

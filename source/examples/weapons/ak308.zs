@@ -43,7 +43,7 @@ class B_AK308 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               1.2;
+		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       30;
 		BHDWeapon.BFrontSightImage   "akmfr";

@@ -675,7 +675,7 @@ class BUMP45Mag : HDMagAmmo {
 	}
 
 	override string,string,name,double getmagsprite(int thismagamt){
-		return (thismagamt > 0) ? "UM4CA0" : "UM4CB0", "PBRSA0", "HDPistolAmmo", 1.7;
+		return (thismagamt > 0) ? "UM4CA0" : "UM4CB0", "PBRSA0", "HD45ACPAmmo", 1.7;
 	}
 
 	override void GetItemsThatUseThis() {
@@ -700,6 +700,52 @@ class BUMP45MagEmpty:IdleDummy{
 	override void postbeginplay(){
 		super.postbeginplay();
 		HDMagAmmo.SpawnMag(self,"BUMP45Mag",0);
+		destroy();
+	}
+}
+
+
+
+
+class FNXMagazine : HDMagAmmo {
+	default{
+		hdmagammo.maxperunit 15;
+		hdmagammo.roundtype "HD45ACPAmmo";
+		hdmagammo.roundbulk c_45ACP_load_bulk;
+		hdmagammo.magbulk c_FNX_mag_bulk;
+		hdpickup.refid B_FNX_MAG_REFID;
+		tag "FNX45T magazine";
+		inventory.icon "FNXCA0";
+		inventory.pickupmessage "Picked up a FNX45 Tactical magazine.";
+		scale 0.8;
+	}
+
+	override string,string,name,double getmagsprite(int thismagamt){
+		return (thismagamt > 0) ? "FNXCA0" : "FNXCB0", "PBRSA0", "HD45ACPAmmo", 1.7;
+	}
+
+	override void GetItemsThatUseThis() {
+		itemsthatusethis.push("b_FNX");
+	}
+
+	states{
+		spawn:
+			FNXC A -1;
+			stop;
+		spawnempty:
+			FNXC B -1{
+				brollsprite = true;
+				brollcenter = true;
+				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
+			}
+			stop;
+	}
+}
+
+class BFNXMagEmpty:IdleDummy{
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"FNXMagazine",0);
 		destroy();
 	}
 }
