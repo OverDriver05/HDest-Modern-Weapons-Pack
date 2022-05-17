@@ -25,6 +25,7 @@ Firearms used by the West:
 - SCAR-17 (w21)
 - UMP-9 (w22)
 - UMP-45 (w23), Magazine (m23)
+- FNX45 Tactical (w24), Magazine (m24)
 
 ---
 The original project readme is below.
