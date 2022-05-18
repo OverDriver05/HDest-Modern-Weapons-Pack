@@ -105,6 +105,11 @@
     - This required the.45ACP from HDBulletLib
 	- Firemodes: Semi
 
+- Modified M107
+	- Now uses 50 OMG from HDBulletLib instead of Bryan's 50BMG. This was done to improve continuity between the mods
+    - For example, if you have Potetobloke's weapon pack, you can now share ammo between the M107 and the M2HB.
+	- The loadout codes and magazine are still the same, except they both now take 50 OMG.
+
 - Added a reflex to the ACOG. 
  	- Without zooming, the reflex is active. While zooming, you switch to the magnified view.
  	- I didn't like how I was bad at aiming with the ACOG, so here goes.

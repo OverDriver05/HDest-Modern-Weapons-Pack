@@ -15,8 +15,8 @@ class b_m107 : basestandardrifle {
 		tag                          "M107";
 		inventory.icon               "M17PA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_BMG";
-		BHDWeapon.BAmmoClass         "B50BMGAmmo";
+		BHDWeapon.BBulletClass       "HDB_50OMG";
+		BHDWeapon.BAmmoClass         "HD50OMGAmmo";
 		BHDWeapon.BMagazineClass     "M107Magazine";
 		BHDWeapon.BGunMass           12.0;
 		BHDWeapon.BCookOff           30;
@@ -56,7 +56,7 @@ class b_m107 : basestandardrifle {
 		BHDWeapon.bBarrelMount       "";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "";
-		BHDWeapon.EjectShellClass    "B50BMGSpent";
+		BHDWeapon.EjectShellClass    "HDSpent50OMG";
 		hdweapon.refid               B_M107_REFID;
 
 		BHDWeapon.BAltFrontSightImage "";

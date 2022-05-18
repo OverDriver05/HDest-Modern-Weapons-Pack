@@ -358,7 +358,7 @@ class BGlockMagEmpty2 : IdleDummy {
 class M107Magazine : HDMagAmmo {
 	default{
 		hdmagammo.maxperunit 10;
-		hdmagammo.roundtype "B50BMGAmmo";
+		hdmagammo.roundtype "HD50OMGAmmo";
 		hdmagammo.roundbulk c_van_9mm_bulk;
 		hdmagammo.magbulk c_m107_mag_bulk;
 		hdpickup.refid B_M107_MAG_REFID;
@@ -369,7 +369,7 @@ class M107Magazine : HDMagAmmo {
 	}
 
 	override string,string,name,double getmagsprite(int thismagamt){
-		return (thismagamt > 0) ? "M17MA0" : "M17MB0", "BG50A7A3", "B50BMGAmmo", 1.7;
+		return (thismagamt > 0) ? "M17MA0" : "M17MB0", "BG50A7A3", "HD50OMGAmmo", 1.7;
 	}
 
 	override void GetItemsThatUseThis() {

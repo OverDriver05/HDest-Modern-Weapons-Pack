@@ -12,7 +12,7 @@ class b_FNX : BasePistol {
 		weapon.bobrangex 0.1;
 		weapon.bobrangey 0.6;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "FNX45T";
+		tag                          "FNX45 Tactical";
 		inventory.icon               "FNXPA0";
 		BHDWeapon.BFlashSprite       "MPFLA0";
 		BHDWeapon.BHeatDrain         12;
