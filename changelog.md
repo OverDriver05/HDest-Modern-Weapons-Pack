@@ -112,6 +112,7 @@
 
 - Added a reflex to the ACOG. 
  	- Without zooming, the reflex is active. While zooming, you switch to the magnified view.
+    - Redid sprite. Now has the same base mount width as other attachments, so it better fits with the new weapons. Also added nonfunctional reflex bit to the top.
  	- I didn't like how I was bad at aiming with the ACOG, so here goes.
 
 - The old 9mm silencer now works on any pistol caliber weapons.
