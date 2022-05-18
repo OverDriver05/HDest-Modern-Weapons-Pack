@@ -45,7 +45,7 @@ Firearms used by the East:
 Firearms used by the West:
 - M240 (w16), Magazine (m16)
 <p align="center">
-	<img src="sprites/mf240B/bm240pickup.png">
+	<img src="graphics/gunimages/m240/none/base.png">
 </p>
 - SCAR-16 (w20)
 <p align="center">
@@ -57,7 +57,7 @@ Firearms used by the West:
 </p>
 - UMP-9 (w22)
 <p align="center">
-	<img src="graphics/gunimages/ump9/base.png">
+	<img src="graphics/gunimages/ump/base.png">
 </p>
 - UMP-45 (w23), Magazine (m23)
 <p align="center">

@@ -46,10 +46,10 @@ class B_UMP9 : BaseStandardRifle {
 		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       22;
-		BHDWeapon.BFrontSightImage   "scrfr";
+		BHDWeapon.BFrontSightImage   "umpfr";
 		BHDWeapon.BBackSightImage    "umpbr";
-		BHDWeapon.BFrontOffsetX      -6;
-		BHDWeapon.BFrontOffsetY      14;
+		BHDWeapon.BFrontOffsetX      0;
+		BHDWeapon.BFrontOffsetY      23;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "9MM_GLOCK";
@@ -58,7 +58,7 @@ class B_UMP9 : BaseStandardRifle {
 		BHDWeapon.EjectShellClass    "HDSpent9mm";
 		hdweapon.refid               B_UMP9_REFID;
 
-		BHDWeapon.BAltFrontSightImage "a_scrfr";
+		BHDWeapon.BAltFrontSightImage "umpfr";
 		BHDWeapon.BAltBackSightImage "a_umpbr";
 
 		BHDWeapon.BLayerSight  104;
