@@ -16,19 +16,55 @@ New sprites have to have offsets set through something like SLADE.
 TLDR of new weapons: 
 
 Firearms used by the East:
+<p align="center">
+	<img src="graphics/gunimages/akm/base.png">
+</p>
 - AK-15 (w12)
+<p align="center">
+	<img src="graphics/gunimages/ak12/base.png">
+</p>
 - AK-12 (w17)
+<p align="center">
+	<img src="graphics/gunimages/ak19/base.png">
+</p>
 - AK-19 (w14)
+<p align="center">
+	<img src="graphics/gunimages/ak308/base.png">
+</p>
 - AK-308 (w18)
+<p align="center">
+	<img src="graphics/gunimages/rpk16/base.png">
+</p>
 - RPK-16 (w19), Magazine (m19)
+<p align="center">
+	<img src="graphics/gunimages/ak108/base.png">
+</p>
 - AK-108 (w15)
 
 Firearms used by the West:
+<p align="center">
+	<img src="graphics/gunimages/m240/base.png">
+</p>
 - M240 (w16), Magazine (m16)
+<p align="center">
+	<img src="graphics/gunimages/scar16/base.png">
+</p>
 - SCAR-16 (w20)
+<p align="center">
+	<img src="graphics/gunimages/scar17/base.png">
+</p>
 - SCAR-17 (w21)
+<p align="center">
+	<img src="graphics/gunimages/ump9/base.png">
+</p>
 - UMP-9 (w22)
+<p align="center">
+	<img src="graphics/gunimages/ump45/base.png">
+</p>
 - UMP-45 (w23), Magazine (m23)
+<p align="center">
+	<img src="graphics/gunimages/fnx/base.png">
+</p>
 - FNX45 Tactical (w24), Magazine (m24)
 
 ---
