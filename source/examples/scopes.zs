@@ -206,16 +206,17 @@ class B_ACOG_Red : BaseAcog {
 		BaseAttachment.BaseSprite "SCOP";
 		BaseAttachment.BaseFrame 0;
 		//Inventory.ICON "ZUXKA0";
-		BaseSightAttachment.BackOffY 32;
-        BaseSightAttachment.BackOffX 0;
-		BaseSightAttachment.bbackAltImage "rflahd";	
-        BaseSightAttachment.bfrontAltImage "holira";	
-		Scale 0.4;
+		BaseSightAttachment.FrontOffY 5;
+        //BaseSightAttachment.BackOffX 0;
+		BaseSightAttachment.bbackAltImage "holir";	
+        BaseSightAttachment.bfrontAltImage "acogrmr";	
+		BaseSightAttachment.UseWeaponIron true;
+		//Scale 0.4;
 		
         HDPickup.RefID "acg";
 		Tag "Red ACOG (iron Sight).";
 		Inventory.Icon "SCPPA0";
-		Inventory.PickupMessage "Picked up a red M4 ACOG (iron Sight).";
+		Inventory.PickupMessage "Picked up a Trijicon ACOG with RMR.";
 	}
 
 	States {
