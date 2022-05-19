@@ -68,6 +68,11 @@ Firearms used by the West:
 	<img src="sprites/fnx/bfnxpickup.png">
 </p>
 
+Misc. items that were also edited:
+- ACOG (now has rmr on top)
+- Added in RMR sight for pistols
+    - Instead of using the 'NATO_RAILS', pistols now use the 'PIS_RAILS'.
+
 ---
 The original project readme is below.
 ---

@@ -85,7 +85,7 @@ class GlockSilencer : BaseSilencerAttachment {
 		HDPickup.RefId "sl9";
 		Tag "Universal pistol caliber silencer";
 		Inventory.Icon "NMMSA0";
-		Inventory.PickupMessage "Picked up a 'Universal Pistol Caliber'' silencer.";
+		Inventory.PickupMessage "Picked up a Universal Pistol Caliber silencer.";
 		Scale 0.4;
 	}
 

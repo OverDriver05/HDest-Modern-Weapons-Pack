@@ -55,6 +55,7 @@ class b_FNX : BasePistol {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "9MM_GLOCK";
 		BHDWeapon.bMiscMount         "NOT_ANYMORE";
+		BHDWeapon.bScopeMount        "PIS_RAILS";
 		BHDWeapon.EjectShellClass    "HDSpent45ACP";
 		hdweapon.refid               B_FNX_REFID;
 		BHDWeapon.bIronThreshold 	5;

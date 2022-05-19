@@ -307,6 +307,40 @@ class B_Reflex_Red : BaseCompactDotSight {
 	}
 }
 
+
+
+
+class B_RMR : BaseCompactDotSight {
+	default {
+		BaseAttachment.SerialID B_RMR_ID;
+		BaseAttachment.BaseSprite "RMRR";
+		BaseAttachment.BaseFrame 0;
+		Tag "RMR";
+		Inventory.ICON "RMRIA0";
+		BaseSightAttachment.BackOffY -3.5;
+		Inventory.PickupMessage "Picked up an RMR.";
+		//BaseSightAttachment.bfrontAltImage "acogrmr";
+		BaseSightAttachment.bbackAltImage "acogrmr";
+        BaseAttachment.MountId "PIS_RAILS";
+		HDPickup.RefID "rmr";
+		Scale 0.4;
+	}
+	States {
+		Spawn:
+			RMRI A -1;
+			Stop;
+
+		OverlayImage:
+			RMRS A -1;
+			Stop;
+	}
+}
+
+
+
+
+
+
 class B_Scope_10x : BaseAcog {
 	default {
 		BaseAttachment.SerialId B_SCOPE_10X_ID;

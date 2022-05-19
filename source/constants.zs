@@ -97,6 +97,7 @@ const B_SIGHT_CRDOT_ID    = 5;
 const B_SIGHT_HOLO_ID     = 6;
 const B_REFLEX_RED_ID     = 7;
 const B_SCOPE_10X_ID      = 8;
+const B_RMR_ID       = 9;
 
 const B_FLASHLIGHT_ID     = 1;
 

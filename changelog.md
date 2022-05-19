@@ -114,6 +114,12 @@
  	- Without zooming, the RMR is active. While zooming, you switch to the magnified view. This works only if you have the minimal sights option enabled, because it relies on the alt sight code bit thing.
     - Redid sprite. Now has the same base mount width as other attachments, so it better fits with the new weapons. Also added nonfunctional reflex bit to the top.  The RMR on top above the scope sprite is functional, however.
  	- I didn't like how I was bad at aiming with the ACOG, so here goes.
+    - Loadout codes are the same
+
+- Added pistol RMR.
+    - Only works on pistols, which correlates to new "PIS_RAILS" mountID
+    - You can add it to a weapon with loadout code `bs9`
+    - You can add it as a separate item to your loadout with code `rmr`
 
 - The old 9mm silencer now works on any pistol caliber weapons.
     - Now known as "Universal Pistol Caliber silencer"
