@@ -73,18 +73,23 @@ Firearms used by the West:
 Misc. items that were also edited:
 
 - Added ITI Mars (acog that has rmr on top)
+
     - Lower zoom than other acog
 <p align="center">
 	<img src="sprites/accessory/ACPPA0.png">
-	<img src="sprites/accessory/SCOPA0.png">
+	<img src="sprites/accessory/ACOPA0.png">
 </p>
+
 - Added in RMR sight (for pistols)
+
     - Instead of using the 'NATO_RAILS', pistols now use the 'PIS_RAILS'.
 <p align="center">
 	<img src="sprites/accessory/RMRIA0.png">
     <img src="sprites/accessory/RMRRA0.png">
 </p>
+
 - Added in VFL 6-24x56 Telescopic Sight (scope)
+
     - Lower zoom than 10x scope
 <p align="center">
 	<img src="sprites/accessory/VFLPA0.png">
