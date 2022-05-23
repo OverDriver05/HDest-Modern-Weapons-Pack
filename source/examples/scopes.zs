@@ -205,18 +205,10 @@ class B_ACOG_Red : BaseAcog {
 		BaseAttachment.SerialId B_ACOG_RED_ID;
 		BaseAttachment.BaseSprite "SCOP";
 		BaseAttachment.BaseFrame 0;
-		//Inventory.ICON "ZUXKA0";
-		BaseSightAttachment.FrontOffY 5;
-        //BaseSightAttachment.BackOffX 0;
-		BaseSightAttachment.bbackAltImage "holir";	
-        BaseSightAttachment.bfrontAltImage "acogrmr";	
-		BaseSightAttachment.UseWeaponIron true;
-		//Scale 0.4;
-		
-        HDPickup.RefID "acg";
+		HDPickup.RefID "acg";
 		Tag "Red ACOG (iron Sight).";
 		Inventory.Icon "SCPPA0";
-		Inventory.PickupMessage "Picked up a Trijicon ACOG with RMR.";
+		Inventory.PickupMessage "Picked up a red M4 ACOG (iron Sight).";
 	}
 
 	States {
@@ -229,6 +221,39 @@ class B_ACOG_Red : BaseAcog {
 			Stop;
 	}
 }
+
+class B_ACOG_RMR : BaseAcog {
+	default {
+		BaseAttachment.SerialId B_ACOG_RMR_ID;
+		BaseAttachment.BaseSprite "ACOP";
+		BaseAttachment.BaseFrame 0;
+		Inventory.Icon "ACPPA0";
+		//Inventory.ICON "ZUXKA0";
+		BaseSightAttachment.FrontOffY 5;
+        //BaseSightAttachment.BackOffX 0;
+		BaseSightAttachment.bbackAltImage "holir";	
+        BaseSightAttachment.bfrontAltImage "acogrmr";	
+		BaseSightAttachment.UseWeaponIron true;
+        BaseScopeAttachment.zoomFactor 7;
+		//Scale 0.4;
+		
+        HDPickup.RefID "acr";
+		Tag "ACOG with RMR (iron Sight).";
+		Inventory.PickupMessage "Picked up an ACOG with RMR.";
+	}
+
+	States {
+		Spawn:
+			ACPP A -1;
+			Stop;
+
+		OverlayImage:
+			ACOP A -1;
+			Stop;
+	}
+}
+
+
 
 class B_Sight_CRdot : BaseFullDotSight {
 	default {
@@ -383,6 +408,57 @@ class B_Scope_10x : BaseAcog {
 
 		OverlayImage:
 			SCOP E -1;
+			Stop;
+	}
+}
+
+
+class B_Scope_Vx : BaseAcog {
+	default {
+		BaseAttachment.SerialId B_SCOPE_VX_ID;
+		BaseAttachment.BaseSprite "VFSP";
+		BaseAttachment.BaseFrame 0;
+		HDPickup.RefID "vfl";
+		Tag "VFL 6-24x56";
+		Inventory.Icon "VFLPA0";
+		Inventory.PickupMessage "Picked up a VFL 6-24x56 Telescopic Sight.";
+		BaseScopeAttachment.zoomFactor 3;
+		BaseScopeAttachment.SightImage "sight10z";
+		BaseScopeAttachment.ScopeImage "bscope1";
+
+
+		BaseScopeAttachment.ScopeBackY 0;
+		BaseScopeAttachment.ScopeBackX 0;
+
+		BaseScopeAttachment.XClipCam         -46;
+		BaseScopeAttachment.YClipCam         -49;
+		BaseScopeAttachment.ScaledWidth      95;
+
+		BaseScopeAttachment.XPosCam          0;
+		BaseScopeAttachment.YPosCam          1;
+
+		BaseScopeAttachment.ScopeScaleX      1.6;
+		BaseScopeAttachment.ScopeScaleY      1.6;
+
+		BaseScopeAttachment.ScopeHoleX       0;
+		BaseScopeAttachment.ScopeHoleY       0;		
+
+		BaseScopeAttachment.XScaleCam        0.55;
+		BaseScopeAttachment.YScaleCam        0.55;
+
+		BaseSightAttachment.bbackAltImage "holir";	
+        BaseSightAttachment.bfrontAltImage "acogrmr";	
+		BaseSightAttachment.UseWeaponIron true;
+
+	}
+
+	States {
+		Spawn:
+			VFLP A -1;
+			Stop;
+
+		OverlayImage:
+			VFSP A -1;
 			Stop;
 	}
 }

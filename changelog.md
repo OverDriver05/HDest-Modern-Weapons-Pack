@@ -110,16 +110,32 @@
     - For example, if you have Potetobloke's weapon pack, you can now share ammo between the M107 and the M2HB.
 	- The loadout codes and magazine are still the same, except they both now take 50 OMG.
 
-- Added a reflex to the ACOG. 
- 	- Without zooming, the RMR is active. While zooming, you switch to the magnified view. This works only if you have the minimal sights option enabled, because it relies on the alt sight code bit thing.
-    - Redid sprite. Now has the same base mount width as other attachments, so it better fits with the new weapons. Also added nonfunctional reflex bit to the top.  The RMR on top above the scope sprite is functional, however.
- 	- I didn't like how I was bad at aiming with the ACOG, so here goes.
+- Modified ACOG
+    - Redid sprite. Now has the same base mount width as other attachments, so it better fits with the new weapons.
     - Loadout codes are the same
 
-- Added pistol RMR.
+- Added an ITI Mars. (acr) 
+    - Its just an acog.
+ 	- Without zooming, the RMR is active. While zooming, you switch to the magnified view. This works only if you have the minimal sights option enabled, because it relies on the alt sight code bit thing.
+    - Redid sprite. Now has the same base mount width as other attachments, so it better fits with the new weapons. Also added nonfunctional reflex bit to the top.  The RMR on top above the scope sprite is functional, however.
+    - Lower zoom than the other acog
+    - Sprites from Girls Frontline, obtained from IOPwiki.
+    - You can add it to a weapon with loadout code `bs10`
+ 	- I didn't like how I was bad at aiming with the ACOG, so here goes.
+
+- Added pistol RMR. (rmr)
     - Only works on pistols, which correlates to new "PIS_RAILS" mountID
+    - Sprites from Girls Frontline, obtained from IOPwiki.
     - You can add it to a weapon with loadout code `bs9`
     - You can add it as a separate item to your loadout with code `rmr`
+
+- Added VFL 6-24x56 Telescopic Sight. (vfl)
+    - Lower zoom than other scope
+    - Has an RMR on top, like the acog with RMR
+    - You can differentiate the two scopes by the color of the glass (this one is blue)
+    - Sprites from Girls Frontline, obtained from IOPwiki.
+    - You can add it to a weapon with loadout code `bs11`
+    - You can add it as a separate item to your loadout with code `vfl`
 
 - The old 9mm silencer now works on any pistol caliber weapons.
     - Now known as "Universal Pistol Caliber silencer"
