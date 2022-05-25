@@ -70,4 +70,13 @@
     - Magazine: `m23`
 - `w24`: FNX45 Tactical
     - .45ACP Pistol
-    - Magazine: `m24`
+    - Magazine: `m24
+- `acr`: ITI Mars
+    - ACOG with RMR
+    - `bs10` loadout code with weapons
+- `rmr`: RMR
+    - Pistol RMR sight
+    - `bs9` loadout code with weapons
+- `vfl`: VFL 6-24x56 Telescopic Sight
+    - Scope
+    - `bs11` loadout code with weapons
