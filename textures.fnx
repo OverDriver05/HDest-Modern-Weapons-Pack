@@ -1,15 +1,15 @@
 
-sprite FNXPA0, 58, 36 {
-	XScale 3
-	YScale 3
-	Offset 29, 36
+sprite FNXPA0, 45, 20 {
+	XScale 1.2
+	YScale 1.2
+	Offset 16, 20
 	Patch "sprites/fnx/bfnxpickup.png", 0, 0
 }
 
-sprite FNXPB0, 58, 36 {
-	XScale 3
-	YScale 3
-	Offset 29, 36
+sprite FNXPB0, 46, 20 {
+	XScale 1.2
+	YScale 1.2
+	Offset 17, 20
 	Patch "sprites/fnx/bfnxpickupnm.png", 0, 0
 }
 

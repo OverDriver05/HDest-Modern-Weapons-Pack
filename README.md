@@ -91,6 +91,7 @@ Misc. items that were also edited:
 - Added in VFL 6-24x56 Telescopic Sight (scope)
 
     - Lower zoom than 10x scope
+    - Has RMR on top
 <p align="center">
 	<img src="sprites/accessory/VFLPA0.png">
 	<img src="sprites/accessory/VFSPA0.png">

@@ -1,15 +1,15 @@
 
-sprite UM4PA0, 145, 41 {
+sprite UM4PA0, 145, 61 {
 	XScale 3
 	YScale 3
-	Offset 72, 41
+	Offset 48, 61
 	Patch "graphics/gunimages/ump45/base.png", 0, 0
 }
 
-sprite UM4PB0, 145, 31 {
+sprite UM4PB0, 145, 61 {
 	XScale 3
 	YScale 3
-	Offset 145, 31
+	Offset 48, 61
 	Patch "graphics/gunimages/ump45/empty.png", 0, 0
 }
 

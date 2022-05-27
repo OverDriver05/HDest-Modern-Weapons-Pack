@@ -9,7 +9,7 @@ sprite A38PA0, 145, 41 {
 sprite A38PB0, 145, 31 {
 	XScale 3
 	YScale 3
-	Offset 145, 31
+	Offset 72, 31
 	Patch "graphics/gunimages/ak308/empty.png", 0, 0
 }
 
