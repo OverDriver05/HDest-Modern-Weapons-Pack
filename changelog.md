@@ -17,6 +17,7 @@
 	- Same loadout codes for magazine and gun
 
 - Reworked AKM to AK-15
+    - Textures from https://ccrx.itch.io/ak47-1. Check them out!
     - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for Russian military.
 	- Added "NATO" rails to attach attachments such as optics  
 	- Slightly reduced recoil
