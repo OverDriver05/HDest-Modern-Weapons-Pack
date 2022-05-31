@@ -724,21 +724,20 @@ class b_M249 : BHDWeapon {
 
 	}
 
+}
 
 
+class b_fake_m249 : b_M249 {
+	states {
+		spawn:
+			TNT1 A 1;
+			Stop;
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+override void postbeginplay() {
+		let wep = b_m249(spawn("b_m249", pos, ALLOW_REPLACE));
+		self.destroy();
+	}
 
 
 

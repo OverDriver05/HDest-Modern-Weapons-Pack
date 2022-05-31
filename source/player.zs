@@ -103,11 +103,14 @@ class PlayerEvents : EventHandler {
 				e.Replacement = "b762_m14_mag";
 		}
 		// Chaingun
-		else if (e.Replacee is "ChaingunReplaces" || e.Replacee is "Vulcanette") {
+		else if (e.Replacee is "ChaingunReplaces") {
 			if (b_spawn_empty_mags == 1)
 				e.Replacement = "B_M249_Empty";
 			else
 				e.Replacement = "M249_Random_Giver";
+		}
+		else if (e.Replacee is "Vulcanette") {
+			e.Replacement = "b_fake_m249";
 		}
 		// Shotgun
 		else if (e.Replacee is "ShotgunReplaces" || e.Replacee is "SSGReplaces") {
