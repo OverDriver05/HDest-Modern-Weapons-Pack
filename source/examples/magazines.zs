@@ -749,3 +749,61 @@ class BFNXMagEmpty:IdleDummy{
 		destroy();
 	}
 }
+
+
+
+
+
+
+
+class b277_mag : HDMagAmmo {
+	default {
+		HDMagAmmo.MaxPerUnit 20;
+		HDMagAmmo.RoundType "B277Ammo";
+		HDMagAmmo.RoundBulk c_277_load_bulk;
+		HDMagAmmo.MagBulk c_277_mag_bulk;
+		tag "6.8x51mm magazine";
+		hdpickup.refid B_277_MAG_REFID;
+		Inventory.Icon "M14CA0";
+		inventory.pickupmessage "Picked up a 6.8x51mm NATO magazine.";
+		scale 0.8;
+	}
+
+	override string,string,name,double getmagsprite(int thismagamt){
+		return (thismagamt > 0) ? "MCXCA0" : "MCXCB0", "BF27A3A7", "B277Ammo", 1.7;
+	}
+
+	override void GetItemsThatUseThis() {
+	}
+
+	states{
+		spawn:
+			M14C A -1;
+			stop;
+		spawnempty:
+			M14C B -1{
+				brollsprite = true;
+				brollcenter = true;
+				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
+			}
+			stop;
+	}
+}
+
+class B277MagEmpty2 : IdleDummy {
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"b277_mag",0);
+		destroy();
+	}
+}
+
+
+class B277MagEmpty:IdleDummy{
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"b277_mag",0);
+		destroy();
+	}
+}
+

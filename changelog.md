@@ -142,3 +142,8 @@
     - Now known as "Universal Pistol Caliber silencer"
     - Made changes because I was too lazy to create a dedicated silencer for the 45 ACP weapons
 
+- Added 6.8x51mm ammo (b27)
+    - Created by Sig Sauer for the NGSW program
+    - Looks like 7.62x51mm here, but has a silver back end
+    - Single round loadout code: b27
+    - Single shell loadout code: b28

@@ -114,3 +114,16 @@ class HDB_HD45ACP : HDBulletActor{
 		hdbulletactor.distantsound "world/riflefar";
 	}
 }
+
+class HDB_277 : HDBulletActor{
+    default{
+		pushfactor 0.4;
+		mass 85;
+		speed 1050;
+		accuracy 666;
+		stamina 762;
+		woundhealth 40;
+		hdbulletactor.hardness 2;
+		hdbulletactor.distantsound "world/riflefar";
+    }
+}

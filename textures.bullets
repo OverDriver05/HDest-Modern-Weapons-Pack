@@ -420,3 +420,97 @@ sprite AB7SA0, 36, 14 {
 	Offset 18, 14
 	Patch "graphics/newpickup/762rus_Ammo_Box.png", 0, 0
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite BB27A1, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/277/brass_762_1.png", 0, 0
+}
+
+sprite BB27A2A8, 22, 7 {
+	XScale 8
+	YScale 8
+	Offset 11, 7
+	Patch "graphics/bulletimages/277/brass_762_8.png", 0, 0
+}
+
+sprite BB27A3A7, 29, 7 {
+	XScale 8
+	YScale 8
+	Offset 14, 7
+	Patch "graphics/bulletimages/277/brass_762_7.png", 0, 0
+}
+
+sprite BB27A4A6, 23, 7 {
+	XScale 8
+	YScale 8
+	Offset 14, 7
+	Patch "graphics/bulletimages/277/brass_762_6.png", 0, 0
+}
+
+sprite BB27A5, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/277/brass_762_5.png", 0, 0
+}
+
+sprite BF27A1, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/277/bullet_762_1.png", 0, 0
+}
+
+sprite BF27A2A8, 30, 7 {
+	XScale 8
+	YScale 8
+	Offset 15, 7
+	Patch "graphics/bulletimages/277/bullet_762_8.png", 0, 0
+}
+
+sprite BF27A3A7, 40, 7 {
+	XScale 8
+	YScale 8
+	Offset 20, 7
+	Patch "graphics/bulletimages/277/bullet_762_7.png", 0, 0
+}
+
+sprite BF27A4A6, 30, 7 {
+	XScale 8
+	YScale 8
+	Offset 15, 7
+	Patch "graphics/bulletimages/277/bullet_762_6.png", 0, 0
+}
+
+sprite BF27A5, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/277/brass_762_5.png", 0, 0
+}
+
+
+
+
+
+

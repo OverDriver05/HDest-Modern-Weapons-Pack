@@ -693,3 +693,104 @@ class B762SovSpent : BRoundSpent {
 			Stop;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class B277Ammo : BRoundAmmo {
+	default {
+		tag "6.8x51mm round";
+		HDPickup.RefId "b27";
+		HDPickup.Bulk c_277_round_bulk;
+		Inventory.icon "BF27A3A7";
+	}
+	override string pickupmessage(){
+		return "Picked up a stray 6.8x51mm round.";
+	}
+	override void GetItemsThatUseThis() {
+	}
+	override void SplitPickup(){
+	}
+	states {
+		spawn:
+			BF27 A -1;
+			stop;
+		dummy:
+			BS27 A -1;
+			stop;
+	}
+}
+
+
+class B277Brass : BRoundShell {
+	default {
+		tag "6.8x51mm brass";
+		HDPickup.RefId "b28";
+		HDPickup.Bulk c_277_spent_bulk;
+		Inventory.PickupMessage "Picked up some 6.8x51mm brass.";
+	}
+	states {
+		spawn:
+			BB27 A -1;
+			Stop;
+	}	
+}
+
+class B277Spent : BRoundSpent {
+	default {
+		BRoundSpent.ShellClass "B277Brass";
+		HDUPK.PickupType "B277Brass";
+		HDUPK.PickupMessage "Picked up some 6.8x51 brass.";
+	}
+
+	states {
+		spawn:
+			BB27 A 2 {
+				angle+=45;
+				if(floorz==pos.z&&!vel.z)A_Countdown();
+			}
+			Wait;
+
+		death:
+			BB27 A -1 {
+				actor p=spawn(invoker.shellClass,self.pos,ALLOW_REPLACE);
+				p.vel = self.vel;
+				p.vel.xy*=3;
+				p.angle=angle;
+				if(p.vel!=(0,0,0)){
+					p.A_FaceMovementDirection();
+					p.angle+=90;
+				}
+				destroy();
+			}
+			Stop;
+	}
+}
