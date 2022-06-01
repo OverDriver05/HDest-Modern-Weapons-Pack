@@ -778,10 +778,10 @@ class b277_mag : HDMagAmmo {
 
 	states{
 		spawn:
-			M14C A -1;
+			MCXC A -1;
 			stop;
 		spawnempty:
-			M14C B -1{
+			MCXC B -1{
 				brollsprite = true;
 				brollcenter = true;
 				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
