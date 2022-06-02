@@ -67,6 +67,10 @@ Firearms used by the West:
 <p align="center">
 	<img src="sprites/fnx/bfnxpickup.png">
 </p>
+- SIG Sauer MCX Spear [XM5] (w25), Magazine (m25)
+<p align="center">
+	<img src="graphics/gunimages/xm5/base.png">
+</p>
 
 
 

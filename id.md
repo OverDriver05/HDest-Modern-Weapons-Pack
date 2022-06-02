@@ -70,7 +70,10 @@
     - Magazine: `m23`
 - `w24`: FNX45 Tactical
     - .45ACP Pistol
-    - Magazine: `m24
+    - Magazine: `m24`
+`w25`: SIG Sauer MCX Spear
+    - 6.8x51mm Battle Rifle
+    - Magazine: `m25`
 - `acr`: ITI Mars
     - ACOG with RMR
     - `bs10` loadout code with weapons
