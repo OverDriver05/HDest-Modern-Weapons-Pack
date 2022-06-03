@@ -151,9 +151,7 @@
 - Added SIG Sauer MCX Spear (w25)
     - The XM5 is the U.S. Army variant of the SIG MCX Spear, a 6.8×51mm (.277 in), gas-operated, magazine-fed, assault rifle designed by SIG Sauer for the Next Generation Squad Weapon Program in 2022 to replace the M4 carbine. 
     - Fires from 20 round 6.8x51mm magazines, with loadout code m25
-    - As for now, the base sprite looks admittedly ugly. This is because it was meant to be run with a scope and a silencer.
-        - It's also because I'm bad at using Blender. But hey, the SCAR sprites look passable
-    - Sprites from https://sketchfab.com/3d-models/low-poly-sig-mcx-9a6f000c43644afe900669b6e7202378. Check them out!
+    - Sprites from https://sketchfab.com/3d-models/bigwig-spearhead-carbine-b78944e2a345444b82e8d9939ec16ac5. Check them out!
     - Has a firerate slightly slower than the M4. I can't find data on how fast it would actually fire.
     - Uses the 7.62x51mm silencer. Deal with it.
     - First the 1918 BAR, then the M14, then the M5, what comes next?
