@@ -44,12 +44,12 @@ class B_XM5: BaseStandardRifle {
 		BHDWeapon.BUnloadSound       "weapons/m14/clipeject";
 
 		BHDWeapon.BROF               0.7;
-		BHDWeapon.BBackOffsetX       0;
-		BHDWeapon.BBackOffsetY       20;
-		BHDWeapon.BFrontSightImage   "scrfr";
-		BHDWeapon.BBackSightImage    "scrbr";
-		BHDWeapon.BFrontOffsetX      -6;
-		BHDWeapon.BFrontOffsetY      14;
+		BHDWeapon.BBackOffsetX       -7;
+		BHDWeapon.BBackOffsetY       40;
+		BHDWeapon.BFrontSightImage   "m16iron";
+		BHDWeapon.BBackSightImage    "mrsig1";
+		BHDWeapon.BFrontOffsetX      0;
+		BHDWeapon.BFrontOffsetY      22;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "762_NATO_BARREL";
@@ -58,8 +58,8 @@ class B_XM5: BaseStandardRifle {
 		BHDWeapon.EjectShellClass    "B277Spent";
 		hdweapon.refid               B_MCX_REFID;
 
-		BHDWeapon.BAltFrontSightImage "a_scrfr";
-		BHDWeapon.BAltBackSightImage "a_scrbr";
+		BHDWeapon.BAltFrontSightImage "am4";
+		BHDWeapon.BAltBackSightImage "alt_m4i";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;
