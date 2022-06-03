@@ -429,6 +429,7 @@ class B_Scope_Vx : BaseAcog {
 
 		BaseScopeAttachment.ScopeBackY 0;
 		BaseScopeAttachment.ScopeBackX 0;
+        BaseSightAttachment.FrontOffY 5;
 
 		BaseScopeAttachment.XClipCam         -46;
 		BaseScopeAttachment.YClipCam         -49;
