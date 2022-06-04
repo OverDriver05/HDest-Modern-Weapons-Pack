@@ -119,7 +119,7 @@ class HDB_277 : HDBulletActor{
     default{
 		pushfactor 0.4;
 		mass 85;
-		speed 1050;
+		speed 1065;
 		accuracy 666;
 		stamina 762;
 		woundhealth 40;
