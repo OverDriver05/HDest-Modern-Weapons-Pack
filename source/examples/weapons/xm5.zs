@@ -25,7 +25,7 @@ class B_XM5: BaseStandardRifle {
 		BHDWeapon.BSpriteWithoutMag  "MCXPB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "M14CA0";
+		BHDWeapon.BMagazineSprite    "MCXCA0";
 		BHDWeapon.BWeaponBulk        c_m14_bulk;
 		BHDWeapon.BMagazineBulk      c_m14_bulk;
 		BHDWeapon.BBulletBulk        c_277_round_bulk;
