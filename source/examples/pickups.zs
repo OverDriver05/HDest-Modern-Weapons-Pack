@@ -404,6 +404,12 @@ class RandomMagPickup : HDInvRandomSpawner {
 		dropitem "BM249Mag",256,1;
 		dropitem "BAKM_762Mag",256,1;
 		dropitem "BAK_545Mag",256,1;
+		dropitem "BM240Mag",256,1;
+		dropitem "M107Magazine",256,1;
+		dropitem "RPKMag",256,1;
+		dropitem "BUMP45Mag",256,1;
+		dropitem "FNXMagazine",256,1;
+		dropitem "b277_mag",256,1;
 	}
 }
 
@@ -427,6 +433,9 @@ class RandomAttachmentPickup : HDInvRandomSpawner {
 		dropitem "B_Sight_CRdot", 256, 1;
 		dropitem "B_Sight_Holo_Red", 256, 1;
 		dropitem "B_Reflex_Red", 256, 1;
+		dropitem "B_ACOG_RMR", 256, 1;
+		dropitem "B_Scope_Vx", 256, 1;
+		dropitem "B_RMR", 256, 1;
 	}
 }
 
