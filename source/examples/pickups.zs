@@ -449,6 +449,10 @@ class RandomWeaponPickup : HDInvRandomSpawner {
 		dropItem "Rpg_Random_Giver", 256, 1;
 		dropItem "B_AKM", 256, 1;
 		dropItem "B_AKS74U", 256, 1;
+		dropItem "B_SCAR16", 256, 1;
+		dropItem "B_SCAR17", 256, 1;
+		dropItem "B_UMP9", 256, 1;
+		dropItem "B_UMP45", 256, 1;
 	}
 }
 

@@ -60,7 +60,8 @@
 	- Does not have rails, so you cannot attach attachments
 	- Firemodes: Semi/Burst/Auto
 
-- Added M240 (w16) and 100 round 7.62x51mm pouch (m16)
+- Added M240 (w16) and 100 round 7.62x51mm pouch (m16) [NOT INCLUDED ANYMORE]
+	- too lazy to make sprites
 	- FN MAG, modified for US Military. Fires 7.62x51mm.
 	- Uses 100 round 7.62x51mm pouches, which has a loadout code of (m16)
 	 	- The magazine is differentiable from the 200 round 5.56 pouch in that the 7.62 pouch is lighter in color.
@@ -75,6 +76,7 @@
 	- Has a slower rate of fire compared to the M4A1
 	- Has a lower recoil compared to the M4A1
 	- Firemodes: Semi/Auto
+	- Enemies carrying this weapon have a 50% of the spawn rate of the M4
 
 - Added SCAR-17 (w21)
     - Textures used from https://delthor-games.itch.io/free-low-poly-weapons-pack-3. Check them out!
@@ -83,6 +85,7 @@
 	- Has a slower rate of fire compared to the M14
 	- Has a lower recoil compared to the M14
 	- Firemodes: Semi/Auto
+	- Enemies carrying this weapon have a ~78% of the spawn rate of the M249
 
 - Added UMP-9 (w22)
     - Textures used from https://adwitr.itch.io/low-poly-gun-models-ump-uzi. Check them out!
@@ -90,6 +93,7 @@
 	- Shares 9mm smg mags with the MP5
 	- Firemodes: Semi/Burst/Auto
     - I seriously did not know that the UMP series had 600 RPM (wikipedia says so). That's slower than the M4 or MP5, and on par with the SCAR. wow.
+	- Enemies carrying this weapon have a ~33% of the spawn rate of the MP5
 
 - Added UMP-45 (w23)
     - Textures used from https://adwitr.itch.io/low-poly-gun-models-ump-uzi. Check them out!
@@ -98,6 +102,7 @@
     - This required the.45ACP from HDBulletLib
 	- Firemodes: Semi/Burst/Auto
     - I seriously did not know that the UMP series had 600 RPM (wikipedia says so). That's slower than the M4 or MP5, and on par with the SCAR. wow.
+	- Enemies carrying this weapon have a ~22% of the spawn rate of the MP5
 
 - Added FNX45 Tactical (w24)
     - Textures modified from https://gitlab.com/dastrukar/hddons-list-entries/-/blob/master/weapons/NORA_.45_R1 - popguy12.yaml. Check out the original project!

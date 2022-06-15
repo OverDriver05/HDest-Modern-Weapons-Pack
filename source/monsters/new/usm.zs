@@ -16,6 +16,50 @@ class M4CarryBubble : FlipXBubble {
 	}
 }
 
+class SCR16CarryBubble : AiBubble {
+	states {
+		spawn:
+			SC6P A -1;
+			Stop;
+		empty:
+			SC6P B -1;
+			Stop;
+	}
+}
+
+class SCR17CarryBubble : AiBubble {
+	states {
+		spawn:
+			SC7P A -1;
+			Stop;
+		empty:
+			SC7P B -1;
+			Stop;
+	}
+}
+
+class UMP9CarryBubble : FlipXBubble {
+	states {
+		spawn:
+			UMPP A -1;
+			Stop;
+		empty:
+			UMPP B -1;
+			Stop;
+	}
+}
+
+class UMP45CarryBubble : FlipXBubble {
+	states {
+		spawn:
+			UM4P A -1;
+			Stop;
+		empty:
+			UM4P B -1;
+			Stop;
+	}
+}
+
 class M4M203CarryBubble : FlipXBubble {
 	states {
 		spawn:
@@ -137,6 +181,38 @@ class usmc_mp5 : usmc_base {
 	}
 }
 
+class usmc_ump9 : usmc_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_UMP9";
+		HumanoidBase.hBulletClass     "HDB_9";
+		HumanoidBase.hMaxMag          30;
+		HumanoidBase.hMagazineClass   "B9mm_MP5K_MAG";
+		HumanoidBase.hSpentClass      "HDSpent9mm";
+		HumanoidBase.hFireSound       "weapons/mp5/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("UMP9CarryBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
+class usmc_ump45 : usmc_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_UMP45";
+		HumanoidBase.hBulletClass     "HDB_45ACP";
+		HumanoidBase.hMaxMag          25;
+		HumanoidBase.hMagazineClass   "BUMP45Mag";
+		HumanoidBase.hSpentClass      "HDSpent45ACP";
+		HumanoidBase.hFireSound       "weapons/mp5/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("UMP45CarryBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
 class usmc_m4c : usmc_base {
 	default {
 		HumanoidBase.hWeaponClass     "B_M4";
@@ -152,6 +228,38 @@ class usmc_m4c : usmc_base {
 	}
 	override AiBubble getGun() {
 		AiBubble hoverGun = AiBubble(Actor.Spawn("M4CarryBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
+class usmc_scar16c : usmc_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_SCAR16";
+		HumanoidBase.hBulletClass     "HDB_556";
+		HumanoidBase.hMaxMag          30;
+		HumanoidBase.hMagazineClass   "B556Mag";
+		HumanoidBase.hSpentClass      "B556Spent";
+		HumanoidBase.hFireSound       "weapons/m4/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("SCR16CarryBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
+class usmc_scar17c : usmc_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_SCAR17";
+		HumanoidBase.hBulletClass     "HDB_762x51";
+		HumanoidBase.hMaxMag          20;
+		HumanoidBase.hMagazineClass   "b762_m14_mag";
+		HumanoidBase.hSpentClass      "B762x51Spent";
+		HumanoidBase.hFireSound       "weapons/m14/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("SCR17CarryBubble"));
 		hoverGun.host = self;
 		return hoverGun;
 	}

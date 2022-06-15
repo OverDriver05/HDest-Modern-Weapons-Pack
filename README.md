@@ -43,7 +43,7 @@ Firearms used by the East:
 
 
 Firearms used by the West:
-- M240 (w16), Magazine (m16)
+- M240 (w16), Magazine (m16) [NOT INCLUDED YET]
 <p align="center">
 	<img src="graphics/gunimages/m240/none/base.png">
 </p>

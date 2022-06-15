@@ -187,17 +187,24 @@ class PlayerEvents : EventHandler {
 
 	void replaceAllAI(ReplaceEvent e) {
 		if (e.Replacee is "ZombieHideousTrooper") {
-			string possible[18] = {
+			string possible[25] = {
 				"op_uzi",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
+				"usmc_scar16c",
+				"usmc_scar16c",
 				"usmc_m4c",
 				"usmc_m4c",
 				"ru_aks",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
+				"usmc_ump9",
+				"usmc_ump9",
+				"usmc_ump9",
+				"usmc_ump45",
+				"usmc_ump45",
 				"usmc_m4c",
 				"ru_aks",
 				"usmc_m4c",
@@ -207,7 +214,7 @@ class PlayerEvents : EventHandler {
 				"ru_aks",
 				"usmc_m4cm203"
 			};
-			e.Replacement = possible[random(0, 17)];
+			e.Replacement = possible[random(0, 24)];
 		}
 		else if (e.Replacee is "ZombieShotgunner") {
 			if (random(0, 100) < b_ai_shotgunner_chance) {
@@ -215,8 +222,11 @@ class PlayerEvents : EventHandler {
 			}
 		}
 		else if (e.Replacee is "VulcanetteZombie") {
-			string possible[15] = {
+			string possible[23] = {
 				"usmc_m14",
+				"usmc_scar17c",
+				"usmc_scar17c",
+				"usmc_scar17c",
 				"usmc_m249",
 				"usmc_m249",
 				"usmc_m249",
@@ -227,12 +237,17 @@ class PlayerEvents : EventHandler {
 				"usmc_m249",
 				"ru_akm",
 				"umsc_m14",
+				"usmc_scar17c",
+				"usmc_scar17c",
 				"usmc_m249",
 				"usmc_m249",
 				"usmc_m249",
+				"usmc_scar17c",
+				"usmc_scar17c",
+				"usmc_scar17c",
 				"op_m107"
 			};
-			e.Replacement = possible[random(0, 14)];
+			e.Replacement = possible[random(0, 22)];
 		}
 		
 	}
