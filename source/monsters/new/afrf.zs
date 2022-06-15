@@ -10,6 +10,28 @@ class AiAkmBubble : AiBubble {
 	}
 }
 
+class AiAk12Bubble : AiBubble {
+	states {
+		spawn:
+			AK2P A -1;
+			Stop;
+		empty:
+			AK2P B -1;
+			Stop;
+	}
+}
+
+class AiRPK16Bubble : AiBubble {
+	states {
+		spawn:
+			RK6P A -1;
+			Stop;
+		empty:
+			RK6P B -1;
+			Stop;
+	}
+}
+
 class AiAksBubble : AiBubble {
 	states {
 		spawn:
@@ -122,6 +144,38 @@ class ru_emr_aks : ru_emr_base {
 	}
 	override AiBubble getGun() {
 		AiBubble hoverGun = AiBubble(Actor.Spawn("AiAksBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
+class ru_ak12 : ru_vsr_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_AK2";
+		HumanoidBase.hBulletClass     "HDB_545";
+		HumanoidBase.hMaxMag          30;
+		HumanoidBase.hMagazineClass   "BAK_545Mag";
+		HumanoidBase.hSpentClass      "B545Spent";
+		HumanoidBase.hFireSound       "weapons/akm/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("AiAk12Bubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
+class ru_rpk16 : ru_vsr_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_RPK16";
+		HumanoidBase.hBulletClass     "HDB_545";
+		HumanoidBase.hMaxMag          30;
+		HumanoidBase.hMagazineClass   "RPKMag";
+		HumanoidBase.hSpentClass      "B545Spent";
+		HumanoidBase.hFireSound       "weapons/akm/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("AiRPK16Bubble"));
 		hoverGun.host = self;
 		return hoverGun;
 	}

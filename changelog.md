@@ -30,6 +30,7 @@
 	- Has "NATO" rails to attach attachments such as optics 
 	- Firemodes: Semi/Auto
 	- Loadout code is w17
+	- Enemies carrying this weapon have a ~66% of the spawn rate of the AKS74U
 
 - Added AK-19 (w14)
     - Part of the fifth generation of Kalashnikov rifles (AK-12, AK-15, AK-19, AK-308). Designed for international export.
@@ -53,6 +54,7 @@
 	- Has "NATO" rails to attach attachments such as optics 
 	- Firemodes: Semi/Auto
 	- Loadout code of gun is w19
+	- Enemies carrying this weapon have the same spawn rate as the AKM
 
 - Added AK-108 (w15)
 	- From the AK-100 family, known for heavily reduced recoil due to balancing system

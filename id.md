@@ -44,7 +44,7 @@
 - `w15`: AK-108
     - 5.56x45mm Assault Rifle
     - Magazine: `m03`
-- `w16`: M240
+- `w16`: M240 [NOT INCLUDED YET]
     - 7.62x51mm Machine Gun
     - Magazine: `m16`
 - `w17`: AK-12
