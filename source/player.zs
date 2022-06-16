@@ -187,23 +187,21 @@ class PlayerEvents : EventHandler {
 
 	void replaceAllAI(ReplaceEvent e) {
 		if (e.Replacee is "ZombieHideousTrooper") {
-			string possible[27] = {
+			string possible[25] = {
 				"op_uzi",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
+				"usmc_xm5",
+				"usmc_xm5",
+				"usmc_xm5",
 				"usmc_scar16c",
 				"usmc_scar16c",
 				"usmc_m4c",
 				"usmc_m4c",
 				"ru_aks",
-				"usmc_mp5",
-				"usmc_mp5",
-				"usmc_mp5",
 				"usmc_ump9",
 				"usmc_ump9",
-				"usmc_ump9",
-				"usmc_ump45",
 				"usmc_ump45",
 				"usmc_m4c",
 				"ru_aks",
@@ -216,7 +214,7 @@ class PlayerEvents : EventHandler {
 				"ru_ak12",
 				"ru_ak12"												
 			};
-			e.Replacement = possible[random(0, 26)];
+			e.Replacement = possible[random(0, 24)];
 		}
 		else if (e.Replacee is "ZombieShotgunner") {
 			if (random(0, 100) < b_ai_shotgunner_chance) {

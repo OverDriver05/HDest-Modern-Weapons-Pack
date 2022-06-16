@@ -16,58 +16,58 @@ New sprites have to have offsets set through something like SLADE.
 TLDR of new weapons: 
 
 Firearms used by the East:
-- AK-15 (w12)
+- AK-15 ```w12```: 8% chance to replace chaingunguy
 <p align="center">
 	<img src="graphics/gunimages/akm/base.png">
 </p>
-- AK-12 (w17)
+- AK-12 ```w17```: 8% chance to replace zombieman
 <p align="center">
 	<img src="graphics/gunimages/ak12/base.png">
 </p>
-- AK-19 (w14)
+- AK-19 ```w14```: loadout only
 <p align="center">
 	<img src="graphics/gunimages/ak19/base.png">
 </p>
-- AK-308 (w18)
+- AK-308 ```w18```: loadout only
 <p align="center">
 	<img src="graphics/gunimages/ak308/base.png">
 </p>
-- RPK-16 (w19), Magazine (m19)
+- RPK-16 ```w19```, Magazine ```m19```: 8% chance to replace chaingunguy
 <p align="center">
 	<img src="graphics/gunimages/rpk16/base.png">
 </p>
-- AK-108 (w15)
+- AK-108 ```w15```: loadout only
 <p align="center">
 	<img src="graphics/gunimages/ak108/base.png">
 </p>
 
 
 Firearms used by the West:
-- M240 (w16), Magazine (m16) [NOT INCLUDED YET]
+- M240 ```w16```, Magazine ```m16``` [NOT INCLUDED YET]
 <p align="center">
 	<img src="graphics/gunimages/m240/none/base.png">
 </p>
-- SCAR-16 (w20)
+- SCAR-16 ```w20```: 8% chance to replace zombieman
 <p align="center">
 	<img src="graphics/gunimages/scar16/base.png">
 </p>
-- SCAR-17 (w21)
+- SCAR-17 ```w21```: 32% chance to replace chaingunguy
 <p align="center">
 	<img src="graphics/gunimages/scar17/base.png">
 </p>
-- UMP-9 (w22)
+- UMP-9 ```w22```: 8% chance to replace zombieman
 <p align="center">
 	<img src="graphics/gunimages/ump/base.png">
 </p>
-- UMP-45 (w23), Magazine (m23)
+- UMP-45 ```w23```, Magazine ```m23```: 4% chance to replace zombieman
 <p align="center">
 	<img src="graphics/gunimages/ump45/base.png">
 </p>
-- FNX45 Tactical (w24), Magazine (m24)
+- FNX45 Tactical ```w24```, Magazine ```m24```: loadout only
 <p align="center">
 	<img src="sprites/fnx/bfnxpickup.png">
 </p>
-- SIG Sauer MCX Spear [XM5] (w25), Magazine (m25)
+- SIG Sauer MCX Spear [XM5] ```w25```, Magazine ```m25```: 12% chance to replace zombieman
 <p align="center">
 	<img src="graphics/gunimages/xm5/base.png">
 </p>

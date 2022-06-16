@@ -38,6 +38,17 @@ class SCR17CarryBubble : AiBubble {
 	}
 }
 
+class XM5CarryBubble : AiBubble {
+	states {
+		spawn:
+			MCXP A -1;
+			Stop;
+		empty:
+			MCXP B -1;
+			Stop;
+	}
+}
+
 class UMP9CarryBubble : FlipXBubble {
 	states {
 		spawn:
@@ -260,6 +271,22 @@ class usmc_scar17c : usmc_base {
 	}
 	override AiBubble getGun() {
 		AiBubble hoverGun = AiBubble(Actor.Spawn("SCR17CarryBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
+
+class usmc_xm5 : usmc_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_XM5";
+		HumanoidBase.hBulletClass     "HDB_277";
+		HumanoidBase.hMaxMag          20;
+		HumanoidBase.hMagazineClass   "b277_mag";
+		HumanoidBase.hSpentClass      "B277Spent";
+		HumanoidBase.hFireSound       "weapons/m14/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("XM5CarryBubble"));
 		hoverGun.host = self;
 		return hoverGun;
 	}

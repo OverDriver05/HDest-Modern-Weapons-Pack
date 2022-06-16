@@ -104,7 +104,7 @@
     - This required the.45ACP from HDBulletLib
 	- Firemodes: Semi/Burst/Auto
     - I seriously did not know that the UMP series had 600 RPM (wikipedia says so). That's slower than the M4 or MP5, and on par with the SCAR. wow.
-	- Enemies carrying this weapon have a ~22% of the spawn rate of the MP5
+	- Enemies carrying this weapon have a ~16% of the spawn rate of the MP5
 
 - Added FNX45 Tactical (w24)
     - Textures modified from https://gitlab.com/dastrukar/hddons-list-entries/-/blob/master/weapons/NORA_.45_R1 - popguy12.yaml. Check out the original project!
@@ -161,5 +161,5 @@
     - Sprites from https://sketchfab.com/3d-models/bigwig-spearhead-carbine-b78944e2a345444b82e8d9939ec16ac5. Check them out!
     - Has a firerate slightly slower than the M4. I can't find data on how fast it would actually fire.
     - Uses the 7.62x51mm silencer. Deal with it.
+	- Enemies carrying this weapon have a ~75% of the spawn rate of the M4
     - First the 1918 BAR, then the M14, then the M5, what comes next?
-
