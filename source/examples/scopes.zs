@@ -338,7 +338,7 @@ class B_Reflex_Red : BaseCompactDotSight {
 class B_RMR : BaseCompactDotSight {
 	default {
 		BaseAttachment.SerialID B_RMR_ID;
-		BaseAttachment.BaseSprite "RMRR";
+		BaseAttachment.BaseSprite "RMRP";
 		BaseAttachment.BaseFrame 0;
 		Tag "RMR";
 		Inventory.ICON "RMRIA0";
