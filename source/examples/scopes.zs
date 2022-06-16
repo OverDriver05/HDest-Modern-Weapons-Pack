@@ -356,7 +356,6 @@ class B_RMR : BaseCompactDotSight {
 			Stop;
 
 		OverlayImage:
-			RMRS A -1;
 			Stop;
 	}
 }
