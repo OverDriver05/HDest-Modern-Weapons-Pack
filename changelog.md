@@ -1,5 +1,9 @@
 **Many weapons may look the same or similar. For example, the SCARs. UMPs, AKs. M240 and M249, etc. The best way to differentiate them is to throw the weapon on the ground and observe the magazine shape. That'll tell you caliber. Alternatively, check the magazine sprite in you HUD when equipped with the weapon.**
 
+Creating new weapons consists of creating a new zs under /source/examples/weapons/. Textures are edited under /graphics/gunimages/ and /sprites. Make sure to change textures under /textures.xxx and load by editing /zscript.
+
+New sprites have to have offsets set through something like SLADE. 
+
 - Reworked M4 to M4A1
 	- Firemodes: Semi/Auto
 	- Reduced Recoil

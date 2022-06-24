@@ -1,11 +1,7 @@
 # Changelog
 This repository is my personal tweaking of the original project, which itself was edited by HalfBakedCake to work with newer HD versions. Mainly I wanted even more variety to the weapons. As such, some weapons may fit the same niche and could be considered to be repetitve. To each their own I guess.
 
-Thanks to everyone who worked on it before to create a highly useful and fun mod!
-
-Creating new weapons consists of creating a new zs under /source/examples/weapons/. Textures are edited under /graphics/gunimages/ and /sprites. Make sure to change textures under /textures.xxx and load by editing /zscript.
-
-New sprites have to have offsets set through something like SLADE. 
+Thanks to everyone who worked on it before to create a highly useful and fun mod! And be sure to check out _bryan's original project here: https://codeberg.org/_bryan/hdest-weapons
 
 **Now requires Accensi's HDBulletLib (https://gitlab.com/accensi/hd-addons/hdbulletlib), due to dependency on new calibers**
 
