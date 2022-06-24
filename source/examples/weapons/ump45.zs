@@ -65,10 +65,10 @@ class B_UMP45 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.3;
-		BHDWeapon.BRecoilXHigh 0.3;
-		BHDWeapon.BRecoilYLow  0.5;
-		BHDWeapon.BRecoilYHigh 0.8;		
+		BHDWeapon.BRecoilXLow -0.4;
+		BHDWeapon.BRecoilXHigh 0.4;
+		BHDWeapon.BRecoilYLow  0.6;
+		BHDWeapon.BRecoilYHigh 0.9;		
 		BHDWeapon.bShowFireMode true;
 	}
 
