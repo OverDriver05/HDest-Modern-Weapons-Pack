@@ -5,7 +5,7 @@ Thanks to everyone who worked on it before to create a highly useful and fun mod
 
 **Now requires Accensi's HDBulletLib (https://gitlab.com/accensi/hd-addons/hdbulletlib), due to dependency on new calibers**
 
-### Read the Wiki for changes since the original fork: (https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/wikis/1.-Homepage)
+# Read the Wiki for changes and updated instructions since the original fork: ([Wiki](https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/wikis/1.-Homepage))
 
 ---
 The original project readme is below.
