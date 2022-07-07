@@ -1,4 +1,6 @@
 
+const HDCONST_SHOULDERTORADIUS = 1; // Replacing system
+
 class BaseRPG : BHDWeapon {
 
 	override void DrawHUDStuff(HDStatusBar sb,HDWeapon hdw,HDPlayerPawn hpl){
