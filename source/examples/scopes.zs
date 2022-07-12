@@ -231,10 +231,12 @@ class B_ACOG_RMR : BaseAcog {
 		//Inventory.ICON "ZUXKA0";
 		BaseSightAttachment.FrontOffY 5;
         //BaseSightAttachment.BackOffX 0;
+		
 		BaseSightAttachment.bbackAltImage "holir";	
         BaseSightAttachment.bfrontAltImage "acogrmr";	
 		BaseSightAttachment.UseWeaponIron true;
-        BaseScopeAttachment.zoomFactor 7;
+        
+		BaseScopeAttachment.zoomFactor 7;
 		//Scale 0.4;
 		
         HDPickup.RefID "acr";
@@ -290,6 +292,7 @@ class B_Sight_Holo_Red : BaseHoloSight {
 		HDPickup.RefID "hrd";
 		BaseSightAttachment.BackOffX 0;
 		//BaseSightAttachment.BackOffY 47;
+		BaseSightAttachment.FrontImage "holira";
 		BaseSightAttachment.bbackAltImage "holsA";
 		BaseSightAttachment.bfrontAltImage "holira";
 		Inventory.PickupMessage "Picked up a EOTech red-dot sight.";
@@ -306,6 +309,36 @@ class B_Sight_Holo_Red : BaseHoloSight {
 			Stop;
 	}
 }
+
+class B_EOT_HWS : BaseHoloSight {
+	default {
+		BaseAttachment.SerialId B_EOT_HWS_ID;
+		BaseAttachment.BaseSprite "EOTG";
+		BaseAttachment.BaseFrame 0;
+		Tag "EOTECH HWS";
+		Inventory.Icon "EOPPC0";
+		HDPickup.RefID "eot";
+		BaseSightAttachment.BackOffX 0;
+		//BaseSightAttachment.BackOffY 47;
+		BaseSightAttachment.FrontImage "holira";
+		BaseSightAttachment.BackImage "eotec";
+		BaseSightAttachment.bbackAltImage "a_eotec";
+		BaseSightAttachment.bfrontAltImage "holira";
+		Inventory.PickupMessage "Picked up a EOTECH HWS.";
+		Scale 0.4;
+	}
+
+	States {
+		Spawn:
+			EOPP C -1;
+			Stop;
+
+		OverlayImage:
+			EOTG A -1;
+			Stop;
+	}
+}
+
 
 class B_Reflex_Red : BaseCompactDotSight {
 	default {

@@ -102,6 +102,7 @@ const B_SCOPE_10X_ID      = 8;
 const B_RMR_ID       = 9;
 const B_ACOG_RMR_ID       = 10;
 const B_SCOPE_VX_ID      = 11;
+const B_EOT_HWS_ID  = 12;
 
 const B_FLASHLIGHT_ID     = 1;
 
