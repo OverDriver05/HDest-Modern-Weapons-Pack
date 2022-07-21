@@ -42,7 +42,7 @@ class B_M249_Reloader : AutoReloadingThingy{
 	}
 
 	override void DrawHUDStuff(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl){
-		vector2 bob=hpl.hudbob*0.3;
+		vector2 bob=hpl.wepbob*0.3;
 
 		int brass = emptyCount(hpl);
 		int fourm=hpl.countinv("B556Ammo");

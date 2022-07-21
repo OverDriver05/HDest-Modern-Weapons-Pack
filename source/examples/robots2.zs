@@ -395,7 +395,7 @@ class TDERPUsable:HDWeapon{
 		if(!ddd||ddd.amount<1)return;
 		let pmags=GlockMagazine(owner.findinventory("GlockMagazine"));
 
-		vector2 bob=hpl.hudbob*0.2;
+		vector2 bob=hpl.wepbob*0.2;
 		bob.y+=ofs;
 		sb.drawimage("TDRPA8A2",(0,22)+bob,
 			sb.DI_SCREEN_CENTER|sb.DI_ITEM_CENTER|sb.DI_TRANSLATABLE,

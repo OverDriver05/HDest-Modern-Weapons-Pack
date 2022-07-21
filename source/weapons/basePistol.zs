@@ -118,8 +118,10 @@ class BasePistol : BaseStandardRifle {
 				}
 
 			}
-			#### B 1 Offset (0, 44);
-			#### B 0 Offset (0, 40){
+			#### B 1 {
+				A_WeaponOffset(0, invoker.boffsetamt);
+			}
+			#### B 0 {
 				return ResolveState("Chamber");
 			}
 

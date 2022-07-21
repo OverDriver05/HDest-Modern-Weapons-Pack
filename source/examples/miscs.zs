@@ -99,9 +99,9 @@ class FlashSpotLight : SpotLight {
 				}
 
 				let newPos = info.mo.pos + (0, 0, info.mo.height);
-				newPos.z -= (ply.hudbob.y / 2.0);
+				newPos.z -= (ply.wepbob.y / 2.0);
 				SetOrigin(newPos, true);
-				A_SetAngle(info.mo.angle - ply.hudbob.x, SPF_INTERPOLATE);
+				A_SetAngle(info.mo.angle - ply.wepbob.x, SPF_INTERPOLATE);
 
 				if (info.cmd.buttons & BT_SPEED) {
 					pitchDirection = 1;

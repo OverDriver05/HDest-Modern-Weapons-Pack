@@ -72,6 +72,51 @@ class Level1Target : Actor {
 			LV1W A -1;
 			Stop;
 
+}
+}
+
+
+class Level1Intro : Actor {
+	default {
+		mass 100;
+		radius 30;
+		height 72;
+		speed 8;
+		health 9999999999;
+		Monster;
+		PainChance 256;
+		+FLOORCLIP
+	}
+	override void PostBeginPlay() {
+		super.PostBeginPlay();
+	}
+	override bool Used (Actor user) {
+		return true;
+	}
+	States {
+		Spawn:
+			LV1T A 1 {
+				let shrd = Actor.Spawn("FragShard", self.pos + (
+					frandom(-20, 20), 
+					frandom(-20, 20),
+					frandom(0, 48))
+				);
+				shrd.vel = (
+					0,
+					0,
+					frandom(2, 8)
+				);
+			}
+			Loop;
+		Missile:
+		Pain:
+			LV1T BCBCBCBCBC 5;
+			Goto Spawn;
+		Death:
+		XDeath:
+		Raise:
+			LV1W A -1;
+			Stop;
 
 	}
 

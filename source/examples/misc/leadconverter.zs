@@ -20,7 +20,7 @@ class B_BallCrafter : HDWeapon {
 	int mode;
 
 	override void DrawHUDStuff(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl){
-		vector2 bob=hpl.hudbob*0.3;
+		vector2 bob=hpl.wepbob*0.3;
 		sb.drawString(sb.psmallfont, "Ball crafter", (0, -10) + bob, sb.DI_SCREEN_CENTER | sb.DI_TEXT_ALIGN_CENTER, Font.CR_GOLD);
 
 		int leadNeeded = 2;
@@ -175,7 +175,7 @@ class B_CaseCrafter : HDWeapon {
 	int mode;
 
 	override void DrawHUDStuff(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl){
-		vector2 bob=hpl.hudbob*0.3;
+		vector2 bob=hpl.wepbob*0.3;
 		sb.drawString(sb.psmallfont, "Case crafter", (0, -10) + bob, sb.DI_SCREEN_CENTER | sb.DI_TEXT_ALIGN_CENTER, Font.CR_GOLD);
 
 		int brassNeeded = 2;
@@ -314,7 +314,7 @@ class B_BulletAssembler : HDWeapon {
 	int mode;
 
 	override void DrawHUDStuff(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl){
-		vector2 bob=hpl.hudbob*0.3;
+		vector2 bob=hpl.wepbob*0.3;
 		sb.drawString(sb.psmallfont, "Bullet Assembler", (0, -10) + bob, sb.DI_SCREEN_CENTER | sb.DI_TEXT_ALIGN_CENTER, Font.CR_GOLD);
 
 		int powderRequired = 2;
@@ -497,7 +497,7 @@ class B_RocketAssembler : HDWeapon {
 	int mode;
 
 	override void DrawHUDStuff(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl){
-		vector2 bob=hpl.hudbob*0.3;
+		vector2 bob=hpl.wepbob*0.3;
 		sb.drawString(sb.psmallfont, "Rocket Assembler", (0, -10) + bob, sb.DI_SCREEN_CENTER | sb.DI_TEXT_ALIGN_CENTER, Font.CR_GOLD);
 
 		int powderCount  = hpl.countInv("B_GunPowder");

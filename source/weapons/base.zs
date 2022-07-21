@@ -27,6 +27,7 @@ class BHDWeapon : HDWeapon {
 		BHDWeapon.BRecoilYLow  1.3;
 		BHDWeapon.BRecoilYHigh 2.6;
 		BHDWeapon.BShowFireMode false;
+		BHDWeapon.boffsetamt 36;
 	}
 
 	property BShowFireMode: bShowFireMode;
@@ -38,7 +39,10 @@ class BHDWeapon : HDWeapon {
 	property BRecoilYHigh: BRecoilYHigh;
 
 	double BRecoilXLow, BRecoilXHigh;
-	double BRecoilYLow, BRecoilYHigh;	
+	double BRecoilYLow, BRecoilYHigh;
+
+	property boffsetamt: boffsetamt;
+	double boffsetamt;
 
 	property BIronThreshold: bIronThreshold;
 	double bIronThreshold;
@@ -1069,10 +1073,11 @@ class BHDWeapon : HDWeapon {
 				}
 
 			}
-			#### B 1 Offset (0, 42) {
+			#### B 1 {
+				A_WeaponOffset(0, invoker.boffsetamt);
 				A_Overlay(invoker.bLayerGun, "LayerGunFire");
 			}
-			#### B 0 Offset (0, 38) {
+			#### B 0 {
 				return ResolveState("Chamber");
 			}
 
