@@ -66,6 +66,7 @@ class b_FauxtechOrigin : BaseShotgun {
 		BHDWeapon.BRecoilXHigh 1.4;
 		BHDWeapon.BRecoilYLow  2.3;
 		BHDWeapon.BRecoilYHigh 4.6;
+		BHDWeapon.boffsetamt 48;
 
 		BHDWeapon.BLayerSight  106;
 		BHDWeapon.bLayerRHand  105;

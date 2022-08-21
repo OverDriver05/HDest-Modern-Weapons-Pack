@@ -70,6 +70,7 @@ class B_XM5: BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  0.6;
 		BHDWeapon.BRecoilYHigh 0.9;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 50;
 	}
 
 	states {

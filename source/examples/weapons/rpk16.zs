@@ -70,6 +70,7 @@ class B_RPK16 : BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  1.0;
 		BHDWeapon.BRecoilYHigh 2.0;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 38;
 	}
 
 	states {

@@ -71,6 +71,7 @@ class b_FNX : BasePistol {
 	    BHDWeapon.BRecoilXHigh 1.2;
 		BHDWeapon.BRecoilYLow  1.1;
 		BHDWeapon.BRecoilYHigh 2.1;	
+		BHDWeapon.boffsetamt 20;
 	}
 
 	states {

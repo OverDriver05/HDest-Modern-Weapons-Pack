@@ -71,6 +71,7 @@ class b_M249 : BHDWeapon {
 		BHDWeapon.BRecoilXHigh 0.4;
 		BHDWeapon.BRecoilYLow  0.5;
 		BHDWeapon.BRecoilYHigh 0.7;		
+		BHDWeapon.boffsetamt 50;
 	}
 
 	override void InitializeWepStats (bool idfa) {

@@ -70,6 +70,7 @@ class B_UMP9 : BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  0.2;
 		BHDWeapon.BRecoilYHigh 0.5;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 20;
 	}
 
 	states {

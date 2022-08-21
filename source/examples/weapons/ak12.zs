@@ -70,6 +70,7 @@ class B_AK2 : BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  0.7;
 		BHDWeapon.BRecoilYHigh 1.7;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 38;
 	}
 
 	states {

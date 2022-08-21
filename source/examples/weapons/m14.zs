@@ -73,6 +73,7 @@ class b_m14 : basestandardrifle {
 		BHDWeapon.bLayerMisc    99;
 		BHDWeapon.bLayerBarrel  98;
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 50;
 	}
 
 	states {

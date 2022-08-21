@@ -74,6 +74,7 @@ class b_m107 : basestandardrifle {
 		BHDWeapon.bLayerMisc    99;
 		BHDWeapon.bLayerBarrel  98;
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 50;
 	}
 
 	states {

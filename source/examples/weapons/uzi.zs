@@ -70,6 +70,7 @@ class B_Uzi : BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  1.3;
 		BHDWeapon.BRecoilYHigh 2.3;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 20;
 	}
 
 	states {

@@ -70,6 +70,7 @@ class B_AKS74U : BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  1.3;
 		BHDWeapon.BRecoilYHigh 1.8;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 38;
 	}
 
 	states {

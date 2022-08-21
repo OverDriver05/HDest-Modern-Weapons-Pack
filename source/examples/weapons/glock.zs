@@ -7,7 +7,7 @@ class b_Glock : BasePistol {
 		weapon.slotnumber            2;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the Glock 18.";
+		inventory.pickupmessage      "You got the Glock 19.";
 		scale                        0.7;
 		weapon.bobrangex 0.1;
 		weapon.bobrangey 0.6;
@@ -70,7 +70,7 @@ class b_Glock : BasePistol {
 	    BHDWeapon.BRecoilXHigh 0.9;
 		BHDWeapon.BRecoilYLow  0.8;
 		BHDWeapon.BRecoilYHigh 1.8;	
-        BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 20;
 	}
 
 	states {

@@ -70,6 +70,7 @@ class B_SCAR16 : BaseStandardRifle {
 		BHDWeapon.BRecoilYLow  0.4;
 		BHDWeapon.BRecoilYHigh 0.7;		
 		BHDWeapon.bShowFireMode true;
+		BHDWeapon.boffsetamt 38;
 	}
 
 	states {
