@@ -617,7 +617,7 @@ class BHDWeapon : HDWeapon {
 			Vector2 scopeImageScale = (scopeImageScaleX, scopeImageScaleY);
 			Vector2 scopeBack = (scopeBackX, scopeBackY);
 
-			TexMan.SetCameraToTexture(hpc, "HDXHCAM3", def.zoomFactor);
+			TexMan.SetCameraToTexture(hpc, "HDXCAM_ZM66", def.zoomFactor);
 			//let boff = (0, 35);
 			//sb.drawImage("HDXHCAM3", boff + cameraPos + bob, sb.DI_SCREEN_CENTER | sb.DI_ITEM_CENTER, scale: scaleCamera);
 
@@ -631,7 +631,7 @@ class BHDWeapon : HDWeapon {
 				sb.DI_SCREEN_CENTER
 			);
 
-			sb.drawImage("HDXHCAM3", cameraPos + bob, sb.DI_SCREEN_CENTER | sb.DI_ITEM_CENTER, scale: scaleCamera);
+			sb.drawImage("HDXCAM_ZM66", cameraPos + bob, sb.DI_SCREEN_CENTER | sb.DI_ITEM_CENTER, scale: scaleCamera);
 
 			
 			sb.drawimage(

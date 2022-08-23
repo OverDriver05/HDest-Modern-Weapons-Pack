@@ -65,7 +65,7 @@ class BaseFullDotSight : BaseSightAttachment {
 
 class BaseHoloSight : BaseFullDotSight {
 	default {
-		BaseSightAttachment.FrontImage "holir";
+		BaseSightAttachment.FrontImage "holira";
 		BaseSightAttachment.BackImage "holsg";
 		BaseSightAttachment.FrontOffY 0;
 		BaseSightAttachment.BackOffY 18.5;
