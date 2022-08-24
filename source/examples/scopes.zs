@@ -232,7 +232,7 @@ class B_ACOG_RMR : BaseAcog {
 		BaseSightAttachment.FrontOffY 5;
         //BaseSightAttachment.BackOffX 0;
 		
-		BaseSightAttachment.bbackAltImage "holir";	
+		BaseSightAttachment.bbackAltImage "holirb";	
         BaseSightAttachment.bfrontAltImage "acogrmr";	
 		BaseSightAttachment.UseWeaponIron true;
         
@@ -378,6 +378,7 @@ class B_RMR : BaseCompactDotSight {
 		BaseSightAttachment.BackOffY -3.5;
 		Inventory.PickupMessage "Picked up an RMR.";
 		//BaseSightAttachment.bfrontAltImage "acogrmr";
+		BaseSightAttachment.bfrontAltImage "holirb";	
 		BaseSightAttachment.bbackAltImage "acogrmr";
         BaseAttachment.MountId "PIS_RAILS";
 		HDPickup.RefID "rmr";
@@ -480,7 +481,7 @@ class B_Scope_Vx : BaseAcog {
 		BaseScopeAttachment.XScaleCam        0.55;
 		BaseScopeAttachment.YScaleCam        0.55;
 
-		BaseSightAttachment.bbackAltImage "holir";	
+		BaseSightAttachment.bbackAltImage "holirb";	
         BaseSightAttachment.bfrontAltImage "acogrmr";	
 		BaseSightAttachment.UseWeaponIron true;
 
