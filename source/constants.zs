@@ -182,8 +182,8 @@ const c_raw_resource_bulk = 0.1;
 const c_van_9mm_bulk = ENC_9;
 const c_9mm_load_bulk = ENC_9_LOADED;
 
-const c_van_45ACP_bulk = ENC_45ACP;
-const c_45ACP_load_bulk = ENC_45ACP_LOADED;
+const c_van_45ACP_bulk = HD45ACPAmmo.EncRound;
+const c_45ACP_load_bulk = HD45ACPAmmo.EncRoundLoaded;
 
 const c_van_shell_bulk = ENC_SHELL;
 const c_shell_load_bulk = ENC_SHELLLOADED;
