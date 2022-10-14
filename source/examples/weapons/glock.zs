@@ -105,13 +105,10 @@ class b_Glock : BasePistol {
 		SpawnMisc:
 			GLKU C -1;
 			goto HDWeapon::Spawn;
-
+			
 		Firemode:
-			#### A 1 {
-				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 1 ? 0 : 1);
-				A_WeaponReady(WRF_NONE);
-				return ResolveState("Nope");
-			}
+			goto nope;
+
 
 		SpawnNoMag:
 			GLKU B 0 {
