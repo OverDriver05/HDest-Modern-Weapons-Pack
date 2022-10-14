@@ -34,7 +34,7 @@ class B_UMP45 : BaseStandardRifle {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/mp5/fire";
+		BHDWeapon.BFireSound         "weapons/glock/fire";
 		BHDWeapon.BSFireSound        "weapons/mp5/silentfire";
 		BHDWeapon.BChamberSound      "weapons/mp5/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/mp5/boltback";
