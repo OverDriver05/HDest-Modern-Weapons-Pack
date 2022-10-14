@@ -315,7 +315,7 @@ class B_EOT_HWS : BaseHoloSight {
 		BaseAttachment.SerialId B_EOT_HWS_ID;
 		BaseAttachment.BaseSprite "EOTG";
 		BaseAttachment.BaseFrame 0;
-		Tag "EOTECH HWS";
+		Tag "LEOTECH HWS";
 		Inventory.Icon "EOPPC0";
 		HDPickup.RefID "eot";
 		BaseSightAttachment.BackOffX 0;
@@ -324,7 +324,7 @@ class B_EOT_HWS : BaseHoloSight {
 		BaseSightAttachment.BackImage "eotec";
 		BaseSightAttachment.bbackAltImage "a_eotec";
 		BaseSightAttachment.bfrontAltImage "holira";
-		Inventory.PickupMessage "Picked up a EOTECH HWS.";
+		Inventory.PickupMessage "Picked up a LEOTECH HWS.";
 		Scale 0.4;
 	}
 
