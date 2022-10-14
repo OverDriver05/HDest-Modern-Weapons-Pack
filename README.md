@@ -3,7 +3,7 @@ This repository is my tweaking of Bryan's Weapons (hdest-weapons), which was a s
 
 Thanks to everyone who worked on it before to create a highly useful and fun mod! And be sure to check out _bryan's original project here: https://codeberg.org/_bryan/hdest-weapons
 
-**Now requires Accensi's HDBulletLib (https://gitlab.com/accensi/hd-addons/hdbulletlib), due to dependency on new calibers**
+**Now requires HDBulletLib-Recasted (https://github.com/Gay-Snake-Squad/HDBulletLib-Recasted), due to dependency on new calibers**
 
 # Read the Wiki for changes and updated instructions since the original fork: ([Wiki](https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/wikis/1.-Homepage))
 
