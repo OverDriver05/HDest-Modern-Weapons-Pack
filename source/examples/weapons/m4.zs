@@ -65,10 +65,10 @@ class B_M4 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.5;
-		BHDWeapon.BRecoilXHigh 0.5;
-		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 0.8;		
+		BHDWeapon.BRecoilXLow -1.2;
+		BHDWeapon.BRecoilXHigh 1.2;
+		BHDWeapon.BRecoilYLow  1.3;
+		BHDWeapon.BRecoilYHigh 1.8;		
 		BHDWeapon.bShowFireMode true;
 		BHDWeapon.boffsetamt 38;
 	}
@@ -543,10 +543,10 @@ class B_M4_M203 : BaseGLRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.5;
-		BHDWeapon.BRecoilXHigh 0.5;
-		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 0.8;	
+		BHDWeapon.BRecoilXLow -1.2;
+		BHDWeapon.BRecoilXHigh 1.2;
+		BHDWeapon.BRecoilYLow  1.3;
+		BHDWeapon.BRecoilYHigh 1.8;	
 		BHDWeapon.bShowFireMode true;	
 		BHDWeapon.boffsetamt 38;
 	}

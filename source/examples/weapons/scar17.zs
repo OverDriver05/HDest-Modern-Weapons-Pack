@@ -65,10 +65,10 @@ class B_SCAR17 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.5;
-		BHDWeapon.BRecoilXHigh 0.5;
-		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 0.9;		
+		BHDWeapon.BRecoilXLow -0.9;
+		BHDWeapon.BRecoilXHigh 0.9;
+		BHDWeapon.BRecoilYLow  1.0;
+		BHDWeapon.BRecoilYHigh 1.3;		
 		BHDWeapon.bShowFireMode true;
 		BHDWeapon.boffsetamt 50;
 	}

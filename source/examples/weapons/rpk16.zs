@@ -65,10 +65,10 @@ class B_RPK16 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.9;
-		BHDWeapon.BRecoilXHigh 0.9;
-		BHDWeapon.BRecoilYLow  1.0;
-		BHDWeapon.BRecoilYHigh 2.0;		
+		BHDWeapon.BRecoilXLow -1.0;
+		BHDWeapon.BRecoilXHigh 1.0;
+		BHDWeapon.BRecoilYLow  1.1;
+		BHDWeapon.BRecoilYHigh 2.1;		
 		BHDWeapon.bShowFireMode true;
 		BHDWeapon.boffsetamt 38;
 	}

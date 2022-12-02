@@ -65,10 +65,10 @@ class B_AKM : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.8;
-		BHDWeapon.BRecoilXHigh 0.8;
-		BHDWeapon.BRecoilYLow  0.9;
-		BHDWeapon.BRecoilYHigh 1.9;		
+		BHDWeapon.BRecoilXLow -1.2;
+		BHDWeapon.BRecoilXHigh 1.2;
+		BHDWeapon.BRecoilYLow  1.3;
+		BHDWeapon.BRecoilYHigh 2.3;	
 		BHDWeapon.bShowFireMode true;
 		BHDWeapon.boffsetamt 38;
 	}
