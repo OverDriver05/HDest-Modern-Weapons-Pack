@@ -7,9 +7,9 @@ class B_M16_Silencer : BaseSilencerAttachment {
 		BaseAttachment.BaseFrame 0;
 		HDPickup.Bulk 1;
 		HDPickup.RefId "sl5";
-		Tag "5.56m barrel silencer";
+		Tag "Universal intermediate caliber barrel silencer";
 		Inventory.Icon "FFSLA0";
-		Inventory.PickupMessage "Picked up 5.56mm silencer.";
+		Inventory.PickupMessage "Picked up an universal intermediate caliber silencer. Attaches to modular weapons that fire 5.56x45mm or 5.45x39mm.";
 		Scale 0.4;
 	}
 
@@ -33,9 +33,9 @@ class B_M14_Silencer : BaseSilencerAttachment {
 		BaseAttachment.BaseFrame 1;
 		HDPickup.Bulk 1;
 		HDPickup.RefId "sl7";
-		Tag "7.62m barrel silencer";
+		Tag "Universal heavy caliber barrel silencer";
 		Inventory.Icon "FFSLB0";
-		Inventory.PickupMessage "Picked up 7.62mm silencer.";
+		Inventory.PickupMessage "Picked up an universal heavy caliber silencer. Attaches to modular weapons that fire 7.62x51mm, 7.62x39mm, or 6.8x51mm.";
 		Scale 0.4;
 	}
 
@@ -85,7 +85,7 @@ class GlockSilencer : BaseSilencerAttachment {
 		HDPickup.RefId "sl9";
 		Tag "Universal pistol caliber silencer";
 		Inventory.Icon "NMMSA0";
-		Inventory.PickupMessage "Picked up a Universal Pistol Caliber silencer.";
+		Inventory.PickupMessage "Picked up an universal pistol caliber silencer. Attaches to modular weapons that fire 9mm or 45 ACP.";
 		Scale 0.4;
 	}
 

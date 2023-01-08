@@ -52,7 +52,7 @@ class B_RPK16 : BaseStandardRifle {
 		BHDWeapon.BFrontOffsetY      17;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
-		BHDWeapon.bBarrelMount       "554_MOUNT";
+		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "";
 		BHDWeapon.EjectShellClass    "B545Spent";
