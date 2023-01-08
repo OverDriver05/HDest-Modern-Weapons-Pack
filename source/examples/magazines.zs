@@ -507,7 +507,7 @@ class BAK_545Mag : HDMagAmmo {
 		hdmagammo.magbulk c_aks74u_mag_bulk;
 		hdpickup.refid B_AKS74U_MAG_REFID;
 		tag "AKS74u 5.45x39mm magazine";
-		inventory.pickupmessage "Picked up an AKS74u magazine.";
+		inventory.pickupmessage "Picked up a 5.45x39mm magazine.";
 		Inventory.Icon "AK7CA0";
 		scale 0.8;
 	}
@@ -581,7 +581,7 @@ class BAKM_762Mag : HDMagAmmo {
 		hdmagammo.magbulk c_akm_mag_bulk;
 		hdpickup.refid B_AKM_MAG_REFID;
 		tag "AK-15 7.62x39mm magazine";
-		inventory.pickupmessage "Picked up an AK-15 7.62x39mm magazine.";
+		inventory.pickupmessage "Picked up a 7.62x39mm magazine.";
 		Inventory.Icon "AKMCA0";
 		scale 0.8;
 	}
