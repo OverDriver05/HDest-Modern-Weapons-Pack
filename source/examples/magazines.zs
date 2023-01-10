@@ -213,7 +213,7 @@ class BFauxDrum : HDMagAmmo {
 		hdpickup.refid B_FAUX_DRUM_REFID;
 		tag "Fauxtech Origin 12 Drum";
 		inventory.icon "FOSCA0";
-		inventory.pickupmessage "Picked up a Fauxtech Origin 12 drum.";
+		inventory.pickupmessage "Picked up a 20 round 12-gauge shell drum.";
 		scale 0.8;
 	}
 
