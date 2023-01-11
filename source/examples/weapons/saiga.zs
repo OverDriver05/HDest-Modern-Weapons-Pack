@@ -12,7 +12,7 @@ class B_SAIGA : BaseShotgun {
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
 		tag                          "Saiga12k";
-		inventory.icon               "AKMPA0";
+		inventory.icon               "SAIPA0";
 		BHDWeapon.BFlashSprite       "AKMFA0";
 		BHDWeapon.BHeatDrain         12;
 		BHDWeapon.BBulletClass       "HDB_00";
@@ -21,8 +21,8 @@ class B_SAIGA : BaseShotgun {
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           900;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "AKMPA0";
-		BHDWeapon.BSpriteWithoutMag  "AKMPB0";
+		BHDWeapon.BSpriteWithMag     "SAIPA0";
+		BHDWeapon.BSpriteWithoutMag  "SAIPB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
 		BHDWeapon.BMagazineSprite    "FOSCA0";
@@ -75,18 +75,18 @@ class B_SAIGA : BaseShotgun {
 
 	states {
 		Spawn:
-			AKMP A 0 GetMagState();
+			SAIP A 0 GetMagState();
 			Goto Super::Spawn;
 
 		Firemode:
 			goto nope;
 
 		SpawnMag:
-			AKMP A -1;
+			SAIP A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			AKMP B -1;
+			SAIP B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -94,15 +94,15 @@ class B_SAIGA : BaseShotgun {
 			Loop;
 
 		LayerGun:
-			AKMG A 1;
+			SAIG A 1;
 			Loop;
 
 		LayerGunFire:
-			AKMG B 1;
+			SAIG B 1;
 			Goto LayerGun;
 
 		LayerGunBolt:
-			AKMG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
+			SAIG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			Goto LayerGun;
 
 		LayerReloadHands:
@@ -158,8 +158,8 @@ class B_SAIGA : BaseShotgun {
 			}
 
 		LayerGunHandReturn:
-			AKMG C 3;
-			AKMG A -1;
+			SAIG C 3;
+			SAIG A -1;
 			Stop;
 
 		ReloadEnd:
@@ -182,8 +182,8 @@ class B_SAIGA : BaseShotgun {
 			Stop;
 
 		LayerGunReloading:
-			AKMG C 3;
-			AKMG D -1;
+			SAIG C 3;
+			SAIG D -1;
 			Stop;
 
 		UnloadMag:
@@ -245,13 +245,13 @@ class B_SAIGA : BaseShotgun {
 			Goto LayerGun;
 
 		Chamber_Anim:
-			AKMG E 3;
-			AKMG F 3 {
+			SAIG E 3;
+			SAIG F 3 {
 				A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			}
-			AKMG G 3;
-			AKMG E 3;
-			AKMG A -1 {
+			SAIG G 3;
+			SAIG E 3;
+			SAIG A -1 {
 				A_StartSound(invoker.bBoltForwardSound, CHAN_WEAPON);
 			}
 			Stop;
@@ -306,10 +306,10 @@ class B_SAIGA : BaseShotgun {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "AKMPA0", 1.;
+			return "SAIPA0", 1.;
 		}
 		else {
-			return "AKMPB0", 1.;
+			return "SAIPB0", 1.;
 		}
 	}
 	
