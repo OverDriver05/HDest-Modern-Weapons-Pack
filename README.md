@@ -8,7 +8,7 @@ Thanks to everyone who worked on it before to create a highly useful and fun mod
 # Read the Wiki for changes and updated instructions since the original fork: ([Wiki](https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/wikis/1.-Homepage))
 
 ---
-The original project readme is below.
+The original project readme is below. Do **not** follow it for installation.
 ---
 
 <p align="center">
