@@ -450,6 +450,7 @@ class RandomWeaponPickup : HDInvRandomSpawner {
 		dropItem "B_AKM", 256, 1;
 		dropItem "B_AK2", 256, 1;		
 		dropItem "B_AKS74U", 256, 1;
+		dropItem "B_SAIGA", 256, 1;
 		dropItem "B_SCAR16", 256, 1;
 		dropItem "B_SCAR17", 256, 1;
 		dropItem "B_UMP9", 256, 1;

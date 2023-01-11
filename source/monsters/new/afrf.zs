@@ -43,6 +43,17 @@ class AiAksBubble : AiBubble {
 	}
 }
 
+class AiSaiBubble : AiBubble {
+	states {
+		spawn:
+			SAIP A -1;
+			Stop;
+		empty:
+			SAIP B -1;
+			Stop;
+	}
+}
+
 class ru_vsr_base : ai_with_bubble_base {
 	default {
 		species "ru_vsr_base";
@@ -169,7 +180,7 @@ class ru_rpk16 : ru_vsr_base {
 	default {
 		HumanoidBase.hWeaponClass     "B_RPK16";
 		HumanoidBase.hBulletClass     "HDB_545";
-		HumanoidBase.hMaxMag          30;
+		HumanoidBase.hMaxMag          90;
 		HumanoidBase.hMagazineClass   "RPKMag";
 		HumanoidBase.hSpentClass      "B545Spent";
 		HumanoidBase.hFireSound       "weapons/akm/fire";
@@ -178,5 +189,63 @@ class ru_rpk16 : ru_vsr_base {
 		AiBubble hoverGun = AiBubble(Actor.Spawn("AiRPK16Bubble"));
 		hoverGun.host = self;
 		return hoverGun;
+	}
+}
+
+class ru_saiga : ru_vsr_base {
+	default {
+		HumanoidBase.hWeaponClass     "B_SAIGA";
+		HumanoidBase.hBulletClass     "HDB_00";
+		HumanoidBase.hMaxMag          20;
+		HumanoidBase.hMagazineClass   "BFauxDrum";
+		HumanoidBase.hSpentClass      "HDSpentShell";
+		HumanoidBase.hFireSound       "weapons/fauxtech/fire";
+	}
+	override AiBubble getGun() {
+		AiBubble hoverGun = AiBubble(Actor.Spawn("AiSaiBubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+	states {
+		See:
+			#### A 0 { 
+				firemode = 0;
+			}
+			#### A 0 A_Jump(256, "See2");
+		Shoot:
+			#### F 0 A_JumpIf(jammed, "jammed");
+			#### F 1 Bright Light("SHOT") {
+				if (mag < 1) {
+					return ResolveState("OhForFucksSake");
+				}
+			
+				pitch += frandom(0, spread) - frandom(0, spread);
+				angle += frandom(0, spread) - frandom(0, spread);
+				A_StartSound(invoker.hFireSound);
+				HDBulletActor.FireBullet(self, "HDB_wad");
+				HDBulletActor.FireBullet(self, 
+					invoker.hBulletClass, 
+					spread: 6, 
+					speedfactor: 1.0, 
+					amount: 10);
+				A_SpawnItemEx(invoker.hSpentClass,
+					cos(pitch) * 10,
+					0,
+					height - 8 - sin(pitch) * 10,
+					vel.x,
+					vel.y,
+					vel.z,
+					0,
+					SXF_ABSOLUTEMOMENTUM | SXF_NOCHECKPOSITION | SXF_TRANSFERPITCH);
+				mag--;
+				return ResolveState(NULL);
+			}
+
+			#### E 2 {
+				spread++;
+				return ResolveState("PostShot");
+			}
+			#### A 0 A_Jump(120, "Shoot");
+			#### A 0 A_Jump(256, "PostShot");
 	}
 }

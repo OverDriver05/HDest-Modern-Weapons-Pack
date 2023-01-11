@@ -216,11 +216,19 @@ class PlayerEvents : EventHandler {
 			};
 			e.Replacement = possible[random(0, 24)];
 		}
+		//else if (e.Replacee is "ZombieShotgunner") {
+		//	if (random(0, 100) < b_ai_shotgunner_chance) {
+		//		e.Replacement = "usmc_fostech";
+		//	}
+		
 		else if (e.Replacee is "ZombieShotgunner") {
-			if (random(0, 100) < b_ai_shotgunner_chance) {
-				e.Replacement = "usmc_fostech";
-			}
+			string possible[2] = {
+				"usmc_fostech",
+				"ru_saiga"
+			};
+			e.Replacement = possible[random(0, 1)];
 		}
+		
 		else if (e.Replacee is "VulcanetteZombie") {
 			string possible[25] = {
 				"usmc_m14",
