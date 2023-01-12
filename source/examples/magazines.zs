@@ -8,7 +8,7 @@ class B556Mag : HDMagAmmo{
 		hdmagammo.roundbulk c_556_load_bulk;
 		hdmagammo.magbulk c_m4_mag_bulk;
 		hdpickup.refid B_556_MAG_REFID;
-		tag "5.56x45mm magazine";
+		tag "30 round 5.56x45mm magazine";
 		inventory.pickupmessage "Picked up a 5.56x45mm NATO STANAG magazine.";
 		Inventory.Icon "M4RCA0";
 		scale 0.8;
@@ -158,9 +158,9 @@ class B9mm_MP5K_MAG : HDMagAmmo {
 		hdmagammo.roundbulk c_9mm_load_bulk;
 		hdmagammo.magbulk c_mp5_mag_bulk;
 		hdpickup.refid B_MP5_MAG_REFID;
-		tag "MP5 Magazine";
+		tag "30 round 9mm Magazine";
 		inventory.icon "MP5CA0";
-		inventory.pickupmessage "Picked up a MP5 magazine.";
+		inventory.pickupmessage "Picked up a 9mm magazine.";
 		scale 0.8;
 	}
 
@@ -211,7 +211,7 @@ class BFauxDrum : HDMagAmmo {
 		hdmagammo.roundbulk c_shell_load_bulk;
 		hdmagammo.magbulk c_faux_drum_bulk;
 		hdpickup.refid B_FAUX_DRUM_REFID;
-		tag "Fauxtech Origin 12 Drum";
+		tag "20 round 12 Gauge Drum";
 		inventory.icon "FOSCA0";
 		inventory.pickupmessage "Picked up a 20 round 12-gauge shell drum.";
 		scale 0.8;
@@ -256,7 +256,7 @@ class b762_m14_mag : HDMagAmmo {
 		HDMagAmmo.RoundType "B762x51Ammo";
 		HDMagAmmo.RoundBulk c_762_load_bulk;
 		HDMagAmmo.MagBulk c_m14_mag_bulk;
-		tag "7.62x51mm magazine";
+		tag "20 round 7.62x51mm magazine";
 		hdpickup.refid B_M14_MAG_REFID;
 		Inventory.Icon "M14CA0";
 		inventory.pickupmessage "Picked up a 7.62x51mm NATO magazine.";
@@ -310,9 +310,9 @@ class GlockMagazine : HDMagAmmo {
 		hdmagammo.roundbulk c_van_9mm_bulk;
 		hdmagammo.magbulk c_glock_mag_bulk;
 		hdpickup.refid B_GLOCK_MAG_REFID;
-		tag "Glock magazine";
+		tag "17 round 9mm magazine";
 		inventory.icon "GLKCA0";
-		inventory.pickupmessage "Picked up a Glock magazine.";
+		inventory.pickupmessage "Picked up a 9mm pistol magazine.";
 		scale 0.8;
 	}
 
@@ -362,9 +362,9 @@ class M107Magazine : HDMagAmmo {
 		hdmagammo.roundbulk c_van_9mm_bulk;
 		hdmagammo.magbulk c_m107_mag_bulk;
 		hdpickup.refid B_M107_MAG_REFID;
-		tag "M107 magazine";
+		tag "10 round .50 BMG magazine";
 		inventory.icon "M17MA0";
-		inventory.pickupmessage "Picked up a M107 magazine.";
+		inventory.pickupmessage "Picked up a .50 BMG magazine.";
 		scale 0.8;
 	}
 
@@ -506,7 +506,7 @@ class BAK_545Mag : HDMagAmmo {
 		hdmagammo.roundbulk c_556_load_bulk;
 		hdmagammo.magbulk c_aks74u_mag_bulk;
 		hdpickup.refid B_AKS74U_MAG_REFID;
-		tag "AKS74u 5.45x39mm magazine";
+		tag "30 round 5.45x39mm magazine";
 		inventory.pickupmessage "Picked up a 5.45x39mm magazine.";
 		Inventory.Icon "AK7CA0";
 		scale 0.8;
@@ -543,8 +543,8 @@ class RPKMag : HDMagAmmo {
 		hdmagammo.roundbulk c_556_load_bulk;
 		hdmagammo.magbulk c_rpk_mag_bulk;
 		hdpickup.refid B_RPK_MAG_REFID;
-		tag "RPK 95 round 5.45x39mm drum";
-		inventory.pickupmessage "Picked up an 95 round 5.45x39mm drum.";
+		tag "95 round 5.45x39mm drum";
+		inventory.pickupmessage "Picked up a 95 round 5.45x39mm drum.";
 		Inventory.Icon "RK6CA0";
 		scale 0.8;
 	}
@@ -580,7 +580,7 @@ class BAKM_762Mag : HDMagAmmo {
 		hdmagammo.roundbulk c_762_sov_load_bulk;
 		hdmagammo.magbulk c_akm_mag_bulk;
 		hdpickup.refid B_AKM_MAG_REFID;
-		tag "AK-15 7.62x39mm magazine";
+		tag "30 round 7.62x39mm magazine";
 		inventory.pickupmessage "Picked up a 7.62x39mm magazine.";
 		Inventory.Icon "AKMCA0";
 		scale 0.8;
@@ -616,7 +616,7 @@ class UziMagazine : HDMagAmmo {
 		hdmagammo.roundbulk c_van_9mm_bulk;
 		hdmagammo.magbulk c_uzi_mag_bulk;
 		hdpickup.refid B_UZI_MAG_REFID;
-		tag "Uzi magazine";
+		tag "32 round 9mm magazine";
 		inventory.icon "UZICA0";
 		inventory.pickupmessage "Picked up a Uzi magazine.";
 		scale 0.8;
@@ -668,9 +668,9 @@ class BUMP45Mag : HDMagAmmo {
 		hdmagammo.roundbulk c_45ACP_load_bulk;
 		hdmagammo.magbulk c_UMP45_mag_bulk;
 		hdpickup.refid B_UMP45_MAG_REFID;
-		tag "UMP-45 Magazine";
+		tag "25 round .45 ACP Magazine";
 		inventory.icon "UM4CA0";
-		inventory.pickupmessage "Picked up a UMP-45 magazine.";
+		inventory.pickupmessage "Picked up a .45 ACP magazine.";
 		scale 0.8;
 	}
 
@@ -714,9 +714,9 @@ class FNXMagazine : HDMagAmmo {
 		hdmagammo.roundbulk c_45ACP_load_bulk;
 		hdmagammo.magbulk c_FNX_mag_bulk;
 		hdpickup.refid B_FNX_MAG_REFID;
-		tag "FNX45T magazine";
+		tag "15 round .45 ACP magazine";
 		inventory.icon "FNXCA0";
-		inventory.pickupmessage "Picked up a FNX45 Tactical magazine.";
+		inventory.pickupmessage "Picked up a .45 ACP pistol magazine.";
 		scale 0.8;
 	}
 
@@ -762,10 +762,10 @@ class b277_mag : HDMagAmmo {
 		HDMagAmmo.RoundType "B277Ammo";
 		HDMagAmmo.RoundBulk c_277_load_bulk;
 		HDMagAmmo.MagBulk c_277_mag_bulk;
-		tag "6.8x51mm magazine";
+		tag "20 round 6.8x51mm magazine";
 		hdpickup.refid B_277_MAG_REFID;
 		Inventory.Icon "M14CA0";
-		inventory.pickupmessage "Picked up a 6.8x51mm NATO magazine.";
+		inventory.pickupmessage "Picked up a 6.8x51mm magazine.";
 		scale 0.8;
 	}
 
