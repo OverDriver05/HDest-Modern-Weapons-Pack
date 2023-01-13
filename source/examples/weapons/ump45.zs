@@ -329,6 +329,7 @@ class UMP45SilencerOffset : BarrelOffset {
 	default {
 		Offset.WeaponClass "B_UMP45";
 		Offset.WeaponOverlay "GlockSilencer";
+		//Offset.OffX -0.97;
 		Offset.OffX -0.7;
 		Offset.OffY 18;
 	}
@@ -339,6 +340,7 @@ class UMP45EOTOffset : ScopeOffset {
 		Offset.WeaponClass "B_UMP45";
 		Offset.WeaponOverlay "B_EOT_HWS";
 		Offset.OffY 5;
+		Offset.OffX -1.3;
 	}
 }
 
@@ -347,6 +349,7 @@ class UMP45HoloRedOffset : ScopeOffset {
 		Offset.WeaponClass "B_UMP45";
 		Offset.WeaponOverlay "B_Sight_Holo_Red";
 		Offset.OffY 5;
+		Offset.OffX -1.3;
 	}
 }
 
@@ -354,7 +357,8 @@ class UMP45ReflexRedOffset : ScopeOffset {
 	default {
 		Offset.WeaponClass "B_UMP45";
 		Offset.WeaponOverlay "B_Reflex_Red";
-		Offset.OffY 5;
+		Offset.OffY 9;
+		Offset.OffX -1.3;
 	}
 }
 
@@ -363,6 +367,7 @@ class UMP45AcogRedOffset : ScopeOffset {
 		Offset.WeaponClass "B_UMP45";
 		Offset.WeaponOverlay "B_ACOG_Red";
 		Offset.OffY 5;
+		//Offset.OffX -1.3;
 	}
 }
 
@@ -371,5 +376,6 @@ class UMP45AcogRMROffset : ScopeOffset {
 		Offset.WeaponClass "B_UMP45";
 		Offset.WeaponOverlay "B_ACOG_RMR";
 		Offset.OffY 5;
+		//Offset.OffX -1.3;
 	}
 }
