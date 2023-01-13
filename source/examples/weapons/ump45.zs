@@ -69,10 +69,10 @@ class B_UMP45 : BHDWeapon {
 		BHDWeapon.bLayerRHand  104;
 		BHDWeapon.bLayerGunBack 106;
 
-		BHDWeapon.BRecoilXLow -0.4;
-		BHDWeapon.BRecoilXHigh 0.4;
+		BHDWeapon.BRecoilXLow -0.2;
+		BHDWeapon.BRecoilXHigh 0.2;
 		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 0.9;		
+		BHDWeapon.BRecoilYHigh 1.0;		
 		BHDWeapon.bShowFireMode true;
 		BHDWeapon.boffsetamt 20;
 	}
