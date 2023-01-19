@@ -13,7 +13,7 @@ class B_R0635 : BaseStandardRifle {
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
 		tag                          "R0635";
-		inventory.icon               "M4RPA0";
+		inventory.icon               "RO6PA0";
 		BHDWeapon.BFlashSprite       "MPFLA0";
 		BHDWeapon.BHeatDrain         12;
 		BHDWeapon.BBulletClass       "HDB_9";
@@ -22,8 +22,8 @@ class B_R0635 : BaseStandardRifle {
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "M4RPC0";
-		BHDWeapon.BSpriteWithoutMag  "M4RPD0";
+		BHDWeapon.BSpriteWithMag     "RO6PA0";
+		BHDWeapon.BSpriteWithoutMag  "RO6PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
 		BHDWeapon.BMagazineSprite    "UZICA0";
