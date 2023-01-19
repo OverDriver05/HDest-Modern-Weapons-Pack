@@ -48,7 +48,7 @@ class B_R0635 : BaseStandardRifle {
 		BHDWeapon.BBackOffsetX       -7;
 		BHDWeapon.BBackOffsetY       40;
 		BHDWeapon.BFrontSightImage   "m16iron";
-		BHDWeapon.BBackSightImage    "mrsig1";
+		BHDWeapon.BBackSightImage    "mbus";
 		BHDWeapon.BFrontOffsetX      0;
 		BHDWeapon.BFrontOffsetY      22;
 		BHDWeapon.BSilentOffsetX     0;
@@ -60,7 +60,7 @@ class B_R0635 : BaseStandardRifle {
 		hdweapon.refid               B_R0635_REFID;
 
 		BHDWeapon.BAltFrontSightImage "am4";
-		BHDWeapon.BAltBackSightImage "alt_m4i";
+		BHDWeapon.BAltBackSightImage "alt_mbus";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;
