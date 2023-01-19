@@ -1,6 +1,6 @@
 class B_UMP45 : BHDWeapon {
 	default {
-		+hdweapon.fitsinbackpack
+		+hdweapon.fitsinbackpack 
 		weapon.selectionorder        20;
 		weapon.slotnumber            2;
 		weapon.slotpriority          2;
@@ -10,7 +10,7 @@ class B_UMP45 : BHDWeapon {
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "UMP-9";
+		tag                          "UMP-45";
 		inventory.icon               "UM4PA0";
 		BHDWeapon.BFlashSprite       "MPFLA0";
 		BHDWeapon.BHeatDrain         12;

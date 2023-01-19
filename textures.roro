@@ -1,0 +1,14 @@
+
+sprite RO6PA0, 162, 66 {
+	XScale 3
+	YScale 3
+	Offset 81, 66
+	Patch "graphics/gunimages/roro/base.png", 0, 0
+}
+
+sprite RO6PB0, 162, 66 {
+	XScale 3
+	YScale 3
+	Offset 81, 66
+	Patch "graphics/gunimages/roro/empty.png", 0, 0
+}

@@ -73,6 +73,7 @@ const B_UMP45_REFID     = "w23";
 const B_FNX_REFID   = "w24";
 const B_MCX_REFID = "w25";
 const B_SAIGA_REFID = "w26";
+const B_R0635_REFID = "w27";
 
 const B_GLOCK_MAG_REFID  = "m01";
 const B_MP5_MAG_REFID    = "m02";

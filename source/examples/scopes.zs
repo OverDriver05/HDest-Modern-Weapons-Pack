@@ -228,17 +228,12 @@ class B_ACOG_RMR : BaseAcog {
 		BaseAttachment.BaseSprite "ACOP";
 		BaseAttachment.BaseFrame 0;
 		Inventory.Icon "ACPPA0";
-		//Inventory.ICON "ZUXKA0";
-		BaseSightAttachment.FrontOffY 5;
-        //BaseSightAttachment.BackOffX 0;
-		
-		BaseSightAttachment.bbackAltImage "holirb";	
-        BaseSightAttachment.bfrontAltImage "acogrmr";	
-		BaseSightAttachment.UseWeaponIron true;
-        
-		BaseScopeAttachment.zoomFactor 7;
-		//Scale 0.4;
-		
+		BaseSightAttachment.FrontOffY 1.55;
+		BaseSightAttachment.BackOffY 6.5;
+		BaseSightAttachment.bbackAltImage "acogrmr";	
+        BaseSightAttachment.bfrontAltImage "holirb";	
+		BaseSightAttachment.UseWeaponIron true;  
+		BaseScopeAttachment.zoomFactor 7;		
         HDPickup.RefID "acr";
 		Tag "ACOG with RMR (iron Sight).";
 		Inventory.PickupMessage "Picked up an ACOG with RMR.";
@@ -400,6 +395,10 @@ class B_RMR : BaseCompactDotSight {
 
 
 
+
+
+
+
 class B_Scope_10x : BaseAcog {
 	default {
 		BaseAttachment.SerialId B_SCOPE_10X_ID;
@@ -463,7 +462,7 @@ class B_Scope_Vx : BaseAcog {
 
 		BaseScopeAttachment.ScopeBackY 0;
 		BaseScopeAttachment.ScopeBackX 0;
-        BaseSightAttachment.FrontOffY 5;
+        //BaseSightAttachment.FrontOffY 5;
 
 		BaseScopeAttachment.XClipCam         -46;
 		BaseScopeAttachment.YClipCam         -49;
@@ -481,8 +480,10 @@ class B_Scope_Vx : BaseAcog {
 		BaseScopeAttachment.XScaleCam        0.55;
 		BaseScopeAttachment.YScaleCam        0.55;
 
-		BaseSightAttachment.bbackAltImage "holirb";	
-        BaseSightAttachment.bfrontAltImage "acogrmr";	
+		BaseSightAttachment.FrontOffY 1.55;
+		BaseSightAttachment.BackOffY 6.5;
+		BaseSightAttachment.bbackAltImage "acogrmr";	
+        BaseSightAttachment.bfrontAltImage "holirb";
 		BaseSightAttachment.UseWeaponIron true;
 
 	}
