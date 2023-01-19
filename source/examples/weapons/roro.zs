@@ -18,7 +18,7 @@ class B_R0635 : BaseStandardRifle {
 		BHDWeapon.BHeatDrain         12;
 		BHDWeapon.BBulletClass       "HDB_9";
 		BHDWeapon.BAmmoClass         "HDPistolAmmo";
-		BHDWeapon.BMagazineClass     "HD9mMag30";
+		BHDWeapon.BMagazineClass     "UziMagazine";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
@@ -26,11 +26,11 @@ class B_R0635 : BaseStandardRifle {
 		BHDWeapon.BSpriteWithoutMag  "M4RPD0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "CLP3A0";
+		BHDWeapon.BMagazineSprite    "UZICA0";
 		BHDWeapon.BWeaponBulk        c_mp5_bulk;
-		BHDWeapon.BMagazineBulk      c_mp5_mag_bulk;
+		BHDWeapon.BMagazineBulk      c_uzi_mag_bulk;
 		BHDWeapon.BBulletBulk        c_van_9mm_bulk;
-		BHDWeapon.BMagazineCapacity  30;
+		BHDWeapon.BMagazineCapacity  32;
 		BHDWeapon.BarrelLength       18.75;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
