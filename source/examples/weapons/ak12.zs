@@ -54,7 +54,7 @@ class B_AK2 : BaseStandardRifle {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "";
+		BHDWeapon.bMiscMount         "NATO_RAILS";
 		BHDWeapon.EjectShellClass    "B545Spent";
 		hdweapon.refid               B_AK12_REFID;
 
@@ -317,4 +317,13 @@ class B_AK2 : BaseStandardRifle {
 		}
 	}
 	
+}
+
+class AK12FlashLightOffset : MiscOffset {
+	default {
+		Offset.WeaponClass "B_AK2";
+		Offset.WeaponOverlay "B_M16_Flashlight";
+		Offset.OffX -6.9;
+		offset.OffY -10.5;
+	}
 }

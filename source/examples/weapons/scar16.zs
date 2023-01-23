@@ -54,7 +54,7 @@ class B_SCAR16 : BaseStandardRifle {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "";
+		BHDWeapon.bMiscMount         "NATO_RAILS";
 		BHDWeapon.EjectShellClass    "B556Spent";
 		hdweapon.refid               B_SCR16_REFID;
 
@@ -317,4 +317,13 @@ class B_SCAR16 : BaseStandardRifle {
 		}
 	}
 	
+}
+
+class SC16FlashLightOffset : MiscOffset {
+	default {
+		Offset.WeaponClass "B_SCAR16";
+		Offset.WeaponOverlay "B_M16_Flashlight";
+		Offset.OffX -6.7;
+		offset.OffY -4.5;
+	}
 }

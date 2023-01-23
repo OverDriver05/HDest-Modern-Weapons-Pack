@@ -54,7 +54,7 @@ class B_XM5: BaseStandardRifle {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "762_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "";
+		BHDWeapon.bMiscMount         "NATO_RAILS";
 		BHDWeapon.EjectShellClass    "B277Spent";
 		hdweapon.refid               B_MCX_REFID;
 
@@ -317,4 +317,13 @@ class B_XM5: BaseStandardRifle {
 		}
 	}
 	
+}
+
+class XM5FlashLightOffset : MiscOffset {
+	default {
+		Offset.WeaponClass "B_XM5";
+		Offset.WeaponOverlay "B_M16_Flashlight";
+		Offset.OffX -6.9;
+		offset.OffY -10.5;
+	}
 }

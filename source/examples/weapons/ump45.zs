@@ -53,7 +53,7 @@ class B_UMP45 : BHDWeapon {
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "9MM_GLOCK";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "";
+		BHDWeapon.bMiscMount         "NATO_RAILS";
 		BHDWeapon.EjectShellClass    "HDSpent45ACP";
 		hdweapon.refid               B_UMP45_REFID;
 
@@ -323,6 +323,15 @@ class B_UMP45 : BHDWeapon {
 		}
 	}
 
+}
+
+class UMP45FlashLightOffset : MiscOffset {
+	default {
+		Offset.WeaponClass "B_UMP45";
+		Offset.WeaponOverlay "B_M16_Flashlight";
+		Offset.OffX -4;
+		offset.OffY 6;
+	}
 }
 
 class UMP45SilencerOffset : BarrelOffset {

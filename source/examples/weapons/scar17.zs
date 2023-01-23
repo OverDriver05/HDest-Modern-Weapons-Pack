@@ -318,3 +318,12 @@ class B_SCAR17 : BaseStandardRifle {
 	}
 	
 }
+
+class SC17FlashLightOffset : MiscOffset {
+	default {
+		Offset.WeaponClass "B_SCAR17";
+		Offset.WeaponOverlay "B_M16_Flashlight";
+		Offset.OffX -6.7;
+		offset.OffY -4.5;
+	}
+}
