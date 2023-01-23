@@ -330,7 +330,7 @@ class UMP9SilencerOffset : BarrelOffset {
 		Offset.WeaponClass "B_UMP9";
 		Offset.WeaponOverlay "GlockSilencer";
 		//Offset.OffX -0.97;
-		Offset.OffX -0.7;
+		Offset.OffX -0.77;
 		Offset.OffY 18;
 	}
 }
