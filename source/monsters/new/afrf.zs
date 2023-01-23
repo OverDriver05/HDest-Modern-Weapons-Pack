@@ -190,7 +190,62 @@ class ru_rpk16 : ru_vsr_base {
 		hoverGun.host = self;
 		return hoverGun;
 	}
+	states {
+		See:
+			#### A 0 { 
+				fireMode = 3;
+			}
+			#### A 0 A_Jump(256, "See2");
+
+		Shoot:
+			#### F 0 {
+				shooting = true;
+			}
+			#### F 0 A_JumpIf(jammed, "jammed");
+			#### F 1 Bright Light("SHOT") {
+				if (mag < 1) {
+					return ResolveState("OhForFucksSake");
+				}
+			
+				pitch += (frandom(0, spread) - frandom(0, spread)) * (random(0, 1) ? 1 : -1);
+				angle += frandom(0, spread) - frandom(0, spread);
+				if (invoker.silenced && invoker.silClass) {
+					A_StartSound(invoker.hSilentFireSound);
+				}
+				else {
+					A_StartSound(invoker.hFireSound);
+				}
+
+				HDBulletActor.FireBullet(self, invoker.hBulletClass, speedfactor:1.0);
+				A_SpawnItemEx(invoker.hSpentClass,
+					cos(pitch) * 10,
+					0,
+					height - 8 - sin(pitch) * 10,
+					vel.x,
+					vel.y,
+					vel.z,
+					0,
+					SXF_ABSOLUTEMOMENTUM | SXF_NOCHECKPOSITION | SXF_TRANSFERPITCH);
+				mag--;
+				return ResolveState(NULL);
+			}
+			#### E 2;
+			#### E 0 {
+				if (mag > 1) {
+					if (fireMode > 30) {
+						return ResolveState("PostShot");
+					}
+					fireMode++;
+					spread++;
+					return ResolveState("Shoot");
+				}
+				return ResolveState(NULL);
+			}
+			#### A 0 A_Jump(120, "Shoot");
+			#### A 0 A_Jump(256, "PostShot");
+	}
 }
+
 
 class ru_saiga : ru_vsr_base {
 	default {
