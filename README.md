@@ -5,6 +5,8 @@ Thanks to everyone who worked on it before to create a highly useful and fun mod
 
 **Now requires HDBulletLib-Recasted (https://github.com/Gay-Snake-Squad/HDBulletLib-Recasted), due to dependency on new calibers**
 
+**Releases can be found here: (https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/releases)**
+
 # Read the Wiki for changes and updated instructions since the original fork: ([Wiki](https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/wikis/1.-Homepage))
 
 ---
