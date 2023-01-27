@@ -805,7 +805,7 @@ class THERPUsable:HDWeapon{
 			|SXF_TRANSFERPOINTERS|SXF_SETMASTER
 		);
 		hhh.A_StartSound("misc/w_pkup",5);
-		hhh.changetid(HERP_TID);
+		///hhh.changetid(HERP_TID);
 		hhh.vel+=vel;hhh.angle=angle;
 		let hhhh=THERPBot(hhh);
 		hhhh.startangle=angle;

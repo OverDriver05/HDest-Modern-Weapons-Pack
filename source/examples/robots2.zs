@@ -69,7 +69,7 @@ class TDERPBot:HDUPK{
 	}
 	void A_DerpLook(int flags=0,statelabel seestate="see"){
 		A_ClearTarget();
-		if(cmd==DERP_AMBUSH)return;
+		if(cmd==DERP_IDLE)return;
 		A_LookEx(flags,label:seestate);
 		if(
 			deathmatch&&bfriendly
@@ -108,7 +108,7 @@ class TDERPBot:HDUPK{
 	void A_DerpCrawl(bool attack=true){
 		bool moved=true;
 		//ambush(1) does nothing, not even make noise
-		if(attack&&cmd!=DERP_AMBUSH){
+		if(attack&&cmd!=DERP_IDLE){
 			if(target&&target.health>0)A_Chase(
 				"missile","missile",CHF_DONTMOVE|CHF_DONTTURN|CHF_NODIRECTIONTURN
 			);
@@ -198,7 +198,7 @@ class TDERPBot:HDUPK{
 			ammo=15;
 			cmd=random(1,3);
 		}
-		if(cmd==DERP_AMBUSH||cmd==DERP_TURRET)movestamina=1001;
+		if(cmd==DERP_IDLE||cmd==DERP_TURRET)movestamina=1001;
 		oldcmd=cmd;
 	}
 	states{
@@ -235,9 +235,9 @@ class TDERPBot:HDUPK{
 		TDRP A 0{
 			stuckline=null;bnogravity=false;
 			oldcmd=cmd;
-			if(cmd!=DERP_AMBUSH){
+			if(cmd!=DERP_IDLE){
 				A_StartSound("weapons/rifleclick2",CHAN_AUTO);
-				cmd=DERP_AMBUSH;
+				cmd=DERP_IDLE;
 			}
 			let ddd=TDERPUsable(spawn("TDERPUsable",pos));
 			if(ddd){
@@ -289,7 +289,7 @@ class TDERPBot:HDUPK{
 	ready:
 		TDRP A 0 A_StartSound("derp/crawl",CHAN_BODY,volume:0.6);
 		TDRP AAA 1 A_FaceTarget(20,20,0,0,FAF_TOP,-4);
-		TDRP A 0 A_JumpIf(cmd==DERP_AMBUSH,"spawn");
+		TDRP A 0 A_JumpIf(cmd==DERP_IDLE,"spawn");
 		TDRP A 0 A_JumpIfTargetInLOS(1,1);
 		loop;
 	aim:
@@ -408,7 +408,7 @@ class TDERPUsable:HDWeapon{
 		string mode;
 		if(hdw.weaponstatus[0]&DERPF_BROKEN)mode="\cm<broken>";
 		else if(mno==DERP_TURRET)mode="\caTURRET";
-		else if(mno==DERP_AMBUSH)mode="\ccAMBUSH";
+		else if(mno==DERP_IDLE)mode="\ccAMBUSH";
 		else if(mno==DERP_PATROL)mode="\cgPATROL";
 		sb.drawstring(
 			sb.psmallfont,mode,(0,34)+bob,
@@ -921,14 +921,14 @@ class TDerpController:HDWeapon{
 			}else if(justpressed(BT_RELOAD)){
 				cmd++;
 				if(cmd>3)cmd=1;
-				if(cmd==DERP_AMBUSH)A_Log("Ambush mode.",true);
+				if(cmd==DERP_IDLE)A_Log("Ambush mode.",true);
 				else if(cmd==DERP_TURRET)A_Log("Turret mode.",true);
 				else if(cmd==DERP_PATROL)A_Log("Patrol mode.",true);
 			}
 
 			ddd.oldcmd=cmd;
 			if(bt&BT_FIREMODE){
-				ddd.cmd=DERP_AMBUSH;
+				ddd.cmd=DERP_IDLE;
 				if(!invoker.weaponstatus[DRPCS_TIMER]){
 					if(
 						justpressed(BT_ATTACK)
