@@ -115,7 +115,7 @@ class BaseRPG : BHDWeapon {
 			#### # 1 { 
 
 				
-				let rkt=RocketGrenade(spawn("HDHEAT",(
+				let rkt=gyroGrenade(spawn("HDHEAT",(
 					pos.xy,
 					pos.z+HDWeapon.GetShootOffset(
 						self,invoker.barrellength,

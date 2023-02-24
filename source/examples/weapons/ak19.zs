@@ -36,12 +36,12 @@ class B_AK19 : BaseStandardRifle {
 		
 		BHDWeapon.BFireSound         "weapons/m4/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
-		BHDWeapon.BChamberSound      "weapons/m4/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
-		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BChamberSound      "weapons/ak/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
+		BHDWeapon.BClickSound        "weapons/ak/click";
+		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
 
 		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       0;

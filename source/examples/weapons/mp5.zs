@@ -36,12 +36,12 @@ class B_MP5 : BHDWeapon {
 
 		BHDWeapon.BFireSound         "weapons/mp5/fire";
 		BHDWeapon.BSFireSound        "weapons/mp5/silentfire";
-		BHDWeapon.BChamberSound      "weapons/mp5/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/mp5/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/mp5/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
-		BHDWeapon.BLoadSound         "weapons/mp5/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
+		BHDWeapon.BChamberSound      "weapons/ar/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
+		BHDWeapon.BClickSound        "weapons/ar/click";
+		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
 
 		BHDWeapon.BROF               0.3;
 		BHDWeapon.BBackSightImage    "mp5sight";

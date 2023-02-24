@@ -35,14 +35,14 @@ class B_M4 : BaseStandardRifle {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m4/fire";
-		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
-		BHDWeapon.BChamberSound      "weapons/m4/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
-		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BFireSound         "weapons/ar/fire";
+		BHDWeapon.BSFireSound        "weapons/ar/silentfire";
+		BHDWeapon.BChamberSound      "weapons/ar/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/ar/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/ar/boltforward";
+		BHDWeapon.BClickSound        "weapons/ar/click";
+		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
 
 		BHDWeapon.BROF               0.5;
 		BHDWeapon.BBackOffsetX       -7;
@@ -510,14 +510,14 @@ class B_M4_M203 : BaseGLRifle {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m4/fire";
-		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
-		BHDWeapon.BChamberSound      "weapons/m4/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
-		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BFireSound         "weapons/ar/fire";
+		BHDWeapon.BSFireSound        "weapons/ar/silentfire";
+		BHDWeapon.BChamberSound      "weapons/ar/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/ar/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/ar/boltforward";
+		BHDWeapon.BClickSound        "weapons/ar/click";
+		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
 
 		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       -7;

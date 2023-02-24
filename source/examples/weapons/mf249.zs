@@ -36,12 +36,12 @@ class b_M249 : BHDWeapon {
 		
 		BHDWeapon.BFireSound         "weapons/m249/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
-		BHDWeapon.BChamberSound      "weapons/m4/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
+		BHDWeapon.BChamberSound      "weapons/ar/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
+		BHDWeapon.BClickSound        "weapons/ar/click";
 		BHDWeapon.BLoadSound         "weapons/m249/loading";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
 
 		BHDWeapon.BROF               0.2;
 		BHDWeapon.BBackSightImage    "m24rsig";
