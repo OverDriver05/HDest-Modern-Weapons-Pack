@@ -37,11 +37,11 @@ class B_SAIGA : BaseShotgun {
 		BHDWeapon.BFireSound         "weapons/fauxtech/fire";
 		BHDWeapon.BSFireSound        "weapons/fauxtech/silentfire";
 		BHDWeapon.BChamberSound      "weapons/fauxtech/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/ak/boltforward";
-		BHDWeapon.BBoltBackwardSound "weapons/ak/boltback";
-		BHDWeapon.BClickSound        "weapons/ak/click";
-		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BBoltForwardSound  "weapons/akm/boltforward";
+		BHDWeapon.BBoltBackwardSound "weapons/akm/boltback";
+		BHDWeapon.BClickSound        "weapons/akm/click";
+		BHDWeapon.BLoadSound         "weapons/akm/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/akm/clipeject";
 
 		BHDWeapon.BROF               2;
 		BHDWeapon.BBackOffsetX       0;

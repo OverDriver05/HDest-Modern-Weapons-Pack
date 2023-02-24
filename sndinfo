@@ -1,4 +1,4 @@
-// Base sounds for AR-type weapons
+// Base sounds for AR-type weapons. Assuming 5.56x45mm
 weapons/ar/fire        "ounds/base_ammo/55645.wav"
 weapons/ar/silentfire  "sounds/base_ammo/silentfire.wav"
 weapons/ar/boltback    "sounds/base_ar/boltback.wav"
@@ -8,7 +8,7 @@ weapons/ar/clipinsert  "sounds/base_ar/clipinsert.wav"
 weapons/ar/click	   "sounds/base_ar/click.wav"
 weapons/ar/firefar     "sounds/m4/firefar.wav"
 
-// Base sounds for AK-type weapons (or those with side bolts)
+// Base sounds for AK-type weapons (or those with side bolts). Assuming 7.62x51mm
 weapons/ak/fire        "sounds/base_ammo/76239.wav"
 weapons/ak/silentfire  "sounds/base_ammo/silentfire.wav"
 weapons/ak/boltback    "sounds/base_ak/boltback.wav"
@@ -18,7 +18,7 @@ weapons/ak/clipinsert  "sounds/base_ar/clipinsert.wav"
 weapons/ak/click	   "sounds/base_ak/click.wav"
 weapons/ak/firefar     "sounds/m4/firefar.wav"
 
-// Base sounds for pistol weapons
+// Base sounds for pistol weapons. Assuming 9mm.
 weapons/pis/fire        "sounds/base_ammo/9.wav"
 weapons/pis/silentfire  "sounds/base_ammo/silentfire.wav"
 weapons/pis/boltback    "sounds/base_pis/boltback.wav"
@@ -28,7 +28,7 @@ weapons/pis/clipinsert  "sounds/base_pis/clipinsert.wav"
 weapons/pis/click		 "sounds/base_pis/click.wav"
 weapons/pis/firefar     "sounds/glock/firefar.wav"
 
-// Caliber sounds
+// Caliber sounds. Alias them to specific weapons below.
 weapons/45/fire        "sounds/base_ammo/45.wav"
 weapons/9/fire        "sounds/base_ammo/9.wav"
 weapons/54539/fire        "sounds/base_ammo/54539.wav"
@@ -39,19 +39,16 @@ weapons/silentfire/fire     "sounds/base_ammo/silentfire.wav"
 
 
 // Weapon specific sounds
-weapons/fauxtech/fire       	"sounds/fauxtech/fire.wav"
-weapons/fauxtech/silentfire     "sounds/fauxtech/silentfire.wav"
-weapons/fauxtech/firefar 		"sounds/fauxtech/firefar.wav"
+weapons/fauxtech/fire       	"sounds/base_ammo/fauxtechfire.wav"
+weapons/fauxtech/silentfire     "sounds/base_ammo/fauxtechsilentfire.wav"
 
-weapons/akm/fire "sounds/akm/fire.wav"
+weapons/m249/fire 	 "sounds/base_ammo/m249fire.wav"
+weapons/m249/loading "sounds/base_ammo/m249loading.wav"
 
-weapons/m249/fire 	 "sounds/m249/fire.wav"
-weapons/m249/loading "sounds/m249/loading.wav"
+weapons/m107/fire 	"sounds/base_ammo/m107fire.wav"
 
-weapons/m107/fire 	"sounds/m107/fire.wav"
-
-weapons/rpg/fire "sounds/rpg/rpglaunch.wav"
-weapons/rpg/whoosh "sounds/rpg/rpgwhoosh.wav"
+weapons/rpg/fire "sounds/base_ammo/rpglaunch.wav"
+weapons/rpg/whoosh "sounds/base_ammo/rpgwhoosh.wav"
 
 bots/therp/warning "sounds/bots/warning.wav"
 bots/therp/downed "sounds/bots/downed.wav"
@@ -66,8 +63,6 @@ monsters/wobbles/bye "sounds/monsters/wobblesbye.wav"
 monsters/wobbles/dead "sounds/monsters/wobblesdead.wav"
 
 // Compatibility Layer
-
-
 $alias weapons/glock/fire        weapons/pis/fire
 $alias weapons/glock/silentfire  weapons/pis/silentfire
 $alias weapons/glock/boltback    weapons/pis/boltback 

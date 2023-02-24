@@ -36,12 +36,12 @@ class B_AK308 : BaseStandardRifle {
 		
 		BHDWeapon.BFireSound         "weapons/m14/fire";
 		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
-		BHDWeapon.BChamberSound      "weapons/ak/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
-		BHDWeapon.BClickSound        "weapons/ak/click";
-		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
+		BHDWeapon.BChamberSound      "weapons/akm/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/akm/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/akm/boltforward";
+		BHDWeapon.BClickSound        "weapons/akm/click";
+		BHDWeapon.BLoadSound         "weapons/akm/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/akm/clipeject";
 
 		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;
