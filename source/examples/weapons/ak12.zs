@@ -34,14 +34,14 @@ class B_AK2 : BaseStandardRifle {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/akm/fire";
+		BHDWeapon.BFireSound         "weapons/aks74u/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
 		BHDWeapon.BChamberSound      "weapons/ak/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
 		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
 		BHDWeapon.BClickSound        "weapons/ak/click";
-		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
+		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
 		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       0;

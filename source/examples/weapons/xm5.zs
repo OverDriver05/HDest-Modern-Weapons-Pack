@@ -36,12 +36,12 @@ class B_XM5: BaseStandardRifle {
 		
 		BHDWeapon.BFireSound         "weapons/m14/fire";
 		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
-		BHDWeapon.BChamberSound      "weapons/ar/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/ar/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/ar/boltforward";
-		BHDWeapon.BClickSound        "weapons/ar/click";
-		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
+		BHDWeapon.BChamberSound      "weapons/m4/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
+		BHDWeapon.BClickSound        "weapons/m4/click";
+		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
 		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       -7;

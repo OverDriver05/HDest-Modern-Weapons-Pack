@@ -1,57 +1,49 @@
-weapons/ar/fire        "sounds/m4/fire.wav"
-weapons/ar/silentfire  "sounds/ar/silentfire.wav"
-weapons/ar/boltback    "sounds/ar/boltback.wav"
-weapons/ar/boltforward "sounds/ar/boltforward.wav"
-weapons/ar/clipeject   "sounds/ar/clipeject.wav"
-weapons/ar/clipinsert  "sounds/ar/clipinsert.wav"
-weapons/ar/click	   "sounds/ar/click.wav"
+// Base sounds for AR-type weapons
+weapons/ar/fire        "ounds/base_ammo/55645.wav"
+weapons/ar/silentfire  "sounds/base_ammo/silentfire.wav"
+weapons/ar/boltback    "sounds/base_ar/boltback.wav"
+weapons/ar/boltforward "sounds/base_ar/boltforward.wav"
+weapons/ar/clipeject   "sounds/base_ar/clipeject.wav"
+weapons/ar/clipinsert  "sounds/base_ar/clipinsert.wav"
+weapons/ar/click	   "sounds/base_ar/click.wav"
 weapons/ar/firefar     "sounds/m4/firefar.wav"
 
-weapons/ak/fire        "sounds/akm/fire.wav"
-weapons/ak/silentfire  "sounds/ak/silentfire.wav"
-weapons/ak/boltback    "sounds/ak/boltback.wav"
-weapons/ak/boltforward "sounds/ak/boltforward.wav"
-weapons/ak/clipeject   "sounds/ar/clipeject.wav"
-weapons/ak/clipinsert  "sounds/ar/clipinsert.wav"
-weapons/ak/click	   "sounds/ak/click.wav"
+// Base sounds for AK-type weapons (or those with side bolts)
+weapons/ak/fire        "sounds/base_ammo/76239.wav"
+weapons/ak/silentfire  "sounds/base_ammo/silentfire.wav"
+weapons/ak/boltback    "sounds/base_ak/boltback.wav"
+weapons/ak/boltforward "sounds/base_ak/boltforward.wav"
+weapons/ak/clipeject   "sounds/base_ar/clipeject.wav"
+weapons/ak/clipinsert  "sounds/base_ar/clipinsert.wav"
+weapons/ak/click	   "sounds/base_ak/click.wav"
 weapons/ak/firefar     "sounds/m4/firefar.wav"
 
-weapons/glock/fire        "sounds/glock/fire.wav"
-weapons/glock/silentfire  "sounds/glock/silentfire.wav"
-weapons/glock/boltback    "sounds/glock/boltback.wav"
-weapons/glock/boltforward "sounds/glock/boltforward.wav"
-weapons/glock/clipeject   "sounds/glock/clipeject.wav"
-weapons/glock/clipinsert  "sounds/glock/clipinsert.wav"
-weapons/glock/click		  "sounds/glock/click.wav"
-weapons/glock/firefar     "sounds/glock/firefar.wav"
+// Base sounds for pistol weapons
+weapons/pis/fire        "sounds/base_ammo/9.wav"
+weapons/pis/silentfire  "sounds/base_ammo/silentfire.wav"
+weapons/pis/boltback    "sounds/base_pis/boltback.wav"
+weapons/pis/boltforward "sounds/base_pis/boltforward.wav"
+weapons/pis/clipeject   "sounds/base_pis/clipeject.wav"
+weapons/pis/clipinsert  "sounds/base_pis/clipinsert.wav"
+weapons/pis/click		 "sounds/base_pis/click.wav"
+weapons/pis/firefar     "sounds/glock/firefar.wav"
 
-weapons/m4/fire        "sounds/m4/fire.wav"
-weapons/m4/silentfire  "sounds/m4/silentfire.wav"
+// Caliber sounds
+weapons/45/fire        "sounds/base_ammo/45.wav"
+weapons/9/fire        "sounds/base_ammo/9.wav"
+weapons/54539/fire        "sounds/base_ammo/54539.wav"
+weapons/55645/fire        "sounds/base_ammo/55645.wav"
+weapons/76239/fire        "sounds/base_ammo/76239.wav"
+weapons/76251/fire        "sounds/base_ammo/76251.wav"
+weapons/silentfire/fire     "sounds/base_ammo/silentfire.wav"
 
-weapons/mp5/fire        	"sounds/mp5/fire.wav"
-weapons/mp5/silentfire  	"sounds/mp5/silentfire.wav"
-weapons/mp5/boltback    	"sounds/mp5/boltback.wav"
-weapons/mp5/boltforward 	"sounds/mp5/boltforward.wav"
-weapons/mp5/clipeject   	"sounds/mp5/clipeject.wav"
-weapons/mp5/clipinsert  	"sounds/mp5/clipinsert.wav"
-weapons/mp5/firefar     	"sounds/mp5/firefar.wav"
-weapons/mp5/click		   	"sounds/mp5/click.wav"
 
-weapons/m14/fire 			"sounds/m14/fire.wav"  
-weapons/m14/silentfire 		"sounds/m14/silentfire.wav" 
-
+// Weapon specific sounds
 weapons/fauxtech/fire       	"sounds/fauxtech/fire.wav"
 weapons/fauxtech/silentfire     "sounds/fauxtech/silentfire.wav"
-weapons/fauxtech/boltback   	"sounds/fauxtech/boltback.wav"
-weapons/fauxtech/boltforward	"sounds/fauxtech/boltforward.wav"
-weapons/fauxtech/drumeject 		"sounds/fauxtech/drumeject.wav"
-weapons/fauxtech/druminsert 	"sounds/fauxtech/druminsert.wav"
 weapons/fauxtech/firefar 		"sounds/fauxtech/firefar.wav"
-weapons/fauxtech/click			"sounds/fauxtech/click.wav"
 
 weapons/akm/fire "sounds/akm/fire.wav"
-weapons/aks74u/fire "sounds/aks74u/fire.wav"
-weapons/uzi/fire "sounds/uzi/fire.wav"
 
 weapons/m249/fire 	 "sounds/m249/fire.wav"
 weapons/m249/loading "sounds/m249/loading.wav"
@@ -72,3 +64,97 @@ crafting/motor/ready "sounds/crafting/ready.wav"
 monsters/wobbles/alert "sounds/monsters/wobbles.wav"
 monsters/wobbles/bye "sounds/monsters/wobblesbye.wav"
 monsters/wobbles/dead "sounds/monsters/wobblesdead.wav"
+
+// Compatibility Layer
+
+
+$alias weapons/glock/fire        weapons/pis/fire
+$alias weapons/glock/silentfire  weapons/pis/silentfire
+$alias weapons/glock/boltback    weapons/pis/boltback 
+$alias weapons/glock/boltforward weapons/pis/boltforward
+$alias weapons/glock/clipeject   weapons/pis/clipeject
+$alias weapons/glock/clipinsert  weapons/pis/clipinsert
+$alias weapons/glock/click		 weapons/pis/click
+$alias weapons/glock/firefar     weapons/pis/firefar
+
+$alias weapons/m4/fire        weapons/ar/fire 
+$alias weapons/m4/silentfire  weapons/ar/silentfire 
+$alias weapons/m4/boltback    weapons/ar/boltback
+$alias weapons/m4/boltforward weapons/ar/boltforward
+$alias weapons/m4/clipeject   weapons/ar/clipeject
+$alias weapons/m4/clipinsert  weapons/ar/clipinsert
+$alias weapons/m4/click	   weapons/ar/click
+$alias weapons/m4/firefar     weapons/ar/firefar
+
+$alias weapons/mp5/fire        	weapons/9/fire
+$alias weapons/mp5/silentfire  	weapons/pis/silentfire
+$alias weapons/mp5/boltback    	weapons/ak/boltback
+$alias weapons/mp5/boltforward 	weapons/ak/boltforward
+$alias weapons/mp5/clipeject   	weapons/ar/clipeject
+$alias weapons/mp5/clipinsert  	weapons/ar/clipinsert
+$alias weapons/mp5/firefar     	weapons/pis/firefar
+$alias weapons/mp5/click weapons/ar/click
+
+$alias weapons/m14/fire 			weapons/76251/fire 
+$alias weapons/m14/silentfire 		weapons/ar/silentfire
+$alias weapons/m14/boltback 		weapons/ak/boltback
+$alias weapons/m14/boltforward 	weapons/ak/boltforward
+$alias weapons/m14/clipeject 		weapons/ar/clipeject
+$alias weapons/m14/clipinsert 		weapons/ar/clipinsert
+$alias weapons/m14/firefar    		weapons/ar/firefar
+$alias weapons/m14/click           weapons/ar/click
+
+$alias weapons/fauxtech/boltforward weapons/m4/boltforward
+$alias weapons/fauxtech/boltback    weapons/m4/boltback
+$alias weapons/fauxtech/click       weapons/m4/click
+$alias weapons/fauxtech/clipinsert  weapons/m4/clipinsert
+$alias weapons/fauxtech/clipeject   weapons/m4/clipeject
+
+$alias weapons/akm/fire weapons/76239/fire 
+$alias weapons/akm/silentfire weapons/m4/silentfire
+$alias weapons/akm/chamber weapons/ak/chamber
+$alias weapons/akm/boltback weapons/ak/boltback
+$alias weapons/akm/boltforward weapons/ak/boltforward
+$alias weapons/akm/click weapons/ak/click
+$alias weapons/akm/clipinsert weapons/m4/clipinsert
+$alias weapons/akm/clipeject weapons/m4/clipeject
+
+$alias weapons/aks74u/fire weapons/54539/fire 
+$alias weapons/aks74u/silentfire weapons/m4/silentfire
+$alias weapons/aks74u/chamber weapons/ak/chamber
+$alias weapons/aks74u/boltback weapons/ak/boltback
+$alias weapons/aks74u/boltforward weapons/ak/boltforward
+$alias weapons/aks74u/click weapons/ak/click
+$alias weapons/aks74u/clipinsert weapons/m4/clipinsert
+$alias weapons/aks74u/clipeject weapons/m4/clipeject
+
+$alias weapons/uzi/fire weapons/9/fire 
+$alias weapons/uzi/silentfire weapons/mp5/silentfire
+$alias weapons/uzi/chamber weapons/m4/chamber
+$alias weapons/uzi/boltback weapons/m4/boltback
+$alias weapons/uzi/boltforward weapons/m4/boltforward
+$alias weapons/uzi/click weapons/m4/click
+$alias weapons/uzi/clipinsert weapons/m4/clipinsert
+$alias weapons/uzi/clipeject weapons/m4/clipeject
+
+$alias weapons/m249/silentfire  weapons/m4/silentfire
+$alias weapons/m249/chamber     weapons/m4/chamber
+$alias weapons/m249/boltback    weapons/m4/boltback
+$alias weapons/m249/boltforward weapons/m4/boltforward
+$alias weapons/m249/click	    weapons/m4/click
+$alias weapons/m249/clipeject   weapons/m4/clipeject
+
+$alias weapons/m107/silentfire	weapons/m14/silentfire
+$alias weapons/m107/chamber		weapons/m14/chamber
+$alias weapons/m107/boltback    weapons/m14/boltback
+$alias weapons/m107/boltforward weapons/m14/boltforward
+$alias weapons/m107/click		weapons/m4/click
+$alias weapons/m107/clipinsert  weapons/m14/clipinsert
+$alias weapons/m107/clipeject   weapons/m14/clipeject
+
+$alias weapons/rpg/chamber weapons/m4/chamber
+$alias weapons/rpg/boltback weapons/m4/boltback
+$alias weapons/rpg/boltforward weapons/m4/boltforward
+$alias weapons/rpg/click weapons/m4/click
+$alias weapons/rpg/clipinsert weapons/m4/clipinsert
+$alias weapons/rpg/clipeject weapons/m4/clipeject

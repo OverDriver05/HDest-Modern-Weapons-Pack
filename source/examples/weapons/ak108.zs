@@ -36,10 +36,10 @@ class B_AK108 : BaseStandardRifle {
 		
 		BHDWeapon.BFireSound         "weapons/m4/fire";
 		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
-		BHDWeapon.BChamberSound      "weapons/m4/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/m4/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/m4/boltforward";
-		BHDWeapon.BClickSound        "weapons/m4/click";
+		BHDWeapon.BChamberSound      "weapons/ak/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
+		BHDWeapon.BClickSound        "weapons/ak/click";
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 

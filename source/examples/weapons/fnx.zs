@@ -35,7 +35,7 @@ class b_FNX : BasePistol {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 
-		BHDWeapon.BFireSound         "weapons/glock/fire";
+		BHDWeapon.BFireSound         "weapons/45/fire";
 		BHDWeapon.BSFireSound        "weapons/glock/silentfire";
 		BHDWeapon.BChamberSound      "weapons/glock/chamber";
 		BHDWeapon.BBoltBackwardSound  "weapons/glock/boltback";

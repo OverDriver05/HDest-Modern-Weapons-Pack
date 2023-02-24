@@ -33,14 +33,14 @@ class B_UMP45 : BHDWeapon {
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 
-		BHDWeapon.BFireSound         "weapons/glock/fire";
+		BHDWeapon.BFireSound         "weapons/45/fire";
 		BHDWeapon.BSFireSound        "weapons/mp5/silentfire";
-		BHDWeapon.BChamberSound      "weapons/ar/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
-		BHDWeapon.BClickSound        "weapons/ar/click";
-		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
+		BHDWeapon.BChamberSound      "weapons/mp5/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/mp5/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/mp5/boltforward";
+		BHDWeapon.BClickSound        "weapons/m4/click";
+		BHDWeapon.BLoadSound         "weapons/mp5/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
 
 		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;

@@ -36,12 +36,12 @@ class B_SCAR17 : BaseStandardRifle {
 		
 		BHDWeapon.BFireSound         "weapons/m14/fire";
 		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
-		BHDWeapon.BChamberSound      "weapons/ar/chamber";
-		BHDWeapon.BBoltForwardSound  "weapons/ak/boltback";
-		BHDWeapon.BBoltBackwardSound "weapons/ak/boltforward";
-		BHDWeapon.BClickSound        "weapons/ar/click";
-		BHDWeapon.BLoadSound         "weapons/ar/clipinsert";
-		BHDWeapon.BUnloadSound       "weapons/ar/clipeject";
+		BHDWeapon.BChamberSound      "weapons/m14/chamber";
+		BHDWeapon.BBoltForwardSound  "weapons/m14/boltback";
+		BHDWeapon.BBoltBackwardSound "weapons/m14/boltforward";
+		BHDWeapon.BClickSound        "weapons/m14/click";
+		BHDWeapon.BLoadSound         "weapons/m14/clipinsert";
+		BHDWeapon.BUnloadSound       "weapons/m14/clipeject";
 
 		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;
