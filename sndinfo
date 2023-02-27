@@ -1,5 +1,5 @@
 // Base sounds for AR-type weapons. Assuming 5.56x45mm
-weapons/ar/fire        "ounds/base_ammo/55645.wav"
+weapons/ar/fire        "sounds/base_ammo/55645.wav"
 weapons/ar/silentfire  "sounds/base_ammo/silentfire.wav"
 weapons/ar/boltback    "sounds/base_ar/boltback.wav"
 weapons/ar/boltforward "sounds/base_ar/boltforward.wav"
