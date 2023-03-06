@@ -319,6 +319,16 @@ class B_SCAR17 : BaseStandardRifle {
 	
 }
 
+	class SCAR17SilencerOffset : BarrelOffset {
+	default {
+		Offset.WeaponClass "B_SCAR17";
+		Offset.WeaponOverlay "B_M14_Silencer";
+		//Offset.OffX -0.97;
+		Offset.OffX -0.77;
+		Offset.OffY -3;
+	}
+}
+
 class SC17FlashLightOffset : MiscOffset {
 	default {
 		Offset.WeaponClass "B_SCAR17";
