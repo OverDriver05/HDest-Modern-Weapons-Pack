@@ -1,4 +1,4 @@
-class B_AK308 : BaseStandardRifle {
+class B_AK15 : BaseStandardRifle {
 
 	default {
 		+hdweapon.fitsinbackpack
@@ -6,36 +6,36 @@ class B_AK308 : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AK-308.";
+		inventory.pickupmessage      "You got the AK-15.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AK-308";
-		inventory.icon               "A38PA0";
+		tag                          "AK-15";
+		inventory.icon               "A15PA0";
 		BHDWeapon.BFlashSprite       "AKMFA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_762x51";
-		BHDWeapon.BAmmoClass         "B762x51Ammo";
-		BHDWeapon.BMagazineClass     "b762_m14_mag";
+		BHDWeapon.BBulletClass       "HDB_762sov";
+		BHDWeapon.BAmmoClass         "B762SovAmmo";
+		BHDWeapon.BMagazineClass     "BAKM_762Mag";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "A38PA0";
-		BHDWeapon.BSpriteWithoutMag  "A38PB0";
+		BHDWeapon.BSpriteWithMag     "A15PA0";
+		BHDWeapon.BSpriteWithoutMag  "A15PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "A38CA0";
-		BHDWeapon.BWeaponBulk        c_m14_bulk;
-		BHDWeapon.BMagazineBulk      c_m14_mag_bulk;
-		BHDWeapon.BBulletBulk        c_762_round_bulk;
+		BHDWeapon.BMagazineSprite    "A15CA0";
+		BHDWeapon.BWeaponBulk        c_akm_bulk;
+		BHDWeapon.BMagazineBulk      c_akm_mag_bulk;
+		BHDWeapon.BBulletBulk        c_762_sov_round_bulk;
 		BHDWeapon.BMagazineCapacity  30;
 		BHDWeapon.BarrelLength       25;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m14/fire";
-		BHDWeapon.BSFireSound        "weapons/m14/silentfire";
+		BHDWeapon.BFireSound         "weapons/akm/fire";
+		BHDWeapon.BSFireSound        "weapons/akm/silentfire";
 		BHDWeapon.BChamberSound      "weapons/akm/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/akm/boltback";
 		BHDWeapon.BBoltBackwardSound "weapons/akm/boltforward";
@@ -43,7 +43,7 @@ class B_AK308 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/akm/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/akm/clipeject";
 
-		BHDWeapon.BROF               1.0;
+		BHDWeapon.BROF               0.7;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       30;
 		BHDWeapon.BFrontSightImage   "akmfr";
@@ -52,11 +52,11 @@ class B_AK308 : BaseStandardRifle {
 		BHDWeapon.BFrontOffsetY      17;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
-		BHDWeapon.bBarrelMount       "762_NATO_BARREL";
+		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "";
-		BHDWeapon.EjectShellClass    "B762x51Spent";
-		hdweapon.refid               B_AK308_REFID;
+		BHDWeapon.bMiscMount         "NATO_RAILS";
+		BHDWeapon.EjectShellClass    "B762SovSpent";
+		hdweapon.refid               B_AK15_REFID;
 
 		BHDWeapon.BAltFrontSightImage "a_akmfr";
 		BHDWeapon.BAltBackSightImage "a_akmbr";
@@ -65,17 +65,17 @@ class B_AK308 : BaseStandardRifle {
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.8;
-		BHDWeapon.BRecoilXHigh 0.8;
-		BHDWeapon.BRecoilYLow  0.9;
-		BHDWeapon.BRecoilYHigh 1.9;		
+		BHDWeapon.BRecoilXLow -1.2;
+		BHDWeapon.BRecoilXHigh 1.2;
+		BHDWeapon.BRecoilYLow  1.3;
+		BHDWeapon.BRecoilYHigh 2.3;	
 		BHDWeapon.bShowFireMode true;
-		BHDWeapon.boffsetamt 50;
+		BHDWeapon.boffsetamt 38;
 	}
 
 	states {
 		Spawn:
-			A38P A 0 GetMagState();
+			RATP A 0 GetMagState();
 			Goto Super::Spawn;
 
 		Firemode:
@@ -86,11 +86,11 @@ class B_AK308 : BaseStandardRifle {
 			}
 
 		SpawnMag:
-			A38P A -1;
+			A15P A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			A38P B -1;
+			A15P B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -310,11 +310,21 @@ class B_AK308 : BaseStandardRifle {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "A38PA0", 1.;
+			return "A15PA0", 1.;
 		}
 		else {
-			return "A38PB0", 1.;
+			return "A15PB0", 1.;
 		}
 	}
 	
+}
+
+
+class A15FlashLightOffset : MiscOffset {
+	default {
+		Offset.WeaponClass "B_A15";
+		Offset.WeaponOverlay "B_M16_Flashlight";
+		Offset.OffX -6.9;
+		offset.OffY -10.5;
+	}
 }

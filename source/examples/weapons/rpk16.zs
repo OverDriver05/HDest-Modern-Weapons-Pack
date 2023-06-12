@@ -98,15 +98,15 @@ class B_RPK16 : BaseStandardRifle {
 			Loop;
 
 		LayerGun:
-			AKMG A 1;
+			RATG A 1;
 			Loop;
 
 		LayerGunFire:
-			AKMG B 1;
+			RATG B 1;
 			Goto LayerGun;
 
 		LayerGunBolt:
-			AKMG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
+			RATG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			Goto LayerGun;
 
 		LayerReloadHands:
@@ -162,8 +162,8 @@ class B_RPK16 : BaseStandardRifle {
 			}
 
 		LayerGunHandReturn:
-			AKMG C 3;
-			AKMG A -1;
+			RATG C 3;
+			RATG A -1;
 			Stop;
 
 		ReloadEnd:
@@ -186,8 +186,8 @@ class B_RPK16 : BaseStandardRifle {
 			Stop;
 
 		LayerGunReloading:
-			AKMG C 3;
-			AKMG D -1;
+			RATG C 3;
+			RATG D -1;
 			Stop;
 
 		UnloadMag:
@@ -249,13 +249,13 @@ class B_RPK16 : BaseStandardRifle {
 			Goto LayerGun;
 
 		Chamber_Anim:
-			AKMG E 3;
-			AKMG F 3 {
+			RATG E 3;
+			RATG F 3 {
 				A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			}
-			AKMG G 3;
-			AKMG E 3;
-			AKMG A -1 {
+			RATG G 3;
+			RATG E 3;
+			RATG A -1 {
 				A_StartSound(invoker.bBoltForwardSound, CHAN_WEAPON);
 			}
 			Stop;
@@ -302,7 +302,7 @@ class B_RPK16 : BaseStandardRifle {
 			}
 
 		DUMMY:
-			AKMF ABCD -1;
+			RATF ABCD -1;
 			Stop;
 
 

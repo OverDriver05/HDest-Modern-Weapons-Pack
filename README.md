@@ -1,13 +1,15 @@
 # Changelog
+
+- **Now requires HDBulletLib-Recasted (https://github.com/HDest-Community/HDBulletLib-Recasted), due to dependency on new calibers.**
+
+- **Releases for this mod can be found here: (https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/releases)**
+
+- **Read the Wiki for changes and updated instructions since the original fork: ([Wiki](https://gitlab.com/kittyjosh111/hdest-modern-weapons-wiki/-/wikis/1.-Homepage))**
+
 This repository is my tweaking of Bryan's Weapons (hdest-weapons), which was a submod designed to be played with the Doom mod Hideous Destructor. Mainly I wanted even more variety to the weapons. As such, some weapons may fit the same niche and could be considered to be repetitve. To each their own I guess.
 
 Thanks to everyone who worked on it before to create a highly useful and fun mod! And be sure to check out _bryan's original project here: https://codeberg.org/_bryan/hdest-weapons
 
-**Now requires HDBulletLib-Recasted (https://github.com/Gay-Snake-Squad/HDBulletLib-Recasted), due to dependency on new calibers**
-
-**Releases can be found here: (https://gitlab.com/kittyjosh111/hdest-modern-weapons/-/releases)**
-
-# Read the Wiki for changes and updated instructions since the original fork: ([Wiki](https://gitlab.com/kittyjosh111/hdest-modern-weapons-wiki/-/wikis/1.-Homepage))
 
 ---
 The original project readme is below. Do **not** follow it for installation.
