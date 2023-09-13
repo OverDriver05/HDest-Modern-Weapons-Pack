@@ -43,7 +43,7 @@ class B_SCAR16 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m14/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m14/clipeject";
 
-		BHDWeapon.BROF               0.9;
+		BHDWeapon.BROF               1.0;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       20;
 		BHDWeapon.BFrontSightImage   "scrfr";
