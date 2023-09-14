@@ -42,7 +42,7 @@ class B_UMP45 : BHDWeapon {
 		BHDWeapon.BLoadSound         "weapons/mp5/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
 
-		BHDWeapon.BROF               1.0;
+		BHDWeapon.BROF               0.4;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       22;
 		BHDWeapon.BFrontSightImage   "umpfr";

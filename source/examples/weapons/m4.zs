@@ -44,7 +44,7 @@ class B_M4 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.5;
+		BHDWeapon.BROF               0.3;
 		BHDWeapon.BBackOffsetX       -7;
 		BHDWeapon.BBackOffsetY       40;
 		BHDWeapon.BFrontSightImage   "m16iron";
@@ -519,7 +519,7 @@ class B_M4_M203 : BaseGLRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.7;
+		BHDWeapon.BROF               0.3;
 		BHDWeapon.BBackOffsetX       -7;
 		BHDWeapon.BBackOffsetY       40;
 		BHDWeapon.BFrontSightImage   "m16iron";

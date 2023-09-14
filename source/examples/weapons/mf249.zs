@@ -43,7 +43,7 @@ class b_M249 : BHDWeapon {
 		BHDWeapon.BLoadSound         "weapons/m249/loading";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.2;
+		BHDWeapon.BROF               0.15;
 		BHDWeapon.BBackSightImage    "m24rsig";
 		BHDWeapon.BBackOffsetX       4;
 		BHDWeapon.BBackOffsetY       23;

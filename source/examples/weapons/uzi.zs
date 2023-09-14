@@ -43,7 +43,7 @@ class B_Uzi : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.5;
+		BHDWeapon.BROF               0;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       4;
 		BHDWeapon.BFrontSightImage   "uzifr";

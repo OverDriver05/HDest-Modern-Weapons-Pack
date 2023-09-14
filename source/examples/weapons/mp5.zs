@@ -43,7 +43,7 @@ class B_MP5 : BHDWeapon {
 		BHDWeapon.BLoadSound         "weapons/mp5/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
 
-		BHDWeapon.BROF               0.3;
+		BHDWeapon.BROF               0.2;
 		BHDWeapon.BBackSightImage    "mp5sight";
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       20;
@@ -680,7 +680,7 @@ class B_MP5_M203 : BaseGLRifle {
 		BHDWeapon.BLoadSound         "weapons/mp5/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/mp5/clipeject";
 
-		BHDWeapon.BROF               0;
+		BHDWeapon.BROF               0.2;
 	
 		BHDWeapon.BBackSightImage    "mp5sight";
 		BHDWeapon.BBackOffsetX       0;

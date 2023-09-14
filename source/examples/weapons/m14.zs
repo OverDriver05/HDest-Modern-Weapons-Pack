@@ -43,7 +43,7 @@ class b_m14 : basestandardrifle {
 		BHDWeapon.BLoadSound         "weapons/m14/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m14/clipeject";
 
-		BHDWeapon.BROF               0;
+		BHDWeapon.BROF               0.25;
 		BHDWeapon.BBackSightImage    "bm14sig";
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       16;

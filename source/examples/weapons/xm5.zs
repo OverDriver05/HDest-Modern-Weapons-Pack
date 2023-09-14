@@ -43,7 +43,7 @@ class B_XM5: BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/m4/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
-		BHDWeapon.BROF               0.7;
+		BHDWeapon.BROF               0.35;
 		BHDWeapon.BBackOffsetX       -7;
 		BHDWeapon.BBackOffsetY       40;
 		BHDWeapon.BFrontSightImage   "m16iron";

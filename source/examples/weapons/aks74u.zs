@@ -43,7 +43,7 @@ class B_AKS74U : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/aks74u/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/aks74u/clipeject";
 
-		BHDWeapon.BROF               0.5;
+		BHDWeapon.BROF               0.35;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       13;
 		BHDWeapon.BFrontSightImage   "ak7fr";

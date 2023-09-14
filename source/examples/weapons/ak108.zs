@@ -44,7 +44,7 @@ class B_AK108 : BaseStandardRifle {
 		BHDWeapon.BUnloadSound       "weapons/aks74u/clipeject";
 
 
-		BHDWeapon.BROF               0.1;
+		BHDWeapon.BROF               0.3;
 		BHDWeapon.BBackOffsetX       0;
 		BHDWeapon.BBackOffsetY       30;
 		BHDWeapon.BFrontSightImage   "akmfr";
