@@ -77,14 +77,6 @@ class B_AK15 : BaseStandardRifle {
 		Spawn:
 			RATP A 0 GetMagState();
 			Goto Super::Spawn;
-
-		Firemode:
-			#### A 1 {
-				invoker.weaponStatus[I_AUTO] = (invoker.weaponStatus[I_AUTO] == 1 ? 0 : 1);
-				A_WeaponReady(WRF_NONE);
-				return ResolveState("Nope");
-			}
-
 		SpawnMag:
 			A15P A -1;
 			Goto HDWeapon::Spawn;
