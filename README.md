@@ -12,7 +12,7 @@ Thanks to everyone who worked on it before to create a highly useful and fun mod
 
 Also thanks to the following for providing a base model that I edited to make some of the gun sprites:
 
-- https://sketchfab.com/3d-models/ak-12-f78ad7ae10ad4335b3ad81be3ec15bb0 (AK-12 family)
+- https://sketchfab.com/3d-models/ak-12-5b3d2fcb9015402794b841498c9617de (AK-12 family)
 
 - https://delthor-games.itch.io/free-low-poly-weapons-pack-3 (SCAR family)
 
