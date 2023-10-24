@@ -10,6 +10,15 @@ This repository is my tweaking of Bryan's Weapons (hdest-weapons), which was a s
 
 Thanks to everyone who worked on it before to create a highly useful and fun mod! And be sure to check out _bryan's original project here: https://codeberg.org/_bryan/hdest-weapons
 
+Also thanks to the following for providing a base model that I edited to make some of the gun sprites:
+
+- https://sketchfab.com/3d-models/ak-12-f78ad7ae10ad4335b3ad81be3ec15bb0 (AK-12 family)
+
+- https://delthor-games.itch.io/free-low-poly-weapons-pack-3 (SCAR family)
+
+- https://adwitr.itch.io/low-poly-gun-models-ump-uzi (UMP family)
+
+- https://gitlab.com/dastrukar/hddons-list-entries/-/blob/master/weapons/NORA_.45_R1-popguy12.yaml (FNX45)
 
 ---
 The original project readme is below. Do **not** follow it for installation.
