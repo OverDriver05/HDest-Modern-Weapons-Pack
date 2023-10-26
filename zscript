@@ -44,6 +44,7 @@ version "4.4"
 #include "source/examples/weapons/saiga.zs"
 #include "source/examples/weapons/roro.zs"
 #include "source/examples/weapons/ak15.zs"
+#include "source/examples/weapons/qbz191.zs"
 
 #include "source/examples/ammos.zs"
 #include "source/examples/bullets.zs"

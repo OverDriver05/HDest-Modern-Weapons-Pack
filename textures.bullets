@@ -421,24 +421,78 @@ sprite AB7SA0, 36, 14 {
 	Patch "graphics/newpickup/762rus_Ammo_Box.png", 0, 0
 }
 
+// 5.8x42mm
+sprite QB58A1, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/584/brass_584_1.png", 0, 0
+}
 
+sprite QB58A2A8, 22, 7 {
+	XScale 8
+	YScale 8
+	Offset 11, 7
+	Patch "graphics/bulletimages/584/brass_584_8.png", 0, 0
+}
 
+sprite QB58A3A7, 29, 7 {
+	XScale 8
+	YScale 8
+	Offset 14, 7
+	Patch "graphics/bulletimages/584/brass_584_7.png", 0, 0
+}
 
+sprite QB58A4A6, 23, 7 {
+	XScale 8
+	YScale 8
+	Offset 14, 7
+	Patch "graphics/bulletimages/584/brass_584_6.png", 0, 0
+}
 
+sprite QB58A5, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/584/brass_584_5.png", 0, 0
+}
 
+sprite QF58A1, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/584/bullet_584_1.png", 0, 0
+}
 
+sprite QF58A2A8, 30, 7 {
+	XScale 8
+	YScale 8
+	Offset 15, 7
+	Patch "graphics/bulletimages/584/bullet_584_8.png", 0, 0
+}
 
+sprite QF58A3A7, 40, 7 {
+	XScale 8
+	YScale 8
+	Offset 20, 7
+	Patch "graphics/bulletimages/584/bullet_584_7.png", 0, 0
+}
 
+sprite QF58A4A6, 30, 7 {
+	XScale 8
+	YScale 8
+	Offset 15, 7
+	Patch "graphics/bulletimages/584/bullet_584_6.png", 0, 0
+}
 
+sprite QF58A5, 7, 7 {
+	XScale 8
+	YScale 8
+	Offset 3, 7
+	Patch "graphics/bulletimages/584/brass_584_5.png", 0, 0
+}
 
-
-
-
-
-
-
-
-
+// .277 Fury
 sprite BB27A1, 7, 7 {
 	XScale 8
 	YScale 8
@@ -508,9 +562,3 @@ sprite BF27A5, 7, 7 {
 	Offset 3, 7
 	Patch "graphics/bulletimages/277/brass_762_5.png", 0, 0
 }
-
-
-
-
-
-

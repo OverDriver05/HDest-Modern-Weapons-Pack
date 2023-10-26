@@ -1,4 +1,4 @@
-class B_AK19 : BaseStandardRifle {
+class B_QBZ191 : BaseStandardRifle {
 
 	default {
 		+hdweapon.fitsinbackpack
@@ -6,36 +6,36 @@ class B_AK19 : BaseStandardRifle {
 		weapon.slotnumber            4;
 		weapon.slotpriority          1;
 		inventory.pickupsound        "misc/w_pkup";
-		inventory.pickupmessage      "You got the AK-19.";
+		inventory.pickupmessage      "You got the QBZ-191.";
 		scale                        0.7;
 		weapon.bobrangex             0.22;
 		weapon.bobrangey             0.9;
 		obituary                     "%o was assaulted by %k.";
-		tag                          "AK-19";
-		inventory.icon               "AK9PA0";
-		BHDWeapon.BFlashSprite       "AKMFA0";
+		tag                          "QBZ-191";
+		inventory.icon               "Q91PA0";
+		BHDWeapon.BFlashSprite       "FLSHA0";
 		BHDWeapon.BHeatDrain         12;
-		BHDWeapon.BBulletClass       "HDB_556";
-		BHDWeapon.BAmmoClass         "B556Ammo";
-		BHDWeapon.BMagazineClass     "B556Mag";
+		BHDWeapon.BBulletClass       "HDB_584";
+		BHDWeapon.BAmmoClass         "B584Ammo";
+		BHDWeapon.BMagazineClass     "B584Mag";
 		BHDWeapon.BGunMass           6.2;
 		BHDWeapon.BCookOff           30;
 		BHDWeapon.BHeatLimit         255;
-		BHDWeapon.BSpriteWithMag     "AK9PA0";
-		BHDWeapon.BSpriteWithoutMag  "AK9PB0";
+		BHDWeapon.BSpriteWithMag     "Q91PA0";
+		BHDWeapon.BSpriteWithoutMag  "Q91PB0";
 		BHDWeapon.BSpriteWithFrame    0;
 		BHDWeapon.BSpriteWithoutFrame 1;
-		BHDWeapon.BMagazineSprite    "AK9CA0";
-		BHDWeapon.BWeaponBulk        c_akm_bulk;
+		BHDWeapon.BMagazineSprite    "Q91CA0";
+		BHDWeapon.BWeaponBulk        c_qbz191_bulk;
 		BHDWeapon.BMagazineBulk      c_m4_mag_bulk;
-		BHDWeapon.BBulletBulk        c_556_round_bulk;
+		BHDWeapon.BBulletBulk        c_584_round_bulk;
 		BHDWeapon.BMagazineCapacity  30;
 		BHDWeapon.BarrelLength       25;
 		BHDWeapon.BarrelWidth        1;
 		BHDWeapon.BarrelDepth        3;
 		
-		BHDWeapon.BFireSound         "weapons/m4/fire";
-		BHDWeapon.BSFireSound        "weapons/m4/silentfire";
+		BHDWeapon.BFireSound         "weapons/aks74u/fire";
+		BHDWeapon.BSFireSound        "weapons/aks74u/silentfire";
 		BHDWeapon.BChamberSound      "weapons/aks74u/chamber";
 		BHDWeapon.BBoltForwardSound  "weapons/aks74u/boltback";
 		BHDWeapon.BBoltBackwardSound "weapons/aks74u/boltforward";
@@ -43,39 +43,39 @@ class B_AK19 : BaseStandardRifle {
 		BHDWeapon.BLoadSound         "weapons/aks74u/clipinsert";
 		BHDWeapon.BUnloadSound       "weapons/aks74u/clipeject";
 
-		BHDWeapon.BROF               0.3;
+		BHDWeapon.BROF               0.4;
 		BHDWeapon.BBackOffsetX       -7;
-		BHDWeapon.BBackOffsetY       42;
-		BHDWeapon.BFrontSightImage   "akmfr";
+		BHDWeapon.BBackOffsetY       40;
+		BHDWeapon.BFrontSightImage   "scrfr";
 		BHDWeapon.BBackSightImage    "alt_a12";
-		BHDWeapon.BFrontOffsetX      0;
-		BHDWeapon.BFrontOffsetY      17;
+		BHDWeapon.BFrontOffsetX      -6;
+		BHDWeapon.BFrontOffsetY      14;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "556_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
 		BHDWeapon.bMiscMount         "NATO_RAILS";
-		BHDWeapon.EjectShellClass    "B556Spent";
-		hdweapon.refid               B_AK19_REFID;
+		BHDWeapon.EjectShellClass    "B584Spent";
+		hdweapon.refid               B_QBZ191_REFID;
 
-		BHDWeapon.BAltFrontSightImage "a_akmfr";
+		BHDWeapon.BAltFrontSightImage "a_scrfr";
 		BHDWeapon.BAltBackSightImage "alt_a12";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;
 		BHDWeapon.bLayerGunBack -99;
 
-		BHDWeapon.BRecoilXLow -0.5;
-		BHDWeapon.BRecoilXHigh 0.5;
-		BHDWeapon.BRecoilYLow  0.6;
-		BHDWeapon.BRecoilYHigh 1.6;		
+		BHDWeapon.BRecoilXLow -0.6;
+		BHDWeapon.BRecoilXHigh 0.6;
+		BHDWeapon.BRecoilYLow  0.7;
+		BHDWeapon.BRecoilYHigh 1.7;		
 		BHDWeapon.bShowFireMode true;
 		BHDWeapon.boffsetamt 38;
 	}
 
 	states {
 		Spawn:
-			AK9P A 0 GetMagState();
+			Q91P A 0 GetMagState();
 			Goto Super::Spawn;
 
 		Firemode:
@@ -86,11 +86,11 @@ class B_AK19 : BaseStandardRifle {
 			}
 
 		SpawnMag:
-			AK9P A -1;
+			Q91P A -1;
 			Goto HDWeapon::Spawn;
 
 		SpawnNoMag:
-			AK9P B -1;
+			Q91P B -1;
 			Goto HDWeapon::Spawn;
 
 		LayerGunBack:
@@ -98,15 +98,15 @@ class B_AK19 : BaseStandardRifle {
 			Loop;
 
 		LayerGun:
-			RATG A 1;
+			Q91G A 1;
 			Loop;
 
 		LayerGunFire:
-			RATG B 1;
+			Q91G B 1;
 			Goto LayerGun;
 
 		LayerGunBolt:
-			RATG E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
+			Q91G E 3 A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			Goto LayerGun;
 
 		LayerReloadHands:
@@ -162,8 +162,8 @@ class B_AK19 : BaseStandardRifle {
 			}
 
 		LayerGunHandReturn:
-			RATG C 3;
-			RATG A -1;
+			Q91G C 3;
+			Q91G A -1;
 			Stop;
 
 		ReloadEnd:
@@ -186,8 +186,8 @@ class B_AK19 : BaseStandardRifle {
 			Stop;
 
 		LayerGunReloading:
-			RATG C 3;
-			RATG D -1;
+			Q91G C 3;
+			Q91G D -1;
 			Stop;
 
 		UnloadMag:
@@ -249,13 +249,13 @@ class B_AK19 : BaseStandardRifle {
 			Goto LayerGun;
 
 		Chamber_Anim:
-			RATG E 3;
-			RATG F 3 {
+			Q91G E 3;
+			Q91G F 3 {
 				A_StartSound(invoker.bBoltBackwardSound, CHAN_WEAPON);
 			}
-			RATG G 3;
-			RATG E 3;
-			RATG A -1 {
+			Q91G G 3;
+			Q91G E 3;
+			Q91G A -1 {
 				A_StartSound(invoker.bBoltForwardSound, CHAN_WEAPON);
 			}
 			Stop;
@@ -302,7 +302,7 @@ class B_AK19 : BaseStandardRifle {
 			}
 
 		DUMMY:
-			RATF ABCD -1;
+			Q91F ABCD -1;
 			Stop;
 
 
@@ -310,10 +310,10 @@ class B_AK19 : BaseStandardRifle {
 
 	override string, double GetPickupSprite() {
 		if(magazineGetAmmo() > -1) {
-			return "AK9PA0", 1.;
+			return "Q91PA0", 1.;
 		}
 		else {
-			return "AK9PB0", 1.;
+			return "Q91PB0", 1.;
 		}
 	}
 	

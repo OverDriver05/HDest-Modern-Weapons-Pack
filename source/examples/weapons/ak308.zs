@@ -44,22 +44,22 @@ class B_AK308 : BaseStandardRifle {
 		BHDWeapon.BUnloadSound       "weapons/akm/clipeject";
 
 		BHDWeapon.BROF               0.4;
-		BHDWeapon.BBackOffsetX       0;
-		BHDWeapon.BBackOffsetY       30;
+		BHDWeapon.BBackOffsetX       -7;
+		BHDWeapon.BBackOffsetY       42;
 		BHDWeapon.BFrontSightImage   "akmfr";
-		BHDWeapon.BBackSightImage    "akmbr";
+		BHDWeapon.BBackSightImage    "alt_a12";
 		BHDWeapon.BFrontOffsetX      0;
 		BHDWeapon.BFrontOffsetY      17;
 		BHDWeapon.BSilentOffsetX     0;
 		BHDWeapon.BSilentOffsetY     0;
 		BHDWeapon.bBarrelMount       "762_NATO_BARREL";
 		BHDWeapon.bScopeMount        "NATO_RAILS";
-		BHDWeapon.bMiscMount         "";
+		BHDWeapon.bMiscMount         "NATO_RAILS";
 		BHDWeapon.EjectShellClass    "B762x51Spent";
 		hdweapon.refid               B_AK308_REFID;
 
 		BHDWeapon.BAltFrontSightImage "a_akmfr";
-		BHDWeapon.BAltBackSightImage "a_akmbr";
+		BHDWeapon.BAltBackSightImage "alt_a12";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;

@@ -44,10 +44,10 @@ class B_AK15 : BaseStandardRifle {
 		BHDWeapon.BUnloadSound       "weapons/akm/clipeject";
 
 		BHDWeapon.BROF               0.4;
-		BHDWeapon.BBackOffsetX       0;
-		BHDWeapon.BBackOffsetY       30;
+		BHDWeapon.BBackOffsetX       -7;
+		BHDWeapon.BBackOffsetY       42;
 		BHDWeapon.BFrontSightImage   "akmfr";
-		BHDWeapon.BBackSightImage    "akmbr";
+		BHDWeapon.BBackSightImage    "alt_a12";
 		BHDWeapon.BFrontOffsetX      0;
 		BHDWeapon.BFrontOffsetY      17;
 		BHDWeapon.BSilentOffsetX     0;
@@ -59,7 +59,7 @@ class B_AK15 : BaseStandardRifle {
 		hdweapon.refid               B_AK15_REFID;
 
 		BHDWeapon.BAltFrontSightImage "a_akmfr";
-		BHDWeapon.BAltBackSightImage "a_akmbr";
+		BHDWeapon.BAltBackSightImage "alt_a12";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;

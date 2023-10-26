@@ -12,6 +12,8 @@ Thanks to everyone who worked on it before to create a highly useful and fun mod
 
 Also thanks to the following for providing a base model that I edited to make some of the gun sprites:
 
+- https://sketchfab.com/3d-models/bigwig-spearhead-a015d565fee74f1a8bdf86eb808b93cf (XM7 or SIG Spear)
+
 - https://sketchfab.com/3d-models/ak-12-5b3d2fcb9015402794b841498c9617de (AK-12 family)
 
 - https://delthor-games.itch.io/free-low-poly-weapons-pack-3 (SCAR family)
@@ -19,6 +21,8 @@ Also thanks to the following for providing a base model that I edited to make so
 - https://adwitr.itch.io/low-poly-gun-models-ump-uzi (UMP family)
 
 - https://gitlab.com/dastrukar/hddons-list-entries/-/blob/master/weapons/NORA_.45_R1-popguy12.yaml (FNX45)
+
+- https://sketchfab.com/3d-models/minecraft-qbz-192-rifle-81457d1bad3040c1af8f1905ac3ef700 (QBZ-191)
 
 ---
 The original project readme is below. Do **not** follow it for installation.

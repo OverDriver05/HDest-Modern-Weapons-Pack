@@ -1,0 +1,28 @@
+
+sprite Q91PA0, 145, 41 {
+	XScale 3
+	YScale 3
+	Offset 72, 41
+	Patch "graphics/gunimages/qbz191/base.png", 0, 0
+}
+
+sprite Q91PB0, 145, 31 {
+	XScale 3
+	YScale 3
+	Offset 72, 31
+	Patch "graphics/gunimages/qbz191/empty.png", 0, 0
+}
+
+sprite Q91CA0, 23, 26 {
+	XScale 3
+	YScale 3
+	Offset 11, 26
+	Patch "graphics/mags/584clip.png", 0, 0
+}
+
+sprite Q91CB0, 23, 26 {
+	XScale 3
+	YScale 3
+	Offset 11, 26
+	Patch "graphics/mags/584clipnb.png", 0, 0
+}

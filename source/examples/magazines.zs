@@ -807,3 +807,54 @@ class B277MagEmpty:IdleDummy{
 	}
 }
 
+
+class B584Mag : HDMagAmmo{
+	default{
+		hdmagammo.maxperunit 30;
+		hdmagammo.roundtype "B584Ammo";
+		hdmagammo.roundbulk c_584_load_bulk;
+		hdmagammo.magbulk c_584_mag_bulk;
+		hdpickup.refid B_584_MAG_REFID;
+		tag "30 round 5.8x42mm magazine";
+		inventory.pickupmessage "Picked up a 5.8x42mm magazine.";
+		Inventory.Icon "Q91CA0";
+		scale 0.8;
+	}
+
+	override string,string,name,double getmagsprite(int thismagamt) {
+		return (thismagamt > 0) ? "Q91CA0" : "Q91CB0", "QF58A3A7", "B584Ammo", 1.7;
+	}
+
+	override void GetItemsThatUseThis() {
+		itemsthatusethis.push("B_QBZ91");
+	}
+
+	states{
+		spawn:
+			Q91C A -1;
+			stop;
+		spawnempty:
+			Q91C B -1{
+				brollsprite = true;
+				brollcenter = true;
+				roll = randompick(0, 0, 0, 0, 2, 2, 2, 2, 1, 3) * 90;
+			}
+			stop;
+	}
+}
+
+class B584MagEmpty:IdleDummy{
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"B584Mag",0);
+		destroy();
+	}
+}
+
+class B584MagEmpty2 : IdleDummy {
+	override void postbeginplay(){
+		super.postbeginplay();
+		HDMagAmmo.SpawnMag(self,"B584Mag",0);
+		destroy();
+	}
+}
