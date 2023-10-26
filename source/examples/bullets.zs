@@ -8,7 +8,7 @@ class HDB_556 : HDBulletActor{
 		stamina 556;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
 
@@ -21,7 +21,7 @@ class HDB_762 : HDBulletActor{
 		stamina 762;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
 
@@ -34,7 +34,7 @@ class HDB_762x63 : HDBulletActor{
 		stamina 762;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
 
@@ -47,7 +47,7 @@ class HDB_762x51 : HDBulletActor {
 		stamina 762;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
 
@@ -60,7 +60,7 @@ class HDB_792 : HDBulletActor{
 		stamina 792;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
 
@@ -72,7 +72,7 @@ class HDB_BMG:HDBulletActor{
         accuracy 600;
         stamina 1270;
         woundhealth 2;
-        hdbulletactor.hardness 4;
+        //hdbulletactor.hardness 4;
     }
 }
 
@@ -85,7 +85,7 @@ class HDB_545:HDBulletActor{
         stamina 545;
         woundhealth 5;
         hdbulletactor.hardness 4;
- 		hdbulletactor.distantsound "world/riflefar";
+ 		//hdbulletactor.distantsound "world/riflefar";
     }
 }
 
@@ -98,7 +98,7 @@ class HDB_762sov : HDBulletActor{
         stamina 762;
         woundhealth 5;
         hdbulletactor.hardness 4;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
     }
 }
 
@@ -111,7 +111,7 @@ class HDB_HD45ACP : HDBulletActor{
 		stamina 450;
 		woundhealth 4;
 		hdbulletactor.hardness 3;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
 
@@ -124,7 +124,7 @@ class HDB_277 : HDBulletActor{
 		stamina 762;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
     }
 }
 
@@ -137,6 +137,6 @@ class HDB_584 : HDBulletActor{
 		stamina 584;
 		woundhealth 40;
 		hdbulletactor.hardness 2;
-		hdbulletactor.distantsound "world/riflefar";
+		//hdbulletactor.distantsound "world/riflefar";
 	}
 }
