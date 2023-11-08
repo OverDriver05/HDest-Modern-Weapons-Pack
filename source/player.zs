@@ -156,33 +156,7 @@ class PlayerEvents : EventHandler {
 				}
 			}
 		}
-		else if (e.Replacee is "ClipMagPickup" || e.Replacee is "ClipBoxPickup") {
-			e.Replacement = "RandomBryanPickup";
-		}
-			else if (e.Replacee is "DERPUsable") {
-			e.Replacement = "TDERPUsable";
-		}
-			else if (e.Replacee is "DERPDead") {
-			e.Replacement = "TDERPDead";
-		}
-			else if (e.Replacee is "EnemyDERP") {
-			e.Replacement = "EnemyTDERP";
-		}
-			else if (e.Replacee is "DERPBot") {
-			e.Replacement = "TDerpBot";
-		}
-			else if (e.Replacee is "HERPUsable") {
-			e.Replacement = "THERPUsable";
-		}
-			else if (e.Replacee is "BrokenHERP") {
-			e.Replacement = "BrokenTHERP";
-		}
-			else if (e.Replacee is "EnemyHERP") {
-			e.Replacement = "EnemyTHERP";
-		}
-			else if (e.Replacee is "HERPBot") {
-			e.Replacement = "THerpBot";
-		}
+
 	}
 
 	void replaceAllAI(ReplaceEvent e) {
