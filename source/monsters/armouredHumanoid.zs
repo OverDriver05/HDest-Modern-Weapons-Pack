@@ -1,7 +1,7 @@
 
 /* Copy class of zombieman, but with parameters to change weapons and such */
 
-class ArmouredHumanoidBase : ZombieStormtrooper {
+class ArmouredHumanoidBase : ZombieHDest {
 	
 	property hWeaponClass: hWeaponClass;
 	string hWeaponClass;

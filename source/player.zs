@@ -161,59 +161,37 @@ class PlayerEvents : EventHandler {
 
 	void replaceAllAI(ReplaceEvent e) {
 		if (e.Replacee is "ZombieHideousTrooper") {
-			string possible[50] = {
-				"usmc_m4c",
+			string possible[28] = {
 				"usmc_m4c",
 				"usmc_m4c",
 				"usmc_m4c",
 				"usmc_m4cm203",
-				"usmc_m4cm203",
-				"usmc_m4cm203",
-				"usmc_mp5",
-				"usmc_mp5",
-				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_xm5",
 				"usmc_xm5",
-				"usmc_xm5",
 				"usmc_scar16c",
 				"usmc_scar16c",
-				"usmc_scar16c",
-				"usmc_ump9",
+				"usmc_scar17c",
+				"usmc_m14",
 				"usmc_ump9",
 				"usmc_ump9",
 				"usmc_ump45",
-				"usmc_m249",
-				"op_m107",
+				"ru_akm",
+				"ru_akm",
+				"ru_akm",
+				"ru_aks",
+				"ru_aks",
+				"ru_aks",
 				"op_uzi",
 				"ru_ak15",
 				"ru_ak15",
-				"ru_ak15",
-				"ru_ak15",
-				"ru_ak15",
-				"ru_akm",
-				"ru_akm",
-				"ru_akm",
-				"ru_akm",
-				"ru_akm",
-				"ru_aks",
-				"ru_aks",
-				"ru_aks",
-				"ru_aks",
-				"ru_aks",
 				"ru_ak12",
 				"ru_ak12",
-				"ru_ak12",
-				"ru_ak12",
-				"ru_ak12",
-				"ru_ak12",
-				"ru_rpk16",
-				"op_m107",
-				"op_uzi"
+				"op_m107"
 			};
-			e.Replacement = possible[random(0, 49)];
+			e.Replacement = possible[random(0, 27)];
 		}
 		//else if (e.Replacee is "ZombieShotgunner") {
 		//	if (random(0, 100) < b_ai_shotgunner_chance) {
