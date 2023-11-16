@@ -62,6 +62,7 @@ version "4.4"
 #include "source/monsters/lvl1warrior.zs"
 
 #include "source/monsters/humanoid.zs"
+#include "source/monsters/armouredHumanoid.zs"
 
 #include "source/monsters/new/ai_bubble.zs"
 #include "source/monsters/new/afrf.zs"
