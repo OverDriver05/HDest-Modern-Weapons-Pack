@@ -161,37 +161,42 @@ class PlayerEvents : EventHandler {
 
 	void replaceAllAI(ReplaceEvent e) {
 		if (e.Replacee is "ZombieHideousTrooper") {
-			string possible[28] = {
-				"usmc_m4c",
+			string possible[33] = {
 				"usmc_m4c",
 				"usmc_m4c",
 				"usmc_m4cm203",
+				"arm_usmc_m4c"
+				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_mp5",
 				"usmc_xm5",
-				"usmc_xm5",
+				"arm_usmc_xm5",
 				"usmc_scar16c",
-				"usmc_scar16c",
-				"usmc_scar17c",
-				"usmc_m14",
+				"arm_usmc_scar16c",
 				"usmc_ump9",
-				"usmc_ump9",
+				"arm_usmc_ump9",
 				"usmc_ump45",
-				"ru_akm",
-				"ru_akm",
-				"ru_akm",
-				"ru_aks",
-				"ru_aks",
-				"ru_aks",
+				"arm_usmc_ump45",
+				"op_m107",
+				"op_uzi",
 				"op_uzi",
 				"ru_ak15",
 				"ru_ak15",
+				"arm_ru_ak15",
+				"ru_akm",
+				"ru_akm",
+				"ru_akm",
+				"ru_aks",
+				"ru_aks",
+				"ru_aks",
 				"ru_ak12",
 				"ru_ak12",
-				"op_m107"
+				"arm_ru_ak12",
+				"usmc_fostech",
+				"ru_saiga"
 			};
-			e.Replacement = possible[random(0, 27)];
+			e.Replacement = possible[random(0, 32)];
 		}
 		//else if (e.Replacee is "ZombieShotgunner") {
 		//	if (random(0, 100) < b_ai_shotgunner_chance) {
@@ -199,24 +204,48 @@ class PlayerEvents : EventHandler {
 		//	}
 		
 		else if (e.Replacee is "ZombieShotgunner") {
-			string possible[2] = {
+			string possible[10] = {
 				"usmc_fostech",
-				"ru_saiga"
+				"arm_usmc_fostech",
+				"arm_usmc_fostech",
+				"arm_usmc_scar16c",
+				"arm_usmc_scar17c",
+				"ru_saiga",
+				"arm_ru_saiga",
+				"arm_ru_saiga",
+				"arm_ru_ak12",
+				"arm_ru_ak15"
 			};
-			e.Replacement = possible[random(0, 1)];
+			e.Replacement = possible[random(0, 9)];
 		}
 		
 		else if (e.Replacee is "VulcanetteZombie") {
-			string possible[7] = {
+			string possible[23] = {
 				"usmc_m14",
-				"usmc_scar17c",
+				"usmc_m14",
+				"arm_usmc_ump9",
+				"arm_usmc_ump9",
+				"arm_usmc_ump45",
+				"arm_usmc_ump45",
+				"arm_usmc_scar16c",
+				"arm_usmc_scar16c",
+				"arm_usmc_scar16c",
+				"arm_usmc_scar17c",
+				"arm_usmc_scar17c",
+				"arm_usmc_scar17c",
 				"usmc_m249",
 				"usmc_m249",
+				"arm_usmc_m249",
+				"arm_usmc_m249",
+				"arm_usmc_m249",
 				"ru_rpk16",				
 				"ru_rpk16",
+				"arm_ru_rpk16",
+				"arm_ru_rpk16",
+				"arm_ru_rpk16",
 				"op_m107"
 			};
-			e.Replacement = possible[random(0, 6)];
+			e.Replacement = possible[random(0,22)];
 		}
 		
 	}

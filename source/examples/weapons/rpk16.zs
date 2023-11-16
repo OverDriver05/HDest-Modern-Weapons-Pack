@@ -59,7 +59,7 @@ class B_RPK16 : BaseStandardRifle {
 		hdweapon.refid               B_RPK16_REFID;
 
 		BHDWeapon.BAltFrontSightImage "a_akmfr";
-		BHDWeapon.BAltBackSightImage "a_akmbr";
+		BHDWeapon.BAltBackSightImage "alt_a12";
 
 		BHDWeapon.BLayerSight  104;
 		BHDWeapon.bLayerRHand  105;
