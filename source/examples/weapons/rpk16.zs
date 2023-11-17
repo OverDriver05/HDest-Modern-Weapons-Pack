@@ -44,8 +44,8 @@ class B_RPK16 : BaseStandardRifle {
 		BHDWeapon.BUnloadSound       "weapons/m4/clipeject";
 
 		BHDWeapon.BROF               0.3;
-		BHDWeapon.BBackOffsetX       0;
-		BHDWeapon.BBackOffsetY       30;
+		BHDWeapon.BBackOffsetX       -7;
+		BHDWeapon.BBackOffsetY       42;
 		BHDWeapon.BFrontSightImage   "akmfr";
 		BHDWeapon.BBackSightImage    "akmbr";
 		BHDWeapon.BFrontOffsetX      0;
