@@ -10,6 +10,7 @@ Actor BryanReplacer : RandomSpawner
 	DropItem "arm_usmc_xm5", 255, 100
 	DropItem "arm_usmc_scar16c", 255, 100
 	DropItem "arm_usmc_scar17c", 255, 100
+	Dropitem "arm_ru_qbz191", 255, 100
 	Dropitem "arm_ru_ak12", 255, 100
 	Dropitem "arm_ru_ak15", 255, 100
 	DropItem "arm_usmc_ump45", 255, 100
