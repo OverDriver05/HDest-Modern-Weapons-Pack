@@ -55,5 +55,5 @@ OptionMenu "B_Options" {
 	option "Attachment Spawn Mode", "b_attach_spawn_mode", "B_Attach_Spawn_Options"
 	option "Backpack Mode", "b_alt_backpack", "B_Alt_Backpack"
 	option "Resource mode", "b_spawn_raw_resources", "B_Resource_Options"
-	option "Replace spawns" , "replacespawns" , OffOn
+	option "Milsim mode" , "replacespawns" , OffOn
 }
