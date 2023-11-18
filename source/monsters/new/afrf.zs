@@ -109,6 +109,17 @@ class ArmouredAiSaiBubble : ArmouredAiBubble {
 	}
 }
 
+class ArmouredAiQBZ191Bubble : ArmouredAiBubble {
+	states {
+		spawn:
+			Q91P A -1;
+			Stop;
+		empty:
+			Q91P B -1;
+			Stop;
+	}
+}
+
 class ru_vsr_base : ai_with_bubble_base {
 	default {
 		species "ru_vsr_base";
@@ -440,6 +451,22 @@ class ru_saiga : ru_vsr_base {
 
 
 // Armoured Enemy Section
+
+class arm_ru_qbz191 : arm_ru_base {
+	default {
+		ArmouredHumanoidBase.hWeaponClass     "B_QBZ191";
+		ArmouredHumanoidBase.hBulletClass     "HDB_584";
+		ArmouredHumanoidBase.hMaxMag          30;
+		ArmouredHumanoidBase.hMagazineClass   "B584Mag";
+		ArmouredHumanoidBase.hSpentClass      "B584Spent";
+		ArmouredHumanoidBase.hFireSound       "weapons/aks74u/fire";
+	}
+	override ArmouredAiBubble getGun() {
+		ArmouredAiBubble hoverGun = ArmouredAiBubble(Actor.Spawn("ArmouredAiQBZ191Bubble"));
+		hoverGun.host = self;
+		return hoverGun;
+	}
+}
 
 class arm_ru_ak15 : arm_ru_base {
 	default {
