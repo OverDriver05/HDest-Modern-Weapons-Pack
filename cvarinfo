@@ -14,3 +14,6 @@ server int b_ai_scout_chance      = 30;
 server int b_ai_rifleman_chance   = 30;
 server int b_ai_shotgunner_chance = 10;
 server int b_ai_ranger_chance     = 10;
+
+server bool replacespawns = true;
+server int replacetype = 0;

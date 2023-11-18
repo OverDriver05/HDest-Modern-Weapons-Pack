@@ -1,0 +1,465 @@
+/* Zscript to replace vanilla HDest enemies with the humanoid enemies in hdest-modern-weapons */
+/* Code inspired by Monster_Picker by Williams (https://drive.google.com/file/d/1sC0TUhZPwYbWIRYURjVK74e3lKuBYkP7/view?usp=sharing) */
+
+Actor BryanReplacer : RandomSpawner
+{
+    DropItem "ZombieShotgunner", 255, 200
+	DropItem "ZombieStormtrooper", 255, 200
+	DropItem "VulcanetteZombie", 255, 200
+	DropItem "arm_usmc_m4c", 255, 100
+	DropItem "arm_usmc_xm5", 255, 100
+	DropItem "arm_usmc_scar16c", 255, 100
+	DropItem "arm_usmc_scar17c", 255, 100
+	Dropitem "arm_ru_ak12", 255, 100
+	Dropitem "arm_ru_ak15", 255, 100
+	DropItem "arm_usmc_ump45", 255, 100
+	DropItem "arm_usmc_ump9", 255, 100
+	Dropitem "arm_usmc_fostech", 255, 100
+	Dropitem "arm_ru_saiga", 255, 100
+	Dropitem "arm_ru_rpk16", 255, 100
+	Dropitem "arm_usmc_m249", 255, 100
+}
+
+// Actual Replacements of HDest mobs
+ 
+Actor OriginalZombieAutoStormtrooper : ZombieAutoStormtrooper {}
+Actor ReplacedZombieAutoStormtrooper replaces ZombieAutoStormtrooper {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalZombieAutoStormtrooper",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalZombieSemiStormtrooper : ZombieSemiStormtrooper {}
+Actor ReplacedZombieSemiStormtrooper replaces ZombieSemiStormtrooper {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalZombieSemiStormtrooper",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalZombieSMGStormtrooper : ZombieSMGStormtrooper {}
+Actor ReplacedZombieSMGStormtrooper replaces ZombieSMGStormtrooper {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalZombieSMGStormtrooper",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalUndeadJackbootman : UndeadJackbootman {}
+Actor ReplacedUndeadJackbootman replaces UndeadJackbootman {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalUndeadJackbootman",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalJackboot : Jackboot {}
+Actor ReplacedJackboot replaces Jackboot {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalJackboot",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalJackAndJillboot : JackAndJillboot {}
+Actor ReplacedJackAndJillboot replaces JackAndJillboot {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalJackAndJillboot",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalVulcanetteZombie : VulcanetteZombie {}
+Actor ReplacedVulcanetteZombie replaces VulcanetteZombie {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalVulcanetteZombie",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalSerpentipede : Serpentipede {}
+Actor ReplacedSerpentipede replaces Serpentipede {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalSerpentipede",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalRegentipede : Regentipede {}
+Actor ReplacedRegentipede replaces Regentipede {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalRegentipede",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalArdentipede : Ardentipede {}
+Actor ReplacedArdentipede replaces Ardentipede {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalArdentipede",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalPainBringer : PainBringer {}
+Actor ReplacedPainBringer replaces PainBringer {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalPainBringer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalPainLord : PainLord {}
+Actor ReplacedPainLord replaces PainLord {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalPainLord",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalPutto : Putto {}
+Actor ReplacedPutto replaces Putto {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalPutto",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalBabuin : Babuin {}
+Actor ReplacedBabuin replaces Babuin {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalBabuin",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalNinjaPirate : NinjaPirate {}
+Actor ReplacedNinjaPirate replaces NinjaPirate {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalNinjaPirate",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalSpecBabuin : SpecBabuin {}
+Actor ReplacedSpecBabuin replaces SpecBabuin {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalSpecBabuin",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalNecromancer : Necromancer {}
+Actor ReplacedNecromancer replaces Necromancer {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalNecromancer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalFlyingSkull : FlyingSkull {}
+Actor ReplacedFlyingSkull replaces FlyingSkull {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalFlyingSkull",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalTrilobite : Trilobite {}
+Actor ReplacedTrilobite replaces Trilobite {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalTribolite",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalSkullSpitter : SkullSpitter {}
+Actor ReplacedSkullSpitter replaces SkullSpitter {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalSkullSplitter",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalBoner : Boner {}
+Actor ReplacedBoner replaces Boner {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalBoner",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalCombatSlug : CombatSlug {}
+Actor ReplacedCombatSlug replaces CombatSlug {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalCombatSlug",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalTechnoSpider : TechnoSpider {}
+Actor ReplacedTechnoSpider replaces TechnoSpider {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalTechnoSpider",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalYokai : Yokai {}
+Actor ReplacedYokai replaces Yokai {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalYokai",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalTechnorantula : Technorantula {}
+Actor ReplacedTechnorantula replaces Technorantula {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalTechnorantula",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
+
+Actor OriginalSatanRobo : SatanRobo {}
+Actor ReplacedSatanRobo replaces SatanRobo {
+	States {
+	Spawn:
+	    TNT1 A 0 NODELAY
+		TNT1 A 0 {
+		    if (!GetCVar("replacespawns") == 0) {
+			    A_SpawnItemEx("OriginalSatanRobo",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+			else {
+			    A_SpawnItemEx("BryanReplacer",0,0,0,0,0,0,0,SXF_NOCHECKPOSITION);
+			}
+		}
+		Stop
+	}
+}
