@@ -48,7 +48,7 @@ class ArmouredHumanoidBase : ZombieHDest {
 		scoped = random(1, 2);
 		mag = hMaxMag;
 		initializeAttachments();
-		hdmobster.spawnmobster(self);
+		
 	}
 
 	virtual void initializeAttachments() {}

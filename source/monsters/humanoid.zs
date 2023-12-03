@@ -47,7 +47,7 @@ class HumanoidBase : ZombieStormtrooper {
 		scoped = random(0, 2);
 		mag = hMaxMag;
 		initializeAttachments();
-		hdmobster.spawnmobster(self);
+
 	}
 
 	virtual void initializeAttachments() {}
