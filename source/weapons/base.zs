@@ -1058,6 +1058,7 @@ class BHDWeapon : HDWeapon {
 			}
 			#### A 1 {
 				if (invoker.brokenChamber() || (!invoker.chambered() && invoker.magazineGetAmmo() < 1)) {
+					A_StartSound(invoker.bClickSound, CHAN_WEAPON, CHANF_OVERLAP);
 					return ResolveState("Nope");
 				}
 				else if (!invoker.chambered()) {
